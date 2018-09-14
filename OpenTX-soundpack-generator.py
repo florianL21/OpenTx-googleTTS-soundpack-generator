@@ -59,7 +59,12 @@ def create_filesystem():
 	else:
 		print(pcolors.WARNING + "Filepath already exists" + pcolors.ENDC)
 
-
+def shorten_text(long_text, max_length):
+	if(len(str(long_text)) >= max_length):
+		return str(long_text)[:max_length-4] + "..."
+	else:
+		return str(long_text)
+		
 def create_voice_from_list():
 	#find the last row:
 	lastRow = ws.max_row
@@ -75,8 +80,10 @@ def create_voice_from_list():
 	print("Generating " + str(lastRow-2) + " Files")
 	print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
 	for r in progressbar.progressbar(range(2, lastRow), redirect_stdout=True):
-		print "\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(str(ws.cell(row=r, column=1).value),str(ws.cell(row=r, column=2).value),str(ws.cell(row=r, column=3).value)),
+		print "\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(ws.cell(row=r, column=1).value, 10),
+			shorten_text(ws.cell(row=r, column=2).value, 30),shorten_text(ws.cell(row=r, column=3).value, 40)),
 		synthesize_ssml('<speak>' + str(ws.cell(row=r, column=3).value) + '</speak>', filepath + str(ws.cell(row=r, column=1).value))
+
 
 
 if __name__ == '__main__':
@@ -92,9 +99,9 @@ if __name__ == '__main__':
 	parser.add_argument('-r', '--remove', action='store_true',
                        help='Use to clear all directories and start over fresh.')
 	parser.add_argument('-o', '--override', action='store_true',
-                       help='Use to enable overide if a file already exists. Use if you want to regenerate all voices from the excel file without affecting the folder structure. this will NOT delete any files!')
+                       help='Use to enable overide if a file already exists. Use if you want to regenerate all voices from the excel file without affecting the folder structure. This will NOT delete any files!')
 	parser.add_argument('-s', '--singleLine', type=int, default=0,
-                       help='Use this option to regenerate one single line of the excel file. add a minus to the line number to regenerate system voices, a positive value will regenerate user voices')
+                       help='Use this option to regenerate one single line of the excel file. Add a minus to the line number to regenerate system voices, a positive value will regenerate user voices')
 	args = parser.parse_args()
 	
 	# Note: the voice can also be specified by name.
@@ -123,12 +130,14 @@ if __name__ == '__main__':
 			print(pcolors.BOLD + "Generating user defined voices" + pcolors.ENDC)
 			ws = wb[str(args.language) + '-user']
 			print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
-			print "\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(str(ws.cell(row=args.singleLine, column=1).value),str(ws.cell(row=args.singleLine, column=2).value),str(ws.cell(row=args.singleLine, column=3).value)),
+			print "\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(ws.cell(row=args.singleLine, column=1).value, 10),
+				shorten_text(ws.cell(row=args.singleLine, column=2).value, 30),shorten_text(ws.cell(row=args.singleLine, column=3).value, 40)),
 			synthesize_ssml('<speak>' + str(ws.cell(row=args.singleLine, column=3).value) + '</speak>', filepath + str(ws.cell(row=args.singleLine, column=1).value))
 		else:
 			filepath = "SOUNDS/" + str(args.language) + "/SYSTEM/"
 			print(pcolors.BOLD + "Generating system voices" + pcolors.ENDC)
 			ws = wb[str(args.language) + '-system']
 			print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
-			print "\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(str(ws.cell(row=-args.singleLine, column=1).value),str(ws.cell(row=-args.singleLine, column=2).value),str(ws.cell(row=-args.singleLine, column=3).value)),
+			print "\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(ws.cell(row=-args.singleLine, column=1).value, 10),
+				shorten_text(ws.cell(row=-args.singleLine, column=2).value, 30), shorten_text(ws.cell(row=-args.singleLine, column=3).value, 40)),
 			synthesize_ssml('<speak>' + str(ws.cell(row=-args.singleLine, column=3).value) + '</speak>', filepath + str(ws.cell(row=-args.singleLine, column=1).value))
