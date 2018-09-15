@@ -7,6 +7,9 @@ from google.cloud import texttospeech
 from pydub import AudioSegment
 from openpyxl import load_workbook
 
+standardVoice = "Wavenet-A"
+usedVoice = ""
+
 client = texttospeech.TextToSpeechClient()
 
 filepath = "";
@@ -87,6 +90,7 @@ def create_voice_from_list():
 
 
 if __name__ == '__main__':
+
 	parser = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -94,7 +98,7 @@ if __name__ == '__main__':
                        help='The name of the input .xlsx file')
 	parser.add_argument('-l', '--language',
                        help='If formated correctly this should be the language code. For example en for english')
-	parser.add_argument('-v', '--voice', default='en-US-Wavenet-D',
+	parser.add_argument('-v', '--voice', default = standardVoice,
                        help='Define the name of the TTS voice')
 	parser.add_argument('-r', '--remove', action='store_true',
                        help='Use to clear all directories and start over fresh.')
@@ -104,14 +108,17 @@ if __name__ == '__main__':
                        help='Use this option to regenerate one single line of the excel file. Add a minus to the line number to regenerate system voices, a positive value will regenerate user voices')
 	args = parser.parse_args()
 	
+	usedVoice = str(args.language) + "-" + args.voice
+	print("Using '" + usedVoice + "' for voice output")
+	
 	# Note: the voice can also be specified by name.
     # Names of voices can be retrieved with client.list_voices().
 	voice = texttospeech.types.VoiceSelectionParams(
-        language_code=args.voice[:5],
-        name=args.voice)
+        language_code=args.language,
+        name=usedVoice)
 	wb = load_workbook(str(args.file), data_only=True)
 	
-	filepath = "SOUNDS/" + str(args.language) + "/SYSTEM/"
+	filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/SYSTEM/"
 	create_filesystem()
 	if args.singleLine == 0:
 		#generate system sounds
@@ -120,13 +127,13 @@ if __name__ == '__main__':
 		create_voice_from_list()
 
 		#generate user sounds
-		filepath = "SOUNDS/" + str(args.language) + "/"
+		filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/"
 		print(pcolors.BOLD + "Generating user defined voices" + pcolors.ENDC)
 		ws = wb[str(args.language) + '-user']
 		create_voice_from_list()
 	else:
 		if args.singleLine > 0:
-			filepath = "SOUNDS/" + str(args.language) + "/"
+			filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/"
 			print(pcolors.BOLD + "Generating user defined voices" + pcolors.ENDC)
 			ws = wb[str(args.language) + '-user']
 			print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
@@ -134,7 +141,7 @@ if __name__ == '__main__':
 				shorten_text(ws.cell(row=args.singleLine, column=2).value, 30),shorten_text(ws.cell(row=args.singleLine, column=3).value, 40)),
 			synthesize_ssml('<speak>' + str(ws.cell(row=args.singleLine, column=3).value) + '</speak>', filepath + str(ws.cell(row=args.singleLine, column=1).value))
 		else:
-			filepath = "SOUNDS/" + str(args.language) + "/SYSTEM/"
+			filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/SYSTEM/"
 			print(pcolors.BOLD + "Generating system voices" + pcolors.ENDC)
 			ws = wb[str(args.language) + '-system']
 			print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
