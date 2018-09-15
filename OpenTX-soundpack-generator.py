@@ -8,11 +8,12 @@ from pydub import AudioSegment
 from openpyxl import load_workbook
 
 standardVoice = "Wavenet-A"
-usedVoice = ""
+
 
 client = texttospeech.TextToSpeechClient()
 
-filepath = "";
+filepath = ""
+usedVoice = ""
 
 class pcolors:
 	HEADER = '\033[95m'
@@ -39,6 +40,11 @@ def synthesize_ssml(ssml_text, output_file_name):
 	if os.path.isfile(output_file_name + ".wav") and (not args.override):
 		print(pcolors.OKBLUE + "<-- Skipped" + pcolors.ENDC)
 	else:
+		if os.path.isfile(output_file_name + ".wav"):
+			print(pcolors.OKGREEN + "<-- Overwritten" + pcolors.ENDC)
+		else:
+			print("")
+		
 		response = client.synthesize_speech(input_text, voice, audio_config)
 
 		# The response's audio_content is binary.
@@ -48,7 +54,6 @@ def synthesize_ssml(ssml_text, output_file_name):
 		sound = sound.set_channels(1)
 		sound = sound.set_frame_rate(32000)
 		sound.export(output_file_name + ".wav", format="wav")
-		print("")
 
 
 def create_filesystem():
@@ -63,10 +68,11 @@ def create_filesystem():
 		print(pcolors.WARNING + "Filepath already exists" + pcolors.ENDC)
 
 def shorten_text(long_text, max_length):
-	if(len(str(long_text)) >= max_length):
-		return str(long_text)[:max_length-4] + "..."
+	long_text = unicode(long_text)
+	if(len(long_text) >= max_length):
+		return long_text[:max_length-4] + "..."
 	else:
-		return str(long_text)
+		return long_text
 		
 def create_voice_from_list():
 	#find the last row:
@@ -83,9 +89,9 @@ def create_voice_from_list():
 	print("Generating " + str(lastRow-2) + " Files")
 	print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
 	for r in progressbar.progressbar(range(2, lastRow), redirect_stdout=True):
-		print "\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(ws.cell(row=r, column=1).value, 10),
+		print u"\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(ws.cell(row=r, column=1).value, 10),
 			shorten_text(ws.cell(row=r, column=2).value, 30),shorten_text(ws.cell(row=r, column=3).value, 40)),
-		synthesize_ssml('<speak>' + str(ws.cell(row=r, column=3).value) + '</speak>', filepath + str(ws.cell(row=r, column=1).value))
+		synthesize_ssml('<speak>' + unicode(ws.cell(row=r, column=3).value) + '</speak>', filepath + unicode(ws.cell(row=r, column=1).value))
 
 
 
@@ -137,14 +143,14 @@ if __name__ == '__main__':
 			print(pcolors.BOLD + "Generating user defined voices" + pcolors.ENDC)
 			ws = wb[str(args.language) + '-user']
 			print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
-			print "\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(ws.cell(row=args.singleLine, column=1).value, 10),
+			print u"\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(ws.cell(row=args.singleLine, column=1).value, 10),
 				shorten_text(ws.cell(row=args.singleLine, column=2).value, 30),shorten_text(ws.cell(row=args.singleLine, column=3).value, 40)),
-			synthesize_ssml('<speak>' + str(ws.cell(row=args.singleLine, column=3).value) + '</speak>', filepath + str(ws.cell(row=args.singleLine, column=1).value))
+			synthesize_ssml('<speak>' + unicode(ws.cell(row=args.singleLine, column=3).value) + '</speak>', filepath + unicode(ws.cell(row=args.singleLine, column=1).value))
 		else:
 			filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/SYSTEM/"
 			print(pcolors.BOLD + "Generating system voices" + pcolors.ENDC)
 			ws = wb[str(args.language) + '-system']
 			print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
-			print "\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(ws.cell(row=-args.singleLine, column=1).value, 10),
+			print u"\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(ws.cell(row=-args.singleLine, column=1).value, 10),
 				shorten_text(ws.cell(row=-args.singleLine, column=2).value, 30), shorten_text(ws.cell(row=-args.singleLine, column=3).value, 40)),
-			synthesize_ssml('<speak>' + str(ws.cell(row=-args.singleLine, column=3).value) + '</speak>', filepath + str(ws.cell(row=-args.singleLine, column=1).value))
+			synthesize_ssml('<speak>' + unicode(ws.cell(row=-args.singleLine, column=3).value) + '</speak>', filepath + unicode(ws.cell(row=-args.singleLine, column=1).value))
