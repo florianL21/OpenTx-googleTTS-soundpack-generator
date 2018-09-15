@@ -102,6 +102,7 @@ def create_voce_from_lines(start_index, end_index):
 			synthesize_ssml('<speak>' + unicode(ws.cell(row=r, column=3).value) + '</speak>', filepath + unicode(ws.cell(row=r, column=1).value))
 		else:
 			print(pcolors.WARNING + "<-- Ignored" + pcolors.ENDC)
+		
 
 
 if __name__ == '__main__':
@@ -112,7 +113,7 @@ if __name__ == '__main__':
 	parser.add_argument('-f', '--file',
                        help='The name of the input .xlsx file')
 	parser.add_argument('-l', '--language',
-                       help='If formated correctly this should be the language code. For example en for english')
+                       help='If formated correctly this should be the language code. For example en-US for english')
 	parser.add_argument('-v', '--voice', default = standardVoice,
                        help='Define the name of the TTS voice')
 	parser.add_argument('-r', '--remove', action='store_true',
@@ -135,25 +136,29 @@ if __name__ == '__main__':
 	
 	filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/SYSTEM/"
 	create_filesystem()
-	if args.singleLine == 0:
-		#generate system sounds
-		print(pcolors.BOLD + "Generating system voices" + pcolors.ENDC)
-		ws = wb[str(args.language) + '-system']
-		create_voice_from_list()
+	try:
+		if args.singleLine == 0:
+			#generate system sounds
+			print(pcolors.BOLD + "Generating system voices" + pcolors.ENDC)
+			ws = wb[str(args.language) + '-system']
+			create_voice_from_list()
 
-		#generate user sounds
-		filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/"
-		print(pcolors.BOLD + "Generating user defined voices" + pcolors.ENDC)
-		ws = wb[str(args.language) + '-user']
-		create_voice_from_list()
-	else:
-		if args.singleLine > 0:
+			#generate user sounds
 			filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/"
 			print(pcolors.BOLD + "Generating user defined voices" + pcolors.ENDC)
 			ws = wb[str(args.language) + '-user']
-			create_voce_from_lines(args.singleLine, args.singleLine + 1)
+			create_voice_from_list()
 		else:
-			filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/SYSTEM/"
-			print(pcolors.BOLD + "Generating system voices" + pcolors.ENDC)
-			ws = wb[str(args.language) + '-system']
-			create_voce_from_lines(-args.singleLine, (-args.singleLine) + 1)
+			if args.singleLine > 0:
+				filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/"
+				print(pcolors.BOLD + "Generating user defined voices" + pcolors.ENDC)
+				ws = wb[str(args.language) + '-user']
+				create_voce_from_lines(args.singleLine, args.singleLine + 1)
+			else:
+				filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/SYSTEM/"
+				print(pcolors.BOLD + "Generating system voices" + pcolors.ENDC)
+				ws = wb[str(args.language) + '-system']
+				create_voce_from_lines(-args.singleLine, (-args.singleLine) + 1)
+	except KeyboardInterrupt:
+		print(pcolors.FAIL + "Exiting script" + pcolors.ENDC)
+		exit()
