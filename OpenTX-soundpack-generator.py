@@ -59,7 +59,7 @@ def synthesize_ssml(ssml_text, output_file_name):
 def create_filesystem():
 	if args.remove and os.path.exists(filepath):
 		print(pcolors.WARNING + "Removing old files and folders..." + pcolors.ENDC)
-		shutil.rmtree("SOUNDS/" + str(args.language))
+		shutil.rmtree("SOUNDS/" + str(args.language).split('-')[0])
 		os.makedirs(filepath)
 	elif not os.path.exists(filepath):
 		os.makedirs(filepath)
@@ -93,6 +93,15 @@ def create_voice_from_list():
 			shorten_text(ws.cell(row=r, column=2).value, 30),shorten_text(ws.cell(row=r, column=3).value, 40)),
 		synthesize_ssml('<speak>' + unicode(ws.cell(row=r, column=3).value) + '</speak>', filepath + unicode(ws.cell(row=r, column=1).value))
 
+def create_voce_from_lines(start_index, end_index):
+	print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
+	for r in progressbar.progressbar(range(start_index, end_index), redirect_stdout=True):
+		print u"\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(ws.cell(row=r, column=1).value, 10),
+				shorten_text(ws.cell(row=r, column=2).value, 30),shorten_text(ws.cell(row=r, column=3).value, 40)),
+		if not ((ws.cell(row=r, column=1).value == None) and (ws.cell(row=r, column=2).value == None) and (ws.cell(row=r, column=3).value == None)):
+			synthesize_ssml('<speak>' + unicode(ws.cell(row=r, column=3).value) + '</speak>', filepath + unicode(ws.cell(row=r, column=1).value))
+		else:
+			print(pcolors.WARNING + "<-- Ignored" + pcolors.ENDC)
 
 
 if __name__ == '__main__':
@@ -142,15 +151,9 @@ if __name__ == '__main__':
 			filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/"
 			print(pcolors.BOLD + "Generating user defined voices" + pcolors.ENDC)
 			ws = wb[str(args.language) + '-user']
-			print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
-			print u"\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(ws.cell(row=args.singleLine, column=1).value, 10),
-				shorten_text(ws.cell(row=args.singleLine, column=2).value, 30),shorten_text(ws.cell(row=args.singleLine, column=3).value, 40)),
-			synthesize_ssml('<speak>' + unicode(ws.cell(row=args.singleLine, column=3).value) + '</speak>', filepath + unicode(ws.cell(row=args.singleLine, column=1).value))
+			create_voce_from_lines(args.singleLine, args.singleLine + 1)
 		else:
 			filepath = "SOUNDS/" + str(args.language).split('-')[0] + "/SYSTEM/"
 			print(pcolors.BOLD + "Generating system voices" + pcolors.ENDC)
 			ws = wb[str(args.language) + '-system']
-			print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
-			print u"\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(ws.cell(row=-args.singleLine, column=1).value, 10),
-				shorten_text(ws.cell(row=-args.singleLine, column=2).value, 30), shorten_text(ws.cell(row=-args.singleLine, column=3).value, 40)),
-			synthesize_ssml('<speak>' + unicode(ws.cell(row=-args.singleLine, column=3).value) + '</speak>', filepath + unicode(ws.cell(row=-args.singleLine, column=1).value))
+			create_voce_from_lines(-args.singleLine, (-args.singleLine) + 1)
