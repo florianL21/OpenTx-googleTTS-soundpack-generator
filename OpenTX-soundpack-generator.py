@@ -144,8 +144,10 @@ if __name__ == '__main__':
 	elif(args.beginAtLine > args.endAtLine) and not (args.beginAtLine < 0 and args.endAtLine < 0):
 		print(pcolors.FAIL + "--endAtLine must be greater than --beginAtLine" + pcolors.ENDC)
 		exit()
-	else:
+	elif (args.beginAtLine is not None and args.endAtLine is not None):
 		multiLine = 1
+	else:
+		multiLine = 0
 		
 	try:
 		print("\n\n*************************************************************\n*** Starting up...\n*************************************************************\n")
@@ -233,7 +235,7 @@ if __name__ == '__main__':
 		create_filesystem(filepathSystem)
 	
 	
-		if(args.singleLine is None and multiLine is None):
+		if(args.singleLine is None and multiLine == 0):
 			#generate system sounds
 			print(pcolors.BOLD + "Generating system voices" + pcolors.ENDC)
 			ws = wb[str(args.language) + '-system']
