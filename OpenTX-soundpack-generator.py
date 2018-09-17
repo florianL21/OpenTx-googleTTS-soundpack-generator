@@ -110,9 +110,9 @@ if __name__ == '__main__':
 	parser = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter)
-	parser.add_argument('-f', '--file',
+	parser.add_argument('-f', '--file', required=True,
                        help='The name of the input file')
-	parser.add_argument('-l', '--language',
+	parser.add_argument('-l', '--language', required=True,
                        help='If formated correctly this should be the language code. For example en-US for english')
 	parser.add_argument('-v', '--voice', nargs='?',
                        help='Define the name of the TTS voice')
@@ -177,7 +177,7 @@ if __name__ == '__main__':
 		else:
 			if usingDefaultVoice:
 				# Try to find a voice that is supports the desired language:
-				print(pcolors.WARNING + "The defined default voice does not exist. using the first voice for your langugae in the list: " + pcolors.ENDC)
+				print(pcolors.WARNING + "The defined default voice does not exist. Using the first voice for your language in the list: " + pcolors.ENDC)
 				selectedCountry_code = 0
 				selectedName = 0
 				for oneVoice in voices.voices:
