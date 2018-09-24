@@ -64,24 +64,14 @@ goto END
 :CheckGoogleCloud
 
 :: echo Checking Google Cloud version...
-echo Installing Google Cloud...
+echo Installing Google Cloud. Please log in and create or sign into a project.
 ::gcloud --version 1>&2>NUL
 ::if errorlevel 1 goto ErrorNoGoogleCloud
 goto ErrorNoGoogleCloud
 echo Google Cloud is installed.
 
-goto SetSystemVariable
+goto InstallGoogleCloud
 
-:ErrorNoGoogleCloud
-echo.
-::echo Error^: Google Cloud not installed
-if %processStatus% == 2 (
-	goto InstallGoogleCloud
-) else (
-	echo Google cloud should be installed and initialized at this point.
-	::goto END
-	goto SetSystemVariable
-)
 
 :InstallGoogleCloud
 set GoogleCloudPath=%cd%\GoogleCloud.exe
@@ -92,7 +82,7 @@ if not exist GoogleCloud.exe (
 echo Please follow the install procedure of the google cloud.
 GoogleCloud.exe
 set processStatus=3
-goto CheckGoogleCloud
+goto SetSystemVariable
 
 
 :SetSystemVariable
