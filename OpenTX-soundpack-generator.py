@@ -5,23 +5,17 @@ standardVoice = "Wavenet-A"
 import argparse
 import os
 import shutil
-import progressbar
+import sys
 
+from tqdm import tqdm
+from tqdm._utils import _term_move_up
 from google.cloud import texttospeech
 from pydub import AudioSegment
 from openpyxl import load_workbook
+from colorama import init, Fore, Back
+init(autoreset=True) #initialize colorama
 
-
-class pcolors:
-	HEADER = '\033[95m'
-	OKBLUE = '\033[94m'
-	OKGREEN = '\033[92m'
-	WARNING = '\033[93m'
-	FAIL = '\033[91m'
-	ENDC = '\033[0m'
-	BOLD = '\033[1m'
-	UNDERLINE = '\033[4m'
-	BGGREEN = '\x1b[6;30;42m'
+prefix = _term_move_up()
 
 def synthesize_ssml(ssml_text, output_file_name):
 	"""Synthesizes speech from the input text of ssml.
@@ -33,15 +27,13 @@ def synthesize_ssml(ssml_text, output_file_name):
 
 	audio_config = texttospeech.types.AudioConfig(
         audio_encoding=texttospeech.enums.AudioEncoding.MP3)
-
+	
+	
 	if os.path.isfile(output_file_name + ".wav") and (not args.override):
-		print(pcolors.OKBLUE + "<-- Skipped" + pcolors.ENDC)
+		tqdm.write(prefix + Fore.BLUE + "Skipped -->")
 	else:
 		if os.path.isfile(output_file_name + ".wav"):
-			print(pcolors.OKGREEN + "<-- Overwritten" + pcolors.ENDC)
-		else:
-			print("")
-		
+			tqdm.write(prefix + Fore.GREEN + "Overwritten -->")
 		response = client.synthesize_speech(input_text, voice, audio_config)
 		# The response's audio_content is binary.
 		with open('output.mp3', 'wb') as out:
@@ -54,14 +46,14 @@ def synthesize_ssml(ssml_text, output_file_name):
 
 def create_filesystem(filepath):
 	if args.remove and os.path.exists(filepath):
-		print(pcolors.WARNING + "Removing old files and folders..." + pcolors.ENDC)
+		print(Fore.YELLOW + "Removing old files and folders...")
 		shutil.rmtree("SOUNDS/" + str(args.language).split('-')[0])
 		os.makedirs(filepath)
 	elif not os.path.exists(filepath):
 		os.makedirs(filepath)
-		print(pcolors.WARNING + "Directories do not exist, creating filepath" + pcolors.ENDC)
+		print(Fore.YELLOW + "Directories do not exist, creating filepath")
 	else:
-		print(pcolors.WARNING + "Filepath already exists" + pcolors.ENDC)
+		print(Fore.YELLOW + "Filepath already exists")
 
 def shorten_text(long_text, max_length):
 	long_text = unicode(long_text)
@@ -83,25 +75,25 @@ def create_voice_from_list(filepath, worksheet):
 	lastRow = find_last_row(worksheet)
 	ignoredRows = worksheet.max_row - lastRow
 	if ignoredRows <> 0:
-		print(pcolors.UNDERLINE + "Ignored " + str(ignoredRows) + " Empty rows from file" + pcolors.ENDC)
+		print(Fore.WHITE + "Ignored " + str(ignoredRows) + " Empty rows from file")
 	else:
 		lastRow += 1
 	print("Generating " + str(lastRow - 2) + " Files")
-	print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
-	for r in progressbar.progressbar(range(2, lastRow), redirect_stdout=True):
-		print u"\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(worksheet.cell(row=r, column=1).value, 10),
-			shorten_text(worksheet.cell(row=r, column=2).value, 30),shorten_text(worksheet.cell(row=r, column=3).value, 40)),
+	print(Back.GREEN + "\t\tFilename:\tDescription:\t\t\tText:")
+	for r in tqdm(range(2, lastRow),file=sys.stdout):
+		tqdm.write(u"\t\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(worksheet.cell(row=r, column=1).value, 10),
+			shorten_text(worksheet.cell(row=r, column=2).value, 30),shorten_text(worksheet.cell(row=r, column=3).value, 40)))
 		synthesize_ssml('<speak>' + unicode(worksheet.cell(row=r, column=3).value) + '</speak>', filepath + unicode(worksheet.cell(row=r, column=1).value))
 
 def create_voice_from_lines(start_index, end_index, filepath, worksheet):
-	print(pcolors.BGGREEN + "\tFilename:\tDescription:\t\t\tText:" + pcolors.ENDC)
-	for r in progressbar.progressbar(range(start_index, end_index), redirect_stdout=True):
-		print u"\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(worksheet.cell(row=r, column=1).value, 10),
-				shorten_text(worksheet.cell(row=r, column=2).value, 30),shorten_text(worksheet.cell(row=r, column=3).value, 40)),
+	print(Back.GREEN + "\t\tFilename:\tDescription:\t\t\tText:")
+	for r in tqdm(range(start_index, end_index),file=sys.stdout):
+		tqdm.write(u"\t\t{0:<10s}\t{1:<30s}\t{2:<40s}".format(shorten_text(worksheet.cell(row=r, column=1).value, 10),
+				shorten_text(worksheet.cell(row=r, column=2).value, 30),shorten_text(worksheet.cell(row=r, column=3).value, 40)))
 		if not ((worksheet.cell(row=r, column=1).value == None) and (worksheet.cell(row=r, column=2).value == None) and (worksheet.cell(row=r, column=3).value == None)) and r >= 2:
 			synthesize_ssml('<speak>' + unicode(worksheet.cell(row=r, column=3).value) + '</speak>', filepath + unicode(worksheet.cell(row=r, column=1).value))
 		else:
-			print(pcolors.WARNING + "<-- Ignored" + pcolors.ENDC)
+			tqdm.write(Fore.YELLOW + "<-- Ignored")
 		
 
 
@@ -130,19 +122,19 @@ if __name__ == '__main__':
 	
 	# Pre check arguments to make sure thet nothing is missconfigured.
 	if (args.singleLine is not None and (args.beginAtLine is not None or args.endAtLine is not None)):
-		print(pcolors.FAIL + "You cannot try to gereate a sinle line and multiple lines at the same time. Please remove either the -s(--singleLine) argument or both of -b(--beginAtLine) AND -e(--endAtLine)" + pcolors.ENDC)
+		print(Fore.RED + "You cannot try to gereate a sinle line and multiple lines at the same time. Please remove either the -s(--singleLine) argument or both of -b(--beginAtLine) AND -e(--endAtLine)")
 		exit()
 	if (args.beginAtLine is not None and args.endAtLine is None):
-		print(pcolors.FAIL + "The argument --beginAtLine requires --endAtLine" + pcolors.ENDC)
+		print(Fore.RED + "The argument --beginAtLine requires --endAtLine")
 		exit()
 	elif (args.beginAtLine is None and args.endAtLine is not None):
-		print(pcolors.FAIL + "The argument --endAtLine requires --beginAtLine" + pcolors.ENDC)
+		print(Fore.RED + "The argument --endAtLine requires --beginAtLine")
 		exit()
 	elif((args.beginAtLine < 0 and args.endAtLine < 0) and args.beginAtLine < args.endAtLine):
-		print(pcolors.FAIL + "Because you are generating system sounds --beginAtLine must be greater than --endAtLine" + pcolors.ENDC)
+		print(Fore.RED + "Because you are generating system sounds --beginAtLine must be greater than --endAtLine")
 		exit()
 	elif(args.beginAtLine > args.endAtLine) and not (args.beginAtLine < 0 and args.endAtLine < 0):
-		print(pcolors.FAIL + "--endAtLine must be greater than --beginAtLine" + pcolors.ENDC)
+		print(Fore.RED + "--endAtLine must be greater than --beginAtLine")
 		exit()
 	elif (args.beginAtLine is not None and args.endAtLine is not None):
 		multiLine = 1
@@ -177,7 +169,7 @@ if __name__ == '__main__':
 		else:
 			if usingDefaultVoice:
 				# Try to find a voice that is supports the desired language:
-				print(pcolors.WARNING + "The defined default voice does not exist. Using the first voice for your language in the list: " + pcolors.ENDC)
+				print(Fore.YELLOW + "The defined default voice does not exist. Using the first voice for your language in the list: ")
 				selectedCountry_code = 0
 				selectedName = 0
 				for oneVoice in voices.voices:
@@ -195,19 +187,21 @@ if __name__ == '__main__':
 						name = selectedName)
 					print(voice.name)
 				else:
-					print(pcolors.FAIL + "Sorry, your Language is not supported by Google cloud TTS" + pcolors.ENDC)
+					print(Fore.RED + "Sorry, your Language is not supported by Google cloud TTS")
 					exit()
 			else:
-				print(pcolors.FAIL + "No voice found matching your request of: " + voice.name + pcolors.ENDC)
-				print(pcolors.UNDERLINE + "Here is a list of all supported voices:"  + pcolors.ENDC)
+				print(Fore.RED + "No voice found matching your request of: " + voice.name)
+				print(Fore.WHITE + "Here is a list of all supported voices:")
 				for oneVoice in voices.voices:
-					# Display the voice's name.
-					print('Name: {}'.format(oneVoice.name))
+					# Display the voice's name and gender:
+					ssml_voice_genders = ['SSML_VOICE_GENDER_UNSPECIFIED', 'MALE',
+                              'FEMALE', 'NEUTRAL']
+					print('Name: {} \t\tGender: {}'.format(oneVoice.name, ssml_voice_genders[oneVoice.ssml_gender]))
 				exit()
 		
 		# Check if the input file exists:
 		if not os.path.isfile(str(args.file)):
-			print(pcolors.FAIL + "This file does not exist: " + str(args.file) + pcolors.ENDC)
+			print(Fore.RED + "This file does not exist: " + str(args.file))
 			exit()
 		
 		# Try to determine which file type it is:
@@ -215,17 +209,17 @@ if __name__ == '__main__':
 			inputFile = str(args.file)
 			fileExention = inputFile.split('.')[len(inputFile.split('.')) - 1]
 		except:
-			print(pcolors.FAIL + "Something is wrong with your filename" + pcolors.ENDC)
+			print(Fore.RED + "Something is wrong with your filename")
 			exit()
 			
 		# Check if file is a csv or a xlsx file. If you need checks for other file extentions add them here:
 		if fileExention == 'csv':
-			print(pcolors.FAIL + "CSV files are not yet supported..." + pcolors.ENDC)
+			print(Fore.RED + "CSV files are not yet supported...")
 			exit()
 		elif fileExention == 'xlsx':
 			wb = load_workbook(inputFile, data_only=True)
 		else:
-			print(pcolors.FAIL + "Unsupported file" + pcolors.ENDC)
+			print(Fore.RED + "Unsupported file")
 			exit()
 		
 		
@@ -237,44 +231,44 @@ if __name__ == '__main__':
 	
 		if(args.singleLine is None and multiLine == 0):
 			#generate system sounds
-			print(pcolors.BOLD + "Generating system voices" + pcolors.ENDC)
+			print(Fore.CYAN + "Generating system voices")
 			ws = wb[str(args.language) + '-system']
 			create_voice_from_list(filepathSystem, ws)
 
 			#generate user sounds
-			print(pcolors.BOLD + "Generating user defined voices" + pcolors.ENDC)
+			print(Fore.CYAN + "Generating user defined voices")
 			ws = wb[str(args.language) + '-user']
 			create_voice_from_list(filepathUser, ws)
 		elif(args.singleLine is not None):
 			if(args.singleLine > 0):
-				print(pcolors.BOLD + "Generating user defined voice from line {}".format(str(args.singleLine)) + pcolors.ENDC)
+				print(Fore.CYAN + "Generating user defined voice from line {}".format(str(args.singleLine)))
 				ws = wb[str(args.language) + '-user']
 				create_voice_from_lines(args.singleLine, args.singleLine + 1, filepathUser, ws)
 			else:
-				print(pcolors.BOLD + "Generating system voice from line {}".format(str(-args.singleLine)) + pcolors.ENDC)
+				print(Fore.CYAN + "Generating system voice from line {}".format(str(-args.singleLine)))
 				ws = wb[str(args.language) + '-system']
 				create_voice_from_lines(-args.singleLine, (-args.singleLine) + 1, filepathSystem, ws)
 		elif(multiLine == 1):
 			if(args.beginAtLine > 0 and args.endAtLine > 0):
-				print(pcolors.BOLD + "Generating user defined voices from line {} to {}".format(str(args.beginAtLine), str(args.endAtLine)) + pcolors.ENDC)
+				print(Fore.CYAN + "Generating user defined voices from line {} to {}".format(str(args.beginAtLine), str(args.endAtLine)))
 				ws = wb[str(args.language) + '-user']
 				create_voice_from_lines(args.beginAtLine, args.endAtLine, filepathUser, ws)
 			elif(args.beginAtLine < 0 and args.endAtLine < 0):
-				print(pcolors.BOLD + "Generating system voices from line {} to {}".format(str(-args.beginAtLine), str(-args.endAtLine)) + pcolors.ENDC)
+				print(Fore.CYAN + "Generating system voices from line {} to {}".format(str(-args.beginAtLine), str(-args.endAtLine)))
 				ws = wb[str(args.language) + '-system']
 				create_voice_from_lines(-args.beginAtLine, -args.endAtLine, filepathSystem, ws)
 			else:
 				ws = wb[str(args.language) + '-system']
 				lastRow = find_last_row(ws)
-				print(pcolors.BOLD + "Generating system voices from line {} to {}".format(str(-args.beginAtLine), str(lastRow)) + pcolors.ENDC)
+				print(Fore.CYAN + "Generating system voices from line {} to {}".format(str(-args.beginAtLine), str(lastRow)))
 				create_voice_from_lines(-args.beginAtLine, lastRow, filepathSystem, ws)
 				
-				print(pcolors.BOLD + "Generating user defined voices from line 2 to {}".format(str(args.endAtLine)) + pcolors.ENDC)
+				print(Fore.CYAN + "Generating user defined voices from line 2 to {}".format(str(args.endAtLine)))
 				ws = wb[str(args.language) + '-user']
 				create_voice_from_lines(2, args.endAtLine + 1, filepathUser, ws)
 				
 				
 		print("\n\n*************************************************************\n*** Done!!!\n*************************************************************\n")
 	except KeyboardInterrupt:
-		print(pcolors.FAIL + "Exiting script" + pcolors.ENDC)
+		print(Fore.RED + "Exiting script")
 		exit()
