@@ -2,7 +2,7 @@
 set processStatus=0
 :CheckPython
 :: Check for Python Installation
-py --version 2>NUL
+python --version 2>NUL
 if errorlevel 1 goto errorNoPython
 echo Python is installed.
 
@@ -24,7 +24,7 @@ set PythonPath=%cd%\Python.msi
 if not exist Python.msi (
     bitsadmin.exe /transfer "Downloading Python" https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64.msi %PythonPath%
 )
-echo Please install Python...
+echo Please install Python. Make sure to check "Add python.exe to Path" option in the installer.
 Python.msi
 set processStatus=1
 goto CheckPython
@@ -33,25 +33,25 @@ goto CheckPython
 echo Installing python modules...
 
 set PythonModuleName=upgrade pip
-py -m pip install --upgrade pip 2>&1>NUL
+python -m pip install --upgrade pip 2>&1>NUL
 if errorlevel 1 goto ModuleInstallError
 set PythonModuleName=google-cloud-texttospeech
-py -m pip install google-cloud-texttospeech 2>&1>NUL
+python -m pip install google-cloud-texttospeech 2>&1>NUL
 if errorlevel 1 goto ModuleInstallError
 set PythonModuleName=openpyxl
-py -m pip install openpyxl 2>&1>NUL
+python -m pip install openpyxl 2>&1>NUL
 if errorlevel 1 goto ModuleInstallError
 set PythonModuleName=pydub
-py -m pip install pydub 2>&1>NUL
+python -m pip install pydub 2>&1>NUL
 if errorlevel 1 goto ModuleInstallError
 set PythonModuleName=tqdm
-py -m pip install tqdm 2>&1>NUL
+python -m pip install tqdm 2>&1>NUL
 if errorlevel 1 goto ModuleInstallError
 set PythonModuleName=colorama
-py -m pip install colorama 2>&1>NUL
+python -m pip install colorama 2>&1>NUL
 if errorlevel 1 goto ModuleInstallError
 :: set PythonModuleName=wxPython
-:: py -m pip install wxPython 2>&1>NUL
+:: python -m pip install wxPython 2>&1>NUL
 :: if errorlevel 1 goto ModuleInstallError
 echo All modules are installed successfully.
 set processStatus=2
