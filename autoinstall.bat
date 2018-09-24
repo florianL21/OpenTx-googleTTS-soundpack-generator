@@ -117,22 +117,6 @@ goto END
 pause
 goto:eof
 
-::source from https://stackoverflow.com/questions/21704041/creating-batch-script-to-unzip-a-file-without-additional-zip-tools
-:UnZipFile <newzipfile> <ExtractTo> 
-set vbs="%temp%\_.vbs"
-if exist %vbs% del /f /q %vbs%
->%vbs%  echo Set fso = CreateObject("Scripting.FileSystemObject")
->>%vbs% echo If NOT fso.FolderExists(%1) Then
->>%vbs% echo fso.CreateFolder(%1)
->>%vbs% echo End If
->>%vbs% echo set objShell = CreateObject("Shell.Application")
->>%vbs% echo set FilesInZip=objShell.NameSpace(%2).items
->>%vbs% echo objShell.NameSpace(%1).CopyHere(FilesInZip)
->>%vbs% echo Set fso = Nothing
->>%vbs% echo Set objShell = Nothing
-cscript //nologo %vbs%
-if exist %vbs% del /f /q %vbs%
-
 :: py -m pip install --upgrade pip
 :: py -m pip install google-cloud-texttospeech
 :: py -m pip install openpyxl
