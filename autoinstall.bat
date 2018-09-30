@@ -28,11 +28,12 @@ if %processStatus% == 0 (
 set PythonPath=%cd%\Python.msi
 :: download Python
 echo Downloading python installer...
-if not exist Python.msi (
+if not exist Python.msi 2>NUL (
     ::bitsadmin.exe /transfer "Downloading Python" %pythonDownload% %PythonPath%
 	::powershell.exe -nologo -noprofile -command "& { import-module bitstransfer; Start-BitsTransfer '%pythonDownload%' '%PythonPath%'}"
-	::powershell.exe -nologo -noprofile -command "& { $client = new-object System.Net.WebClient; $client.DownloadFile('%pythonDownload%', '%PythonPath%' )}"
-	powershell.exe -nologo -noprofile -command "& { iwr -outf '%PythonPath%' '%pythonDownload%' }"
+	powershell.exe -nologo -noprofile -command "& { $client = new-object System.Net.WebClient; $client.DownloadFile('%pythonDownload%', '%PythonPath%' )}"
+	::powershell.exe -nologo -noprofile -command "& { iwr -outf '%PythonPath%' '%pythonDownload%' }"
+	::powershell.exe -nologo -noprofile -command "& { Invoke-WebRequest -Uri "%pythonDownload%" -OutFile "%PythonPath%" }"
 )
 echo Please install Python. Make sure to check "Add python.exe to Path" option in the installer.
 Python.msi
@@ -85,26 +86,29 @@ goto InstallGoogleCloud
 set GoogleCloudPath=%cd%\GoogleCloud.exe
 :: download Google Cloud
 echo Downloading google cloud installer...
-if not exist GoogleCloud.exe (
+if not exist GoogleCloud.exe 2>NUL (
     ::bitsadmin.exe /transfer "Downloading Google Cloud" %googleCloudDownload% %GoogleCloudPath%
 	::powershell.exe -nologo -noprofile -command "& { import-module bitstransfer; Start-BitsTransfer '%googleCloudDownload%' '%GoogleCloudPath%'}"
-	::powershell.exe -nologo -noprofile -command "& { $client = new-object System.Net.WebClient; $client.DownloadFile('%googleCloudDownload%', '%GoogleCloudPath%' )}"
-	powershell.exe -nologo -noprofile -command "& { iwr -outf '%GoogleCloudPath%' '%googleCloudDownload%' }"
-)
+	powershell.exe -nologo -noprofile -command "& { $client = new-object System.Net.WebClient; $client.DownloadFile('%googleCloudDownload%', '%GoogleCloudPath%' )}"
+	::powershell.exe -nologo -noprofile -command "& { iwr -outf '%GoogleCloudPath%' '%googleCloudDownload%' }"
+	::powershell.exe -nologo -noprofile -command "& { Invoke-WebRequest -Uri "%googleCloudDownload%" -OutFile "%GoogleCloudPath%" }"
+)	
 echo Please follow the install procedure of the google cloud.
 GoogleCloud.exe
 set processStatus=3
+
 goto DownloadFFMPEG
 
 :DownloadFFMPEG
 set FFMPEGPath=%cd%\FFMPEG.zip
 :: download Google Cloud
-echo downloading FFmpeg...
-if not exist FFMPEG.zip (
+echo Downloading FFmpeg...
+if not exist FFMPEG.zip 2>NUL (
     ::bitsadmin.exe /transfer "Downloading Google Cloud" %ffmpegDownload% %FFMPEGPath%
 	::powershell.exe -nologo -noprofile -command "& { import-module bitstransfer; Start-BitsTransfer '%ffmpegDownload%' '%FFMPEGPath%'}"
-	::powershell.exe -nologo -noprofile -command "& { $client = new-object System.Net.WebClient; $client.DownloadFile('%ffmpegDownload%', '%FFMPEGPath%' )}"
-	powershell.exe -nologo -noprofile -command "& { iwr -outf '%FFMPEGPath%' '%ffmpegDownload%' }"
+	powershell.exe -nologo -noprofile -command "& { $client = new-object System.Net.WebClient; $client.DownloadFile('%ffmpegDownload%', '%FFMPEGPath%' )}"
+	::powershell.exe -nologo -noprofile -command "& { iwr -outf '%FFMPEGPath%' '%ffmpegDownload%' }"
+	::powershell.exe -nologo -noprofile -command "& { Invoke-WebRequest -Uri "%ffmpegDownload%" -OutFile "%FFMPEGPath%" }"
 )
 if not exist "%ffmpegInstallPath%" (
 	mkdir %ffmpegInstallPath%
