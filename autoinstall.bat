@@ -2,8 +2,8 @@
 set pythonDownload=https://www.python.org/ftp/python/2.7.13/python-2.7.13.amd64.msi
 set googleCloudDownload=https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe
 set ffmpegDownload=https://ffmpeg.zeranoe.com/builds/win64/static/ffmpeg-4.0.2-win64-static.zip
+set ffmpegInstallPath=C:\ffmpeg
 set processStatus=0
-goto DownloadFFMPEG
 :CheckPython
 :: Check for Python Installation
 python --version 2>NUL
@@ -18,7 +18,7 @@ echo Error^: Python not installed
 if %processStatus% == 0 (
 	goto InstallPython
 ) else (
-	echo Please install Python and then launch the script again.
+	echo If you have just installed Python, please log off and on again. Otherwise please install Python and then launch the script again.
 	goto END
 )
 
@@ -92,13 +92,10 @@ set FFMPEGPath=%cd%\FFMPEG.zip
 if not exist FFMPEG.zip (
     bitsadmin.exe /transfer "Downloading Google Cloud" %ffmpegDownload% %FFMPEGPath%
 )
-
-::TODO: unzip copy to program files and add to system variables
-::Call :UnZipFile %FFMPEGPath% %cd%
-if not exist "C:\ffmpeg" (
-mkdir C:\ffmpeg
-powershell.exe -nologo -noprofile -command "& { $shell = New-Object -COM Shell.Application; $target = $shell.NameSpace('C:\ffmpeg'); $zip = $shell.NameSpace('%FFMPEGPath%'); $target.CopyHere($zip.Items(), 16); }"
-setx path "%PATH%;C:\ffmpeg\ffmpeg-4.0.2-win64-static\bin"
+if not exist "%ffmpegInstallPath%" (
+mkdir %ffmpegInstallPath%
+powershell.exe -nologo -noprofile -command "& { $shell = New-Object -COM Shell.Application; $target = $shell.NameSpace('%ffmpegInstallPath%'); $zip = $shell.NameSpace('%FFMPEGPath%'); $target.CopyHere($zip.Items(), 16); }"
+setx path "%PATH%;%ffmpegInstallPath%\ffmpeg-4.0.2-win64-static\bin"
 )
 goto SetSystemVariable
 
@@ -116,12 +113,3 @@ goto END
 :END
 pause
 goto:eof
-
-:: py -m pip install --upgrade pip
-:: py -m pip install google-cloud-texttospeech
-:: py -m pip install openpyxl
-:: py -m pip install pydub
-:: py -m pip install tqdm
-:: py -m pip install colorama
-:: py -m pip install wxPython
-:: set GOOGLE_APPLICATION_CREDENTIALS = D:\Projekte\Drohne\OpenTx\speechGenerator\wavenet-api-test-77b66fbba700.json
