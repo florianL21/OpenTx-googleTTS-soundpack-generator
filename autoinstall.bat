@@ -26,7 +26,9 @@ if %processStatus% == 0 (
 set PythonPath=%cd%\Python.msi
 :: download Python
 if not exist Python.msi (
-    bitsadmin.exe /transfer "Downloading Python" %pythonDownload% %PythonPath%
+    ::bitsadmin.exe /transfer "Downloading Python" %pythonDownload% %PythonPath%
+	powershell.exe -nologo -noprofile -command "& { import-module bitstransfer; Start-BitsTransfer '%pythonDownload%' '%PythonPath%'}"
+	
 )
 echo Please install Python. Make sure to check "Add python.exe to Path" option in the installer.
 Python.msi
@@ -79,7 +81,8 @@ goto InstallGoogleCloud
 set GoogleCloudPath=%cd%\GoogleCloud.exe
 :: download Google Cloud
 if not exist GoogleCloud.exe (
-    bitsadmin.exe /transfer "Downloading Google Cloud" %googleCloudDownload% %GoogleCloudPath%
+    ::bitsadmin.exe /transfer "Downloading Google Cloud" %googleCloudDownload% %GoogleCloudPath%
+	powershell.exe -nologo -noprofile -command "& { import-module bitstransfer; Start-BitsTransfer '%googleCloudDownload%' '%GoogleCloudPath%'}"
 )
 echo Please follow the install procedure of the google cloud.
 GoogleCloud.exe
@@ -90,12 +93,13 @@ goto DownloadFFMPEG
 set FFMPEGPath=%cd%\FFMPEG.zip
 :: download Google Cloud
 if not exist FFMPEG.zip (
-    bitsadmin.exe /transfer "Downloading Google Cloud" %ffmpegDownload% %FFMPEGPath%
+    ::bitsadmin.exe /transfer "Downloading Google Cloud" %ffmpegDownload% %FFMPEGPath%
+	powershell.exe -nologo -noprofile -command "& { import-module bitstransfer; Start-BitsTransfer '%ffmpegDownload%' '%FFMPEGPath%'}"
 )
 if not exist "%ffmpegInstallPath%" (
-mkdir %ffmpegInstallPath%
-powershell.exe -nologo -noprofile -command "& { $shell = New-Object -COM Shell.Application; $target = $shell.NameSpace('%ffmpegInstallPath%'); $zip = $shell.NameSpace('%FFMPEGPath%'); $target.CopyHere($zip.Items(), 16); }"
-setx path "%PATH%;%ffmpegInstallPath%\ffmpeg-4.0.2-win64-static\bin"
+	mkdir %ffmpegInstallPath%
+	powershell.exe -nologo -noprofile -command "& { $shell = New-Object -COM Shell.Application; $target = $shell.NameSpace('%ffmpegInstallPath%'); $zip = $shell.NameSpace('%FFMPEGPath%'); $target.CopyHere($zip.Items(), 16); }"
+	setx path "%PATH%;%ffmpegInstallPath%\ffmpeg-4.0.2-win64-static\bin"
 )
 goto SetSystemVariable
 
