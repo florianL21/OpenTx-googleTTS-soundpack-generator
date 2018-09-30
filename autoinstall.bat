@@ -4,6 +4,7 @@ set googleCloudDownload=https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleC
 set ffmpegDownload=https://ffmpeg.zeranoe.com/builds/win64/static/ffmpeg-4.0.2-win64-static.zip
 set ffmpegInstallPath=C:\ffmpeg
 set processStatus=0
+
 :CheckPython
 :: Check for Python Installation
 python --version 2>NUL
@@ -25,10 +26,11 @@ if %processStatus% == 0 (
 :InstallPython
 set PythonPath=%cd%\Python.msi
 :: download Python
+echo Downloading python installer...
 if not exist Python.msi (
     ::bitsadmin.exe /transfer "Downloading Python" %pythonDownload% %PythonPath%
-	powershell.exe -nologo -noprofile -command "& { import-module bitstransfer; Start-BitsTransfer '%pythonDownload%' '%PythonPath%'}"
-	
+	::powershell.exe -nologo -noprofile -command "& { import-module bitstransfer; Start-BitsTransfer '%pythonDownload%' '%PythonPath%'}"
+	powershell.exe -nologo -noprofile -command "& { $client = new-object System.Net.WebClient; $client.DownloadFile('%pythonDownload%', '%PythonPath%' )}"
 )
 echo Please install Python. Make sure to check "Add python.exe to Path" option in the installer.
 Python.msi
@@ -80,9 +82,11 @@ goto InstallGoogleCloud
 :InstallGoogleCloud
 set GoogleCloudPath=%cd%\GoogleCloud.exe
 :: download Google Cloud
+echo Downloading google cloud installer...
 if not exist GoogleCloud.exe (
     ::bitsadmin.exe /transfer "Downloading Google Cloud" %googleCloudDownload% %GoogleCloudPath%
-	powershell.exe -nologo -noprofile -command "& { import-module bitstransfer; Start-BitsTransfer '%googleCloudDownload%' '%GoogleCloudPath%'}"
+	::powershell.exe -nologo -noprofile -command "& { import-module bitstransfer; Start-BitsTransfer '%googleCloudDownload%' '%GoogleCloudPath%'}"
+	powershell.exe -nologo -noprofile -command "& { $client = new-object System.Net.WebClient; $client.DownloadFile('%googleCloudDownload%', '%GoogleCloudPath%' )}"
 )
 echo Please follow the install procedure of the google cloud.
 GoogleCloud.exe
@@ -92,9 +96,11 @@ goto DownloadFFMPEG
 :DownloadFFMPEG
 set FFMPEGPath=%cd%\FFMPEG.zip
 :: download Google Cloud
+echo downloading FFmpeg...
 if not exist FFMPEG.zip (
     ::bitsadmin.exe /transfer "Downloading Google Cloud" %ffmpegDownload% %FFMPEGPath%
-	powershell.exe -nologo -noprofile -command "& { import-module bitstransfer; Start-BitsTransfer '%ffmpegDownload%' '%FFMPEGPath%'}"
+	::powershell.exe -nologo -noprofile -command "& { import-module bitstransfer; Start-BitsTransfer '%ffmpegDownload%' '%FFMPEGPath%'}"
+	powershell.exe -nologo -noprofile -command "& { $client = new-object System.Net.WebClient; $client.DownloadFile('%ffmpegDownload%', '%FFMPEGPath%' )}"
 )
 if not exist "%ffmpegInstallPath%" (
 	mkdir %ffmpegInstallPath%
