@@ -19,7 +19,7 @@ using System.IO;
 using NAudio.Wave;
 // using NAudio.Wave;
 
-namespace SpeechGenerator
+namespace SoundpackGenerator
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -74,14 +74,30 @@ namespace SpeechGenerator
             DataContext = this;
             currentFile = new SoundpackConfiguration();
             createEmptyLanguagePack();
+            string pathToGoogleAuthFile = Environment.GetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS");
+            if (pathToGoogleAuthFile == null || pathToGoogleAuthFile =="")
+            {
+                FirstTimeConfiguration envVarNotSetWindow = new FirstTimeConfiguration();
+                this.Hide();
+                if(envVarNotSetWindow.ShowDialog() == true)
+                {
+                    this.Show();
+                }
+                else
+                {
+                    this.Close();
+                    return;
+                }
+            }
             try
             {
                 client = TextToSpeechClient.Create();
             }
             catch(Exception e)
             {
-                MessageBox.Show("Error wile launching the TTS client: \n\n" + e.Message);
+                MessageBox.Show("Google cloud API could not be initialized. Please make sure it is setup correctly and you have an internet connection.\nFull error message: \n\n" + e.Message);
                 Close();
+                return;
             }
 
             //UI initialization:
