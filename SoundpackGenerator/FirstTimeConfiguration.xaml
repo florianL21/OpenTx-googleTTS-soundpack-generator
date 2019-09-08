@@ -1,0 +1,17 @@
+﻿<Window x:Class="SoundpackGenerator.FirstTimeConfiguration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FirstTimeConfiguration" Height="329" Width="336" MinHeight="123" MinWidth="182">
+    <Grid>
+
+        <TextBlock Margin="10,10,10,63" TextWrapping="Wrap">
+            The environment variable GOOGLE_APPLICATION_CREDENTIALS was not found on your system or it was set to an invalid value. <LineBreak></LineBreak>
+            Please follow <Hyperlink NavigateUri="https://cloud.google.com/text-to-speech/docs/quickstart-client-libraries" RequestNavigate="Hyperlink_RequestNavigate">this</Hyperlink> guide to generate an autentication file for your Google cloud project, save it to your PC and paste the path to this file here:
+        
+        </TextBlock>
+        <TextBox x:Name="TextBox_path" Margin="10,0,10,35" TextWrapping="NoWrap" Text="Path to the json file" Height="23" VerticalAlignment="Bottom"/>
+        <Button x:Name="Button_Appy" Content="Apply" HorizontalAlignment="Left" Margin="10,0,0,10" Width="75" Height="20" VerticalAlignment="Bottom" Click="Button_Appy_Click"/>
+        <Button x:Name="Button_Exit" Content="Exit" Margin="0,0,10,10" HorizontalAlignment="Right" Width="75" Height="20" VerticalAlignment="Bottom" Click="Button_Exit_Click"/>
+
+    </Grid>
+</Window>

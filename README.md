@@ -2,16 +2,24 @@
 
 ## What is it?
 
-This is a Python script that can convert an Excel document into a Soundpack for your OpenTX Radio.
+This is an app written in C# using the new .NET Core 3.0 preview which uses the Google Cloud TTS service to generate nice sounding voice packs for OpenTX.
 
-It uses Google's Cloud Text-to-Speech API to generate high quality voices.
+Tipp: The best sounding voices are the ones with WAVENET in their names.
+
+The application features an easy to use GUI:
+
+![](https://github.com/florianL21/OpenTx-googleTTS-soundpack-generator/blob/master/wiki-images/Screenshot-main-GUI.png)
+
 
 ## Setup
 
-The setup is not as easy as with other projects, thus this would go beyond the typical size of a README.
+The setup is really easy. The hardest part about it is to setup a Google cloud project and access key for your google account. The application will ask you for the json file (which you can learn how to generate [here](https://cloud.google.com/text-to-speech/docs/quickstart-client-libraries)) at startup. 
 
-Therefore the Setup is described in detail in the [Wiki](https://github.com/florianL21/OpenTx-googleTTS-soundpack-generator/wiki).
 
-## How do I use it?
+## References
 
-![](https://github.com/florianL21/OpenTx-googleTTS-soundpack-generator/blob/master/wiki-images/4-3.png)
+In this project I make use of the following 3rd party software:
+
+- [Google cloud TTS](https://cloud.google.com/text-to-speech/)
+- [Json parser from Newtonsoft](https://www.newtonsoft.com/json)
+- [Microsoft .NET Core](https://dotnet.microsoft.com/download)

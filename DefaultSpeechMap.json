@@ -1,0 +1,7036 @@
+{
+  "outputPath": "SOUND",
+  "GenerateSystemSounds": true,
+  "GenerateUserSounds": true,
+  "OverrideSounds": false,
+  "LanguagePacks": [
+    {
+      "LanguageCode": "de-DE",
+      "VoiceName": "de-DE-Wavenet-D",
+      "SystemVoices": [
+        {
+          "filename": "0000",
+          "comment": "0",
+          "TTSText": "0"
+        },
+        {
+          "filename": "0001",
+          "comment": "1",
+          "TTSText": "1"
+        },
+        {
+          "filename": "0002",
+          "comment": "2",
+          "TTSText": "2"
+        },
+        {
+          "filename": "0003",
+          "comment": "3",
+          "TTSText": "3"
+        },
+        {
+          "filename": "0004",
+          "comment": "4",
+          "TTSText": "4"
+        },
+        {
+          "filename": "0005",
+          "comment": "5",
+          "TTSText": "5"
+        },
+        {
+          "filename": "0006",
+          "comment": "6",
+          "TTSText": "6"
+        },
+        {
+          "filename": "0007",
+          "comment": "7",
+          "TTSText": "7"
+        },
+        {
+          "filename": "0008",
+          "comment": "8",
+          "TTSText": "8"
+        },
+        {
+          "filename": "0009",
+          "comment": "9",
+          "TTSText": "9"
+        },
+        {
+          "filename": "0010",
+          "comment": "10",
+          "TTSText": "10"
+        },
+        {
+          "filename": "0011",
+          "comment": "11",
+          "TTSText": "11"
+        },
+        {
+          "filename": "0012",
+          "comment": "12",
+          "TTSText": "12"
+        },
+        {
+          "filename": "0013",
+          "comment": "13",
+          "TTSText": "13"
+        },
+        {
+          "filename": "0014",
+          "comment": "14",
+          "TTSText": "14"
+        },
+        {
+          "filename": "0015",
+          "comment": "15",
+          "TTSText": "15"
+        },
+        {
+          "filename": "0016",
+          "comment": "16",
+          "TTSText": "16"
+        },
+        {
+          "filename": "0017",
+          "comment": "17",
+          "TTSText": "17"
+        },
+        {
+          "filename": "0018",
+          "comment": "18",
+          "TTSText": "18"
+        },
+        {
+          "filename": "0019",
+          "comment": "19",
+          "TTSText": "19"
+        },
+        {
+          "filename": "0020",
+          "comment": "20",
+          "TTSText": "20"
+        },
+        {
+          "filename": "0021",
+          "comment": "21",
+          "TTSText": "21"
+        },
+        {
+          "filename": "0022",
+          "comment": "22",
+          "TTSText": "22"
+        },
+        {
+          "filename": "0023",
+          "comment": "23",
+          "TTSText": "23"
+        },
+        {
+          "filename": "0024",
+          "comment": "24",
+          "TTSText": "24"
+        },
+        {
+          "filename": "0025",
+          "comment": "25",
+          "TTSText": "25"
+        },
+        {
+          "filename": "0026",
+          "comment": "26",
+          "TTSText": "26"
+        },
+        {
+          "filename": "0027",
+          "comment": "27",
+          "TTSText": "27"
+        },
+        {
+          "filename": "0028",
+          "comment": "28",
+          "TTSText": "28"
+        },
+        {
+          "filename": "0029",
+          "comment": "29",
+          "TTSText": "29"
+        },
+        {
+          "filename": "0030",
+          "comment": "30",
+          "TTSText": "30"
+        },
+        {
+          "filename": "0031",
+          "comment": "31",
+          "TTSText": "31"
+        },
+        {
+          "filename": "0032",
+          "comment": "32",
+          "TTSText": "32"
+        },
+        {
+          "filename": "0033",
+          "comment": "33",
+          "TTSText": "33"
+        },
+        {
+          "filename": "0034",
+          "comment": "34",
+          "TTSText": "34"
+        },
+        {
+          "filename": "0035",
+          "comment": "35",
+          "TTSText": "35"
+        },
+        {
+          "filename": "0036",
+          "comment": "36",
+          "TTSText": "36"
+        },
+        {
+          "filename": "0037",
+          "comment": "37",
+          "TTSText": "37"
+        },
+        {
+          "filename": "0038",
+          "comment": "38",
+          "TTSText": "38"
+        },
+        {
+          "filename": "0039",
+          "comment": "39",
+          "TTSText": "39"
+        },
+        {
+          "filename": "0040",
+          "comment": "40",
+          "TTSText": "40"
+        },
+        {
+          "filename": "0041",
+          "comment": "41",
+          "TTSText": "41"
+        },
+        {
+          "filename": "0042",
+          "comment": "42",
+          "TTSText": "42"
+        },
+        {
+          "filename": "0043",
+          "comment": "43",
+          "TTSText": "43"
+        },
+        {
+          "filename": "0044",
+          "comment": "44",
+          "TTSText": "44"
+        },
+        {
+          "filename": "0045",
+          "comment": "45",
+          "TTSText": "45"
+        },
+        {
+          "filename": "0046",
+          "comment": "46",
+          "TTSText": "46"
+        },
+        {
+          "filename": "0047",
+          "comment": "47",
+          "TTSText": "47"
+        },
+        {
+          "filename": "0048",
+          "comment": "48",
+          "TTSText": "48"
+        },
+        {
+          "filename": "0049",
+          "comment": "49",
+          "TTSText": "49"
+        },
+        {
+          "filename": "0050",
+          "comment": "50",
+          "TTSText": "50"
+        },
+        {
+          "filename": "0051",
+          "comment": "51",
+          "TTSText": "51"
+        },
+        {
+          "filename": "0052",
+          "comment": "52",
+          "TTSText": "52"
+        },
+        {
+          "filename": "0053",
+          "comment": "53",
+          "TTSText": "53"
+        },
+        {
+          "filename": "0054",
+          "comment": "54",
+          "TTSText": "54"
+        },
+        {
+          "filename": "0055",
+          "comment": "55",
+          "TTSText": "55"
+        },
+        {
+          "filename": "0056",
+          "comment": "56",
+          "TTSText": "56"
+        },
+        {
+          "filename": "0057",
+          "comment": "57",
+          "TTSText": "57"
+        },
+        {
+          "filename": "0058",
+          "comment": "58",
+          "TTSText": "58"
+        },
+        {
+          "filename": "0059",
+          "comment": "59",
+          "TTSText": "59"
+        },
+        {
+          "filename": "0060",
+          "comment": "60",
+          "TTSText": "60"
+        },
+        {
+          "filename": "0061",
+          "comment": "61",
+          "TTSText": "61"
+        },
+        {
+          "filename": "0062",
+          "comment": "62",
+          "TTSText": "62"
+        },
+        {
+          "filename": "0063",
+          "comment": "63",
+          "TTSText": "63"
+        },
+        {
+          "filename": "0064",
+          "comment": "64",
+          "TTSText": "64"
+        },
+        {
+          "filename": "0065",
+          "comment": "65",
+          "TTSText": "65"
+        },
+        {
+          "filename": "0066",
+          "comment": "66",
+          "TTSText": "66"
+        },
+        {
+          "filename": "0067",
+          "comment": "67",
+          "TTSText": "67"
+        },
+        {
+          "filename": "0068",
+          "comment": "68",
+          "TTSText": "68"
+        },
+        {
+          "filename": "0069",
+          "comment": "69",
+          "TTSText": "69"
+        },
+        {
+          "filename": "0070",
+          "comment": "70",
+          "TTSText": "70"
+        },
+        {
+          "filename": "0071",
+          "comment": "71",
+          "TTSText": "71"
+        },
+        {
+          "filename": "0072",
+          "comment": "72",
+          "TTSText": "72"
+        },
+        {
+          "filename": "0073",
+          "comment": "73",
+          "TTSText": "73"
+        },
+        {
+          "filename": "0074",
+          "comment": "74",
+          "TTSText": "74"
+        },
+        {
+          "filename": "0075",
+          "comment": "75",
+          "TTSText": "75"
+        },
+        {
+          "filename": "0076",
+          "comment": "76",
+          "TTSText": "76"
+        },
+        {
+          "filename": "0077",
+          "comment": "77",
+          "TTSText": "77"
+        },
+        {
+          "filename": "0078",
+          "comment": "78",
+          "TTSText": "78"
+        },
+        {
+          "filename": "0079",
+          "comment": "79",
+          "TTSText": "79"
+        },
+        {
+          "filename": "0080",
+          "comment": "80",
+          "TTSText": "80"
+        },
+        {
+          "filename": "0081",
+          "comment": "81",
+          "TTSText": "81"
+        },
+        {
+          "filename": "0082",
+          "comment": "82",
+          "TTSText": "82"
+        },
+        {
+          "filename": "0083",
+          "comment": "83",
+          "TTSText": "83"
+        },
+        {
+          "filename": "0084",
+          "comment": "84",
+          "TTSText": "84"
+        },
+        {
+          "filename": "0085",
+          "comment": "85",
+          "TTSText": "85"
+        },
+        {
+          "filename": "0086",
+          "comment": "86",
+          "TTSText": "86"
+        },
+        {
+          "filename": "0087",
+          "comment": "87",
+          "TTSText": "87"
+        },
+        {
+          "filename": "0088",
+          "comment": "88",
+          "TTSText": "88"
+        },
+        {
+          "filename": "0089",
+          "comment": "89",
+          "TTSText": "89"
+        },
+        {
+          "filename": "0090",
+          "comment": "90",
+          "TTSText": "90"
+        },
+        {
+          "filename": "0091",
+          "comment": "91",
+          "TTSText": "91"
+        },
+        {
+          "filename": "0092",
+          "comment": "92",
+          "TTSText": "92"
+        },
+        {
+          "filename": "0093",
+          "comment": "93",
+          "TTSText": "93"
+        },
+        {
+          "filename": "0094",
+          "comment": "94",
+          "TTSText": "94"
+        },
+        {
+          "filename": "0095",
+          "comment": "95",
+          "TTSText": "95"
+        },
+        {
+          "filename": "0096",
+          "comment": "96",
+          "TTSText": "96"
+        },
+        {
+          "filename": "0097",
+          "comment": "97",
+          "TTSText": "97"
+        },
+        {
+          "filename": "0098",
+          "comment": "98",
+          "TTSText": "98"
+        },
+        {
+          "filename": "0099",
+          "comment": "99",
+          "TTSText": "99"
+        },
+        {
+          "filename": "0100",
+          "comment": "ein",
+          "TTSText": "ein"
+        },
+        {
+          "filename": "0101",
+          "comment": "eine",
+          "TTSText": "eine"
+        },
+        {
+          "filename": "0102",
+          "comment": "hundert",
+          "TTSText": "hundert"
+        },
+        {
+          "filename": "0103",
+          "comment": "tausend",
+          "TTSText": "tausend"
+        },
+        {
+          "filename": "0104",
+          "comment": "komma",
+          "TTSText": "komma"
+        },
+        {
+          "filename": "0105",
+          "comment": "und",
+          "TTSText": "und"
+        },
+        {
+          "filename": "0106",
+          "comment": "minus",
+          "TTSText": "minus"
+        },
+        {
+          "filename": "0107",
+          "comment": "uhr",
+          "TTSText": "uhr"
+        },
+        {
+          "filename": "0108",
+          "comment": "minute",
+          "TTSText": "minute"
+        },
+        {
+          "filename": "0109",
+          "comment": "minuten",
+          "TTSText": "minuten"
+        },
+        {
+          "filename": "0110",
+          "comment": "sekunde",
+          "TTSText": "sekunde"
+        },
+        {
+          "filename": "0111",
+          "comment": "sekunden",
+          "TTSText": "sekunden"
+        },
+        {
+          "filename": "0112",
+          "comment": "stunde",
+          "TTSText": "stunde"
+        },
+        {
+          "filename": "0113",
+          "comment": "stunden",
+          "TTSText": "stunden"
+        },
+        {
+          "filename": "volt0",
+          "comment": "Wolt",
+          "TTSText": "Wolt"
+        },
+        {
+          "filename": "amp0",
+          "comment": "Ampär",
+          "TTSText": "Ampär"
+        },
+        {
+          "filename": "mamp0",
+          "comment": "MilliAmpär",
+          "TTSText": "MilliAmpär"
+        },
+        {
+          "filename": "knot0",
+          "comment": "Knoten",
+          "TTSText": "Knoten"
+        },
+        {
+          "filename": "mps0",
+          "comment": "Meter pro sekunde",
+          "TTSText": "Meter pro sekunde"
+        },
+        {
+          "filename": "fps0",
+          "comment": "Fuss pro sekunde",
+          "TTSText": "Fuss pro sekunde"
+        },
+        {
+          "filename": "kph0",
+          "comment": "Kilometer pro stunde",
+          "TTSText": "Kilometer pro stunde"
+        },
+        {
+          "filename": "mph0",
+          "comment": "Meilen pro Stunde",
+          "TTSText": "Meilen pro Stunde"
+        },
+        {
+          "filename": "meter0",
+          "comment": "Meter",
+          "TTSText": "Meter"
+        },
+        {
+          "filename": "foot0",
+          "comment": "Fuesse",
+          "TTSText": "Fuesse"
+        },
+        {
+          "filename": "celsius0",
+          "comment": "Grad Celsius",
+          "TTSText": "Grad Celsius"
+        },
+        {
+          "filename": "fahr0",
+          "comment": "Grad Fahrenheit",
+          "TTSText": "Grad Fahrenheit"
+        },
+        {
+          "filename": "percent0",
+          "comment": "Prozent",
+          "TTSText": "Prozent"
+        },
+        {
+          "filename": "mamph0",
+          "comment": "Milliampär pro stunde",
+          "TTSText": "Milliampär pro stunde"
+        },
+        {
+          "filename": "watt0",
+          "comment": "Watt",
+          "TTSText": "Watt"
+        },
+        {
+          "filename": "mwatt0",
+          "comment": "Milli Watt",
+          "TTSText": "Milli Watt"
+        },
+        {
+          "filename": "db0",
+          "comment": "D B",
+          "TTSText": "D B"
+        },
+        {
+          "filename": "rpm0",
+          "comment": "Drehzahl",
+          "TTSText": "Drehzahl"
+        },
+        {
+          "filename": "g0",
+          "comment": "g",
+          "TTSText": "g"
+        },
+        {
+          "filename": "degree0",
+          "comment": "Grad",
+          "TTSText": "Grad"
+        },
+        {
+          "filename": "rad0",
+          "comment": "radians",
+          "TTSText": "radians"
+        },
+        {
+          "filename": "ml0",
+          "comment": "Milliliter",
+          "TTSText": "Milliliter"
+        },
+        {
+          "filename": "founce0",
+          "comment": "Unze",
+          "TTSText": "Unze"
+        },
+        {
+          "filename": "hour0",
+          "comment": "Stunde",
+          "TTSText": "Stunde"
+        },
+        {
+          "filename": "hour1",
+          "comment": "Stunden",
+          "TTSText": "Stunden"
+        },
+        {
+          "filename": "minute0",
+          "comment": "Minute",
+          "TTSText": "Minute"
+        },
+        {
+          "filename": "minute1",
+          "comment": "Minuten",
+          "TTSText": "Minuten"
+        },
+        {
+          "filename": "second0",
+          "comment": "Sekunde",
+          "TTSText": "Sekunde"
+        },
+        {
+          "filename": "second1",
+          "comment": "Sekunden",
+          "TTSText": "Sekunden"
+        },
+        {
+          "filename": "inactiv",
+          "comment": "Inaktivitätsalarm",
+          "TTSText": "Inaktivitätsalarm"
+        },
+        {
+          "filename": "lowbatt",
+          "comment": "Senderspannung schwach",
+          "TTSText": "Senderspannung schwach"
+        },
+        {
+          "filename": "thralert",
+          "comment": "Gaskanal nicht Null, bitte prüfen",
+          "TTSText": "Gaskanal nicht Null, bitte prüfen"
+        },
+        {
+          "filename": "swalert",
+          "comment": "Schalter fehlpositioniert, bitte prüfen",
+          "TTSText": "Schalter fehlpositioniert, bitte prüfen"
+        },
+        {
+          "filename": "eebad",
+          "comment": "EEPROM fehlerhaft",
+          "TTSText": "EEPROM fehlerhaft"
+        },
+        {
+          "filename": "eeformat",
+          "comment": "EEPROM formatiert",
+          "TTSText": "EEPROM formatiert"
+        },
+        {
+          "filename": "error",
+          "comment": "Fehler",
+          "TTSText": "Fehler"
+        },
+        {
+          "filename": "midtrim",
+          "comment": "Trim zentriert",
+          "TTSText": "Trim zentriert"
+        },
+        {
+          "filename": "midpot",
+          "comment": "Poti zentriert",
+          "TTSText": "Poti zentriert"
+        },
+        {
+          "filename": "maxtrim",
+          "comment": "Obere Trimmungsgrenze erreicht",
+          "TTSText": "Obere Trimmungsgrenze erreicht"
+        },
+        {
+          "filename": "mintrim",
+          "comment": "Untere Trimmungsgrenze erreicht",
+          "TTSText": "Untere Trimmungsgrenze erreicht"
+        },
+        {
+          "filename": "timer20",
+          "comment": "20 Sekunden",
+          "TTSText": "20 Sekunden"
+        },
+        {
+          "filename": "timer30",
+          "comment": "30 Sekunden",
+          "TTSText": "30 Sekunden"
+        },
+        {
+          "filename": "highmah",
+          "comment": "Senderstrom zu hoch!",
+          "TTSText": "Senderstrom zu hoch!"
+        },
+        {
+          "filename": "hightemp",
+          "comment": "Sendertemperatur zu hoch!",
+          "TTSText": "Sendertemperatur zu hoch!"
+        },
+        {
+          "filename": "a1_org",
+          "comment": "A1 schwach!",
+          "TTSText": "A1 schwach!"
+        },
+        {
+          "filename": "a1_red",
+          "comment": "A1 kritisch!",
+          "TTSText": "A1 kritisch!"
+        },
+        {
+          "filename": "a2_org",
+          "comment": "A2 schwach!",
+          "TTSText": "A2 schwach!"
+        },
+        {
+          "filename": "a2_red",
+          "comment": "A2 kritisch!",
+          "TTSText": "A2 kritisch!"
+        },
+        {
+          "filename": "a3_org",
+          "comment": "A3 schwach!",
+          "TTSText": "A3 schwach!"
+        },
+        {
+          "filename": "a3_red",
+          "comment": "A3 kritisch!",
+          "TTSText": "A3 kritisch!"
+        },
+        {
+          "filename": "a4_org",
+          "comment": "A4 schwach!",
+          "TTSText": "A4 schwach!"
+        },
+        {
+          "filename": "a4_red",
+          "comment": "A4 kritisch!",
+          "TTSText": "A4 kritisch!"
+        },
+        {
+          "filename": "rssi_org",
+          "comment": "Funksignal schwach!",
+          "TTSText": "Funksignal schwach!"
+        },
+        {
+          "filename": "rssi_red",
+          "comment": "Funksignal kritisch!",
+          "TTSText": "Funksignal kritisch!"
+        },
+        {
+          "filename": "swr_red",
+          "comment": "Problem mit der Sender Antenne",
+          "TTSText": "Problem mit der Sender Antenne"
+        },
+        {
+          "filename": "telemko",
+          "comment": "Telemetrie verloren",
+          "TTSText": "Telemetrie verloren"
+        },
+        {
+          "filename": "telemok",
+          "comment": "Telemetrie wiederhergestellt",
+          "TTSText": "Telemetrie wiederhergestellt"
+        },
+        {
+          "filename": "trainko",
+          "comment": "Schülersignal verloren",
+          "TTSText": "Schülersignal verloren"
+        },
+        {
+          "filename": "trainok",
+          "comment": "Schülersignal wiederhergestellt",
+          "TTSText": "Schülersignal wiederhergestellt"
+        },
+        {
+          "filename": "servoko",
+          "comment": "servo overload",
+          "TTSText": "servo overload"
+        },
+        {
+          "filename": "rxko",
+          "comment": "power overload",
+          "TTSText": "power overload"
+        },
+        {
+          "filename": "modelpwr",
+          "comment": "Empfänger noch verbunden",
+          "TTSText": "Empfänger noch verbunden"
+        },
+        {
+          "filename": "timovr1",
+          "comment": "timer eins abgelaufen",
+          "TTSText": "timer eins abgelaufen"
+        },
+        {
+          "filename": "timovr2",
+          "comment": "timer zwei abgelaufen",
+          "TTSText": "timer zwei abgelaufen"
+        },
+        {
+          "filename": "timovr3",
+          "comment": "timer drei abgelaufen",
+          "TTSText": "timer drei abgelaufen"
+        },
+        {
+          "filename": "sensorko",
+          "comment": "Sensor veloren",
+          "TTSText": "Sensor veloren"
+        },
+        {
+          "filename": "hello",
+          "comment": "Willkommen bei openTX",
+          "TTSText": "Willkommen bei openTX"
+        },
+        {
+          "filename": "0134",
+          "comment": "Uhr",
+          "TTSText": "Uhr"
+        },
+        {
+          "filename": "0135",
+          "comment": "Uhr",
+          "TTSText": "Uhr"
+        },
+        {
+          "filename": "0136",
+          "comment": "Sender",
+          "TTSText": "Sender"
+        },
+        {
+          "filename": "0137",
+          "comment": "Empfang",
+          "TTSText": "Empfang"
+        },
+        {
+          "filename": "0138",
+          "comment": "A1",
+          "TTSText": "A1"
+        },
+        {
+          "filename": "0139",
+          "comment": "A2",
+          "TTSText": "A2"
+        },
+        {
+          "filename": "0140",
+          "comment": "Hoehe",
+          "TTSText": "Hoehe"
+        },
+        {
+          "filename": "0141",
+          "comment": "Motor",
+          "TTSText": "Motor"
+        },
+        {
+          "filename": "0142",
+          "comment": "Treibstoff",
+          "TTSText": "Treibstoff"
+        },
+        {
+          "filename": "0143",
+          "comment": "Temperatur",
+          "TTSText": "Temperatur"
+        },
+        {
+          "filename": "0144",
+          "comment": "Temperatur",
+          "TTSText": "Temperatur"
+        },
+        {
+          "filename": "0145",
+          "comment": "Geschwindigkeit",
+          "TTSText": "Geschwindigkeit"
+        },
+        {
+          "filename": "0146",
+          "comment": "Entfernung",
+          "TTSText": "Entfernung"
+        },
+        {
+          "filename": "0147",
+          "comment": "Höhe",
+          "TTSText": "Höhe"
+        },
+        {
+          "filename": "0148",
+          "comment": "Lipo-Zelle",
+          "TTSText": "Lipo-Zelle"
+        },
+        {
+          "filename": "0149",
+          "comment": "Zellen gesamt",
+          "TTSText": "Zellen gesamt"
+        },
+        {
+          "filename": "0150",
+          "comment": "Spannung",
+          "TTSText": "Spannung"
+        },
+        {
+          "filename": "0151",
+          "comment": "Strom",
+          "TTSText": "Strom"
+        },
+        {
+          "filename": "0152",
+          "comment": "Verbrauch",
+          "TTSText": "Verbrauch"
+        },
+        {
+          "filename": "0153",
+          "comment": "Power",
+          "TTSText": "Power"
+        },
+        {
+          "filename": "0154",
+          "comment": "Beschleunigung X",
+          "TTSText": "Beschleunigung X"
+        },
+        {
+          "filename": "0155",
+          "comment": "Beschleunigung Y",
+          "TTSText": "Beschleunigung Y"
+        },
+        {
+          "filename": "0156",
+          "comment": "Beschleunigung Z",
+          "TTSText": "Beschleunigung Z"
+        },
+        {
+          "filename": "0157",
+          "comment": "Richtung",
+          "TTSText": "Richtung"
+        },
+        {
+          "filename": "0158",
+          "comment": "Variometer",
+          "TTSText": "Variometer"
+        },
+        {
+          "filename": "0159",
+          "comment": "Minimum",
+          "TTSText": "Minimum"
+        },
+        {
+          "filename": "0160",
+          "comment": "Maximum",
+          "TTSText": "Maximum"
+        }
+      ],
+      "UserVoices": [
+        {
+          "filename": "gearup",
+          "comment": "Fahrwerk eingezogen",
+          "TTSText": "Fahrwerk eingezogen"
+        },
+        {
+          "filename": "geardn",
+          "comment": "Fahrwerk ausgefahren",
+          "TTSText": "Fahrwerk ausgefahren"
+        },
+        {
+          "filename": "flapup",
+          "comment": "Klappen eingefahren",
+          "TTSText": "Klappen eingefahren"
+        },
+        {
+          "filename": "flapdn",
+          "comment": "Klappen ausgefahren",
+          "TTSText": "Klappen ausgefahren"
+        },
+        {
+          "filename": "lnding",
+          "comment": "Landung",
+          "TTSText": "Landung"
+        },
+        {
+          "filename": "trnon",
+          "comment": "Trainer-Modus ein",
+          "TTSText": "Trainer-Modus ein"
+        },
+        {
+          "filename": "trnoff",
+          "comment": "Trainer-Modus aus",
+          "TTSText": "Trainer-Modus aus"
+        },
+        {
+          "filename": "engoff",
+          "comment": "Motor aus",
+          "TTSText": "Motor aus"
+        },
+        {
+          "filename": "engon",
+          "comment": "Motor an",
+          "TTSText": "Motor an"
+        },
+        {
+          "filename": "tohigh",
+          "comment": "zu hoch",
+          "TTSText": "zu hoch"
+        },
+        {
+          "filename": "tolow",
+          "comment": "zu niedrig",
+          "TTSText": "zu niedrig"
+        },
+        {
+          "filename": "lowbatt",
+          "comment": "Batterie schwach",
+          "TTSText": "Batterie schwach"
+        },
+        {
+          "filename": "crowon",
+          "comment": "Butterfly ein",
+          "TTSText": "Butterfly ein"
+        },
+        {
+          "filename": "crowof",
+          "comment": "Butterfly aus",
+          "TTSText": "Butterfly aus"
+        },
+        {
+          "filename": "fm-spd",
+          "comment": "Geschwindigkeits-Modus ist aktiviert",
+          "TTSText": "Geschwindigkeits-Modus ist aktiviert"
+        },
+        {
+          "filename": "fm-thm",
+          "comment": "Thermik-Modus ist aktiviert",
+          "TTSText": "Thermik-Modus ist aktiviert"
+        },
+        {
+          "filename": "fm-nrm",
+          "comment": "Normal-Modus ist aktiviert",
+          "TTSText": "Normal-Modus ist aktiviert"
+        },
+        {
+          "filename": "fm-1",
+          "comment": "Flugmodus 1",
+          "TTSText": "Flugmodus 1"
+        },
+        {
+          "filename": "fm-2",
+          "comment": "Flugmodus 2",
+          "TTSText": "Flugmodus 2"
+        },
+        {
+          "filename": "fm-3",
+          "comment": "Flugmodus 3",
+          "TTSText": "Flugmodus 3"
+        },
+        {
+          "filename": "fm-4",
+          "comment": "Flugmodus 4",
+          "TTSText": "Flugmodus 4"
+        },
+        {
+          "filename": "fm-5",
+          "comment": "Flugmodus 5",
+          "TTSText": "Flugmodus 5"
+        },
+        {
+          "filename": "fm-6",
+          "comment": "Flugmodus 6",
+          "TTSText": "Flugmodus 6"
+        },
+        {
+          "filename": "fm-7",
+          "comment": "Flugmodus 7",
+          "TTSText": "Flugmodus 7"
+        },
+        {
+          "filename": "fm-8",
+          "comment": "Flugmodus 8",
+          "TTSText": "Flugmodus 8"
+        },
+        {
+          "filename": "fm-9",
+          "comment": "Flugmodus 9",
+          "TTSText": "Flugmodus 9"
+        }
+      ]
+    },
+    {
+      "LanguageCode": "en-US",
+      "VoiceName": "en-US-Wavenet-D",
+      "SystemVoices": [
+        {
+          "filename": "0000",
+          "comment": "0",
+          "TTSText": "0"
+        },
+        {
+          "filename": "0001",
+          "comment": "1",
+          "TTSText": "1"
+        },
+        {
+          "filename": "0002",
+          "comment": "2",
+          "TTSText": "2"
+        },
+        {
+          "filename": "0003",
+          "comment": "3",
+          "TTSText": "3"
+        },
+        {
+          "filename": "0004",
+          "comment": "4",
+          "TTSText": "4"
+        },
+        {
+          "filename": "0005",
+          "comment": "5",
+          "TTSText": "5"
+        },
+        {
+          "filename": "0006",
+          "comment": "6",
+          "TTSText": "6"
+        },
+        {
+          "filename": "0007",
+          "comment": "7",
+          "TTSText": "7"
+        },
+        {
+          "filename": "0008",
+          "comment": "8",
+          "TTSText": "8"
+        },
+        {
+          "filename": "0009",
+          "comment": "9",
+          "TTSText": "9"
+        },
+        {
+          "filename": "0010",
+          "comment": "10",
+          "TTSText": "10"
+        },
+        {
+          "filename": "0011",
+          "comment": "11",
+          "TTSText": "11"
+        },
+        {
+          "filename": "0012",
+          "comment": "12",
+          "TTSText": "12"
+        },
+        {
+          "filename": "0013",
+          "comment": "13",
+          "TTSText": "13"
+        },
+        {
+          "filename": "0014",
+          "comment": "14",
+          "TTSText": "14"
+        },
+        {
+          "filename": "0015",
+          "comment": "15",
+          "TTSText": "15"
+        },
+        {
+          "filename": "0016",
+          "comment": "16",
+          "TTSText": "16"
+        },
+        {
+          "filename": "0017",
+          "comment": "17",
+          "TTSText": "17"
+        },
+        {
+          "filename": "0018",
+          "comment": "18",
+          "TTSText": "18"
+        },
+        {
+          "filename": "0019",
+          "comment": "19",
+          "TTSText": "19"
+        },
+        {
+          "filename": "0020",
+          "comment": "20",
+          "TTSText": "20"
+        },
+        {
+          "filename": "0021",
+          "comment": "21",
+          "TTSText": "21"
+        },
+        {
+          "filename": "0022",
+          "comment": "22",
+          "TTSText": "22"
+        },
+        {
+          "filename": "0023",
+          "comment": "23",
+          "TTSText": "23"
+        },
+        {
+          "filename": "0024",
+          "comment": "24",
+          "TTSText": "24"
+        },
+        {
+          "filename": "0025",
+          "comment": "25",
+          "TTSText": "25"
+        },
+        {
+          "filename": "0026",
+          "comment": "26",
+          "TTSText": "26"
+        },
+        {
+          "filename": "0027",
+          "comment": "27",
+          "TTSText": "27"
+        },
+        {
+          "filename": "0028",
+          "comment": "28",
+          "TTSText": "28"
+        },
+        {
+          "filename": "0029",
+          "comment": "29",
+          "TTSText": "29"
+        },
+        {
+          "filename": "0030",
+          "comment": "30",
+          "TTSText": "30"
+        },
+        {
+          "filename": "0031",
+          "comment": "31",
+          "TTSText": "31"
+        },
+        {
+          "filename": "0032",
+          "comment": "32",
+          "TTSText": "32"
+        },
+        {
+          "filename": "0033",
+          "comment": "33",
+          "TTSText": "33"
+        },
+        {
+          "filename": "0034",
+          "comment": "34",
+          "TTSText": "34"
+        },
+        {
+          "filename": "0035",
+          "comment": "35",
+          "TTSText": "35"
+        },
+        {
+          "filename": "0036",
+          "comment": "36",
+          "TTSText": "36"
+        },
+        {
+          "filename": "0037",
+          "comment": "37",
+          "TTSText": "37"
+        },
+        {
+          "filename": "0038",
+          "comment": "38",
+          "TTSText": "38"
+        },
+        {
+          "filename": "0039",
+          "comment": "39",
+          "TTSText": "39"
+        },
+        {
+          "filename": "0040",
+          "comment": "40",
+          "TTSText": "40"
+        },
+        {
+          "filename": "0041",
+          "comment": "41",
+          "TTSText": "41"
+        },
+        {
+          "filename": "0042",
+          "comment": "42",
+          "TTSText": "42"
+        },
+        {
+          "filename": "0043",
+          "comment": "43",
+          "TTSText": "43"
+        },
+        {
+          "filename": "0044",
+          "comment": "44",
+          "TTSText": "44"
+        },
+        {
+          "filename": "0045",
+          "comment": "45",
+          "TTSText": "45"
+        },
+        {
+          "filename": "0046",
+          "comment": "46",
+          "TTSText": "46"
+        },
+        {
+          "filename": "0047",
+          "comment": "47",
+          "TTSText": "47"
+        },
+        {
+          "filename": "0048",
+          "comment": "48",
+          "TTSText": "48"
+        },
+        {
+          "filename": "0049",
+          "comment": "49",
+          "TTSText": "49"
+        },
+        {
+          "filename": "0050",
+          "comment": "50",
+          "TTSText": "50"
+        },
+        {
+          "filename": "0051",
+          "comment": "51",
+          "TTSText": "51"
+        },
+        {
+          "filename": "0052",
+          "comment": "52",
+          "TTSText": "52"
+        },
+        {
+          "filename": "0053",
+          "comment": "53",
+          "TTSText": "53"
+        },
+        {
+          "filename": "0054",
+          "comment": "54",
+          "TTSText": "54"
+        },
+        {
+          "filename": "0055",
+          "comment": "55",
+          "TTSText": "55"
+        },
+        {
+          "filename": "0056",
+          "comment": "56",
+          "TTSText": "56"
+        },
+        {
+          "filename": "0057",
+          "comment": "57",
+          "TTSText": "57"
+        },
+        {
+          "filename": "0058",
+          "comment": "58",
+          "TTSText": "58"
+        },
+        {
+          "filename": "0059",
+          "comment": "59",
+          "TTSText": "59"
+        },
+        {
+          "filename": "0060",
+          "comment": "60",
+          "TTSText": "60"
+        },
+        {
+          "filename": "0061",
+          "comment": "61",
+          "TTSText": "61"
+        },
+        {
+          "filename": "0062",
+          "comment": "62",
+          "TTSText": "62"
+        },
+        {
+          "filename": "0063",
+          "comment": "63",
+          "TTSText": "63"
+        },
+        {
+          "filename": "0064",
+          "comment": "64",
+          "TTSText": "64"
+        },
+        {
+          "filename": "0065",
+          "comment": "65",
+          "TTSText": "65"
+        },
+        {
+          "filename": "0066",
+          "comment": "66",
+          "TTSText": "66"
+        },
+        {
+          "filename": "0067",
+          "comment": "67",
+          "TTSText": "67"
+        },
+        {
+          "filename": "0068",
+          "comment": "68",
+          "TTSText": "68"
+        },
+        {
+          "filename": "0069",
+          "comment": "69",
+          "TTSText": "69"
+        },
+        {
+          "filename": "0070",
+          "comment": "70",
+          "TTSText": "70"
+        },
+        {
+          "filename": "0071",
+          "comment": "71",
+          "TTSText": "71"
+        },
+        {
+          "filename": "0072",
+          "comment": "72",
+          "TTSText": "72"
+        },
+        {
+          "filename": "0073",
+          "comment": "73",
+          "TTSText": "73"
+        },
+        {
+          "filename": "0074",
+          "comment": "74",
+          "TTSText": "74"
+        },
+        {
+          "filename": "0075",
+          "comment": "75",
+          "TTSText": "75"
+        },
+        {
+          "filename": "0076",
+          "comment": "76",
+          "TTSText": "76"
+        },
+        {
+          "filename": "0077",
+          "comment": "77",
+          "TTSText": "77"
+        },
+        {
+          "filename": "0078",
+          "comment": "78",
+          "TTSText": "78"
+        },
+        {
+          "filename": "0079",
+          "comment": "79",
+          "TTSText": "79"
+        },
+        {
+          "filename": "0080",
+          "comment": "80",
+          "TTSText": "80"
+        },
+        {
+          "filename": "0081",
+          "comment": "81",
+          "TTSText": "81"
+        },
+        {
+          "filename": "0082",
+          "comment": "82",
+          "TTSText": "82"
+        },
+        {
+          "filename": "0083",
+          "comment": "83",
+          "TTSText": "83"
+        },
+        {
+          "filename": "0084",
+          "comment": "84",
+          "TTSText": "84"
+        },
+        {
+          "filename": "0085",
+          "comment": "85",
+          "TTSText": "85"
+        },
+        {
+          "filename": "0086",
+          "comment": "86",
+          "TTSText": "86"
+        },
+        {
+          "filename": "0087",
+          "comment": "87",
+          "TTSText": "87"
+        },
+        {
+          "filename": "0088",
+          "comment": "88",
+          "TTSText": "88"
+        },
+        {
+          "filename": "0089",
+          "comment": "89",
+          "TTSText": "89"
+        },
+        {
+          "filename": "0090",
+          "comment": "90",
+          "TTSText": "90"
+        },
+        {
+          "filename": "0091",
+          "comment": "91",
+          "TTSText": "91"
+        },
+        {
+          "filename": "0092",
+          "comment": "92",
+          "TTSText": "92"
+        },
+        {
+          "filename": "0093",
+          "comment": "93",
+          "TTSText": "93"
+        },
+        {
+          "filename": "0094",
+          "comment": "94",
+          "TTSText": "94"
+        },
+        {
+          "filename": "0095",
+          "comment": "95",
+          "TTSText": "95"
+        },
+        {
+          "filename": "0096",
+          "comment": "96",
+          "TTSText": "96"
+        },
+        {
+          "filename": "0097",
+          "comment": "97",
+          "TTSText": "97"
+        },
+        {
+          "filename": "0098",
+          "comment": "98",
+          "TTSText": "98"
+        },
+        {
+          "filename": "0099",
+          "comment": "99",
+          "TTSText": "99"
+        },
+        {
+          "filename": "0100",
+          "comment": "100",
+          "TTSText": "100"
+        },
+        {
+          "filename": "0101",
+          "comment": "200",
+          "TTSText": "200"
+        },
+        {
+          "filename": "0102",
+          "comment": "300",
+          "TTSText": "300"
+        },
+        {
+          "filename": "0103",
+          "comment": "400",
+          "TTSText": "400"
+        },
+        {
+          "filename": "0104",
+          "comment": "500",
+          "TTSText": "500"
+        },
+        {
+          "filename": "0105",
+          "comment": "600",
+          "TTSText": "600"
+        },
+        {
+          "filename": "0106",
+          "comment": "700",
+          "TTSText": "700"
+        },
+        {
+          "filename": "0107",
+          "comment": "800",
+          "TTSText": "800"
+        },
+        {
+          "filename": "0108",
+          "comment": "900",
+          "TTSText": "900"
+        },
+        {
+          "filename": "0109",
+          "comment": "1000",
+          "TTSText": "1000"
+        },
+        {
+          "filename": "0110",
+          "comment": "and",
+          "TTSText": "and"
+        },
+        {
+          "filename": "0111",
+          "comment": "minus",
+          "TTSText": "minus"
+        },
+        {
+          "filename": "0112",
+          "comment": "point",
+          "TTSText": "point"
+        },
+        {
+          "filename": "volt0",
+          "comment": "volt",
+          "TTSText": "volt"
+        },
+        {
+          "filename": "volt1",
+          "comment": "volts",
+          "TTSText": "volts"
+        },
+        {
+          "filename": "amp0",
+          "comment": "amp",
+          "TTSText": "amp"
+        },
+        {
+          "filename": "amp1",
+          "comment": "amps",
+          "TTSText": "amps"
+        },
+        {
+          "filename": "mamp0",
+          "comment": "milliamp",
+          "TTSText": "milliamp"
+        },
+        {
+          "filename": "mamp1",
+          "comment": "milliamps",
+          "TTSText": "milliamps"
+        },
+        {
+          "filename": "knot0",
+          "comment": "knot",
+          "TTSText": "knot"
+        },
+        {
+          "filename": "knot1",
+          "comment": "knots",
+          "TTSText": "knots"
+        },
+        {
+          "filename": "mps0",
+          "comment": "meter per second",
+          "TTSText": "meter per second"
+        },
+        {
+          "filename": "mps1",
+          "comment": "meters per second",
+          "TTSText": "meters per second"
+        },
+        {
+          "filename": "fps0",
+          "comment": "foot per second",
+          "TTSText": "foot per second"
+        },
+        {
+          "filename": "fps1",
+          "comment": "feet per second",
+          "TTSText": "feet per second"
+        },
+        {
+          "filename": "kph0",
+          "comment": "kmh",
+          "TTSText": "kilometer per hour"
+        },
+        {
+          "filename": "kph1",
+          "comment": "kmh",
+          "TTSText": "kilometers per hour"
+        },
+        {
+          "filename": "mph0",
+          "comment": "mile per hour",
+          "TTSText": "mile per hour"
+        },
+        {
+          "filename": "mph1",
+          "comment": "miles per hour",
+          "TTSText": "miles per hour"
+        },
+        {
+          "filename": "meter0",
+          "comment": "meter",
+          "TTSText": "meter"
+        },
+        {
+          "filename": "meter1",
+          "comment": "meters",
+          "TTSText": "meters"
+        },
+        {
+          "filename": "foot0",
+          "comment": "foot",
+          "TTSText": "foot"
+        },
+        {
+          "filename": "foot1",
+          "comment": "feet",
+          "TTSText": "feet"
+        },
+        {
+          "filename": "celsius0",
+          "comment": "degree celsius",
+          "TTSText": "degree celsius"
+        },
+        {
+          "filename": "celsius1",
+          "comment": "degrees celsius",
+          "TTSText": "degrees celsius"
+        },
+        {
+          "filename": "fahr0",
+          "comment": "degree fahrenheit",
+          "TTSText": "degree fahrenheit"
+        },
+        {
+          "filename": "fahr1",
+          "comment": "degrees fahrenhaeit",
+          "TTSText": "degrees fahrenhaeit"
+        },
+        {
+          "filename": "percent0",
+          "comment": "percent",
+          "TTSText": "percent"
+        },
+        {
+          "filename": "percent1",
+          "comment": "percent",
+          "TTSText": "percent"
+        },
+        {
+          "filename": "mamph0",
+          "comment": "mah",
+          "TTSText": "milliamp hour"
+        },
+        {
+          "filename": "mamph1",
+          "comment": "mah",
+          "TTSText": "milliamp hours"
+        },
+        {
+          "filename": "watt0",
+          "comment": "watt",
+          "TTSText": "watt"
+        },
+        {
+          "filename": "watt1",
+          "comment": "watts",
+          "TTSText": "watts"
+        },
+        {
+          "filename": "mwatt0",
+          "comment": "milli watt",
+          "TTSText": "milli watt"
+        },
+        {
+          "filename": "mwatt1",
+          "comment": "milli watts",
+          "TTSText": "milli watts"
+        },
+        {
+          "filename": "db0",
+          "comment": "db",
+          "TTSText": "db"
+        },
+        {
+          "filename": "db1",
+          "comment": "db",
+          "TTSText": "db"
+        },
+        {
+          "filename": "rpm0",
+          "comment": "rpm",
+          "TTSText": "rpm"
+        },
+        {
+          "filename": "rpm1",
+          "comment": "rpm",
+          "TTSText": "rpm"
+        },
+        {
+          "filename": "g0",
+          "comment": "g",
+          "TTSText": "g"
+        },
+        {
+          "filename": "g1",
+          "comment": "g",
+          "TTSText": "g"
+        },
+        {
+          "filename": "degree0",
+          "comment": "degree",
+          "TTSText": "degree"
+        },
+        {
+          "filename": "degree1",
+          "comment": "degrees",
+          "TTSText": "degrees"
+        },
+        {
+          "filename": "rad0",
+          "comment": "radian",
+          "TTSText": "radian"
+        },
+        {
+          "filename": "rad1",
+          "comment": "radians",
+          "TTSText": "radians"
+        },
+        {
+          "filename": "ml0",
+          "comment": "milliliter",
+          "TTSText": "milliliter"
+        },
+        {
+          "filename": "ml1",
+          "comment": "milliliters",
+          "TTSText": "milliliters"
+        },
+        {
+          "filename": "founce0",
+          "comment": "fluid ounce",
+          "TTSText": "fluid ounce"
+        },
+        {
+          "filename": "founce1",
+          "comment": "fluid ounces",
+          "TTSText": "fluid ounces"
+        },
+        {
+          "filename": "hour0",
+          "comment": "hour",
+          "TTSText": "hour"
+        },
+        {
+          "filename": "hour1",
+          "comment": "hours",
+          "TTSText": "hours"
+        },
+        {
+          "filename": "minute0",
+          "comment": "minute",
+          "TTSText": "minute"
+        },
+        {
+          "filename": "minute1",
+          "comment": "minutes",
+          "TTSText": "minutes"
+        },
+        {
+          "filename": "second0",
+          "comment": "second",
+          "TTSText": "second"
+        },
+        {
+          "filename": "second1",
+          "comment": "seconds",
+          "TTSText": "seconds"
+        },
+        {
+          "filename": "0167",
+          "comment": ".0",
+          "TTSText": ".0"
+        },
+        {
+          "filename": "0168",
+          "comment": ".1",
+          "TTSText": ".1"
+        },
+        {
+          "filename": "0169",
+          "comment": ".2",
+          "TTSText": ".2"
+        },
+        {
+          "filename": "0170",
+          "comment": ".3",
+          "TTSText": ".3"
+        },
+        {
+          "filename": "0171",
+          "comment": ".4",
+          "TTSText": ".4"
+        },
+        {
+          "filename": "0172",
+          "comment": ".5",
+          "TTSText": ".5"
+        },
+        {
+          "filename": "0173",
+          "comment": ".6",
+          "TTSText": ".6"
+        },
+        {
+          "filename": "0174",
+          "comment": ".7",
+          "TTSText": ".7"
+        },
+        {
+          "filename": "0175",
+          "comment": ".8",
+          "TTSText": ".8"
+        },
+        {
+          "filename": "0176",
+          "comment": ".9",
+          "TTSText": ".9"
+        },
+        {
+          "filename": "midtrim",
+          "comment": "trim center",
+          "TTSText": "trim center"
+        },
+        {
+          "filename": "maxtrim",
+          "comment": "maximum trim reached",
+          "TTSText": "maximum trim reached"
+        },
+        {
+          "filename": "mintrim",
+          "comment": "minimum trim reached",
+          "TTSText": "minimum trim reached"
+        },
+        {
+          "filename": "timovr1",
+          "comment": "timer 1 elapsed",
+          "TTSText": "timer 1 elapsed"
+        },
+        {
+          "filename": "timovr2",
+          "comment": "timer 2 elapsed",
+          "TTSText": "timer 2 elapsed"
+        },
+        {
+          "filename": "timovr3",
+          "comment": "timer 3 elapsed",
+          "TTSText": "timer 3 elapsed"
+        },
+        {
+          "filename": "lowbatt",
+          "comment": "transmitter battery low",
+          "TTSText": "transmitter battery low"
+        },
+        {
+          "filename": "inactiv",
+          "comment": "inactivity alarm",
+          "TTSText": "inactivity alarm"
+        },
+        {
+          "filename": "thralert",
+          "comment": "throttle warning",
+          "TTSText": "throttle warning"
+        },
+        {
+          "filename": "swalert",
+          "comment": "switch warning",
+          "TTSText": "switch warning"
+        },
+        {
+          "filename": "eebad",
+          "comment": "bad eeprom",
+          "TTSText": "bad eeprom"
+        },
+        {
+          "filename": "hello",
+          "comment": "Start Sound",
+          "TTSText": "Welcome to Open-TX"
+        },
+        {
+          "filename": "rssi_org",
+          "comment": "rf signal low",
+          "TTSText": "RSSI, low"
+        },
+        {
+          "filename": "rssi_red",
+          "comment": "rf signal critical",
+          "TTSText": "RSSI, critical"
+        },
+        {
+          "filename": "swr_red",
+          "comment": "radio antenna defective",
+          "TTSText": "radio antenna defective"
+        },
+        {
+          "filename": "telemko",
+          "comment": "telemetry lost",
+          "TTSText": "telemetry lost"
+        },
+        {
+          "filename": "telemok",
+          "comment": "telemetry recover",
+          "TTSText": "telemetry recovered"
+        },
+        {
+          "filename": "trainko",
+          "comment": "trainer signal lost",
+          "TTSText": "trainer signal lost"
+        },
+        {
+          "filename": "trainok",
+          "comment": "trainer signal recovered",
+          "TTSText": "trainer signal recovered"
+        },
+        {
+          "filename": "sensorko",
+          "comment": "sensor lost",
+          "TTSText": "sensor lost"
+        },
+        {
+          "filename": "servoko",
+          "comment": "servo overload",
+          "TTSText": "servo overload"
+        },
+        {
+          "filename": "rxko",
+          "comment": "power overload",
+          "TTSText": "power overload"
+        },
+        {
+          "filename": "modelpwr",
+          "comment": "receiver still connected",
+          "TTSText": "receiver still connected"
+        }
+      ],
+      "UserVoices": [
+        {
+          "filename": "gearup",
+          "comment": "gear up",
+          "TTSText": "gear!, up!"
+        },
+        {
+          "filename": "geardn",
+          "comment": "gear down",
+          "TTSText": "gear!, down!"
+        },
+        {
+          "filename": "flapup",
+          "comment": "flaps up",
+          "TTSText": "flaps!, up!"
+        },
+        {
+          "filename": "flapdn",
+          "comment": "flaps down",
+          "TTSText": "flaps!, down!"
+        },
+        {
+          "filename": "splrup",
+          "comment": "spoiler up",
+          "TTSText": "spoiler!, up!"
+        },
+        {
+          "filename": "splrdn",
+          "comment": "spoiler down",
+          "TTSText": "spoiler!, down!"
+        },
+        {
+          "filename": "trnon",
+          "comment": "trainer on",
+          "TTSText": "trainer!, on!"
+        },
+        {
+          "filename": "trnoff",
+          "comment": "trainer off",
+          "TTSText": "trainer!, off!"
+        },
+        {
+          "filename": "engoff",
+          "comment": "engine off",
+          "TTSText": "engine!, off!"
+        },
+        {
+          "filename": "tohigh",
+          "comment": "too high",
+          "TTSText": "too. high!"
+        },
+        {
+          "filename": "tolow",
+          "comment": "too low",
+          "TTSText": "too. low!"
+        },
+        {
+          "filename": "lowbat",
+          "comment": "low battery",
+          "TTSText": "low. battery!"
+        },
+        {
+          "filename": "crowon",
+          "comment": "crow on",
+          "TTSText": "crow!, on!"
+        },
+        {
+          "filename": "crowof",
+          "comment": "crow off",
+          "TTSText": "crow!, off!"
+        },
+        {
+          "filename": "siglow",
+          "comment": "rf signal low",
+          "TTSText": "rf. signal!, low!"
+        },
+        {
+          "filename": "sigcrt",
+          "comment": "rf signal critical",
+          "TTSText": "rf. signal!, critical!"
+        },
+        {
+          "filename": "spdmod",
+          "comment": "high speed mode active",
+          "TTSText": "high. speed. mode!, active"
+        },
+        {
+          "filename": "thmmod",
+          "comment": "thermal mode on",
+          "TTSText": "thermal. mode!, on"
+        },
+        {
+          "filename": "nrmmod",
+          "comment": "normal mode on",
+          "TTSText": "normal. mode!, on"
+        },
+        {
+          "filename": "lnding",
+          "comment": "landing mode on",
+          "TTSText": "landing. mode!, on"
+        },
+        {
+          "filename": "acro",
+          "comment": "acro mode on",
+          "TTSText": "acro. mode!, on"
+        },
+        {
+          "filename": "fm-1",
+          "comment": "flight mode one",
+          "TTSText": "flight mode one"
+        },
+        {
+          "filename": "fm-2",
+          "comment": "flight mode two",
+          "TTSText": "flight mode two"
+        },
+        {
+          "filename": "fm-3",
+          "comment": "flight mode three",
+          "TTSText": "flight mode three"
+        },
+        {
+          "filename": "fm-4",
+          "comment": "flight mode four",
+          "TTSText": "flight mode four"
+        },
+        {
+          "filename": "fm-5",
+          "comment": "flight mode five",
+          "TTSText": "flight mode five"
+        },
+        {
+          "filename": "fm-6",
+          "comment": "flight mode six",
+          "TTSText": "flight mode six"
+        },
+        {
+          "filename": "fm-7",
+          "comment": "flight mode seven",
+          "TTSText": "flight mode seven"
+        },
+        {
+          "filename": "fm-8",
+          "comment": "flight mode eight",
+          "TTSText": "flight mode eight"
+        },
+        {
+          "filename": "vrion",
+          "comment": "vario on",
+          "TTSText": "vario!, on"
+        },
+        {
+          "filename": "vrioff",
+          "comment": "vario off",
+          "TTSText": "vario!, off"
+        },
+        {
+          "filename": "fm-pwr",
+          "comment": "flight mode power",
+          "TTSText": "flight mode power"
+        },
+        {
+          "filename": "fm-lnd",
+          "comment": "flight mode land",
+          "TTSText": "flight mode land"
+        },
+        {
+          "filename": "fm-flt",
+          "comment": "flight mode float",
+          "TTSText": "flight mode float"
+        },
+        {
+          "filename": "fm-spd",
+          "comment": "flight mode speed",
+          "TTSText": "flight mode speed"
+        },
+        {
+          "filename": "fm-fst",
+          "comment": "flight mode fast",
+          "TTSText": "flight mode fast"
+        },
+        {
+          "filename": "fm-nrm",
+          "comment": "flight mode normal",
+          "TTSText": "flight mode normal"
+        },
+        {
+          "filename": "fm-crs",
+          "comment": "flight mode cruise",
+          "TTSText": "flight mode cruise"
+        },
+        {
+          "filename": "fm-acr",
+          "comment": "flight mode acro",
+          "TTSText": "flight mode acro"
+        },
+        {
+          "filename": "fm-rce",
+          "comment": "flight mode race",
+          "TTSText": "flight mode race"
+        },
+        {
+          "filename": "fm-lch",
+          "comment": "flight mode launch",
+          "TTSText": "flight mode launch"
+        },
+        {
+          "filename": "fm-png",
+          "comment": "flight mode ping",
+          "TTSText": "flight mode ping"
+        },
+        {
+          "filename": "fm-thm",
+          "comment": "flight mode thermal",
+          "TTSText": "flight mode thermal"
+        },
+        {
+          "filename": "fm-thl",
+          "comment": "flight mode thermal left",
+          "TTSText": "flight mode thermal left"
+        },
+        {
+          "filename": "fm-thr",
+          "comment": "flight mode thermal right",
+          "TTSText": "flight mode thermal right"
+        }
+      ]
+    },
+    {
+      "LanguageCode": "es-ES",
+      "VoiceName": "es-ES-Standard-A",
+      "SystemVoices": [
+        {
+          "filename": "0000",
+          "comment": "0",
+          "TTSText": "0"
+        },
+        {
+          "filename": "0001",
+          "comment": "1",
+          "TTSText": "1"
+        },
+        {
+          "filename": "0002",
+          "comment": "2",
+          "TTSText": "2"
+        },
+        {
+          "filename": "0003",
+          "comment": "3",
+          "TTSText": "3"
+        },
+        {
+          "filename": "0004",
+          "comment": "4",
+          "TTSText": "4"
+        },
+        {
+          "filename": "0005",
+          "comment": "5",
+          "TTSText": "5"
+        },
+        {
+          "filename": "0006",
+          "comment": "6",
+          "TTSText": "6"
+        },
+        {
+          "filename": "0007",
+          "comment": "7",
+          "TTSText": "7"
+        },
+        {
+          "filename": "0008",
+          "comment": "8",
+          "TTSText": "8"
+        },
+        {
+          "filename": "0009",
+          "comment": "9",
+          "TTSText": "9"
+        },
+        {
+          "filename": "0010",
+          "comment": "10",
+          "TTSText": "10"
+        },
+        {
+          "filename": "0011",
+          "comment": "11",
+          "TTSText": "11"
+        },
+        {
+          "filename": "0012",
+          "comment": "12",
+          "TTSText": "12"
+        },
+        {
+          "filename": "0013",
+          "comment": "13",
+          "TTSText": "13"
+        },
+        {
+          "filename": "0014",
+          "comment": "14",
+          "TTSText": "14"
+        },
+        {
+          "filename": "0015",
+          "comment": "15",
+          "TTSText": "15"
+        },
+        {
+          "filename": "0016",
+          "comment": "16",
+          "TTSText": "16"
+        },
+        {
+          "filename": "0017",
+          "comment": "17",
+          "TTSText": "17"
+        },
+        {
+          "filename": "0018",
+          "comment": "18",
+          "TTSText": "18"
+        },
+        {
+          "filename": "0019",
+          "comment": "19",
+          "TTSText": "19"
+        },
+        {
+          "filename": "0020",
+          "comment": "20",
+          "TTSText": "20"
+        },
+        {
+          "filename": "0021",
+          "comment": "21",
+          "TTSText": "21"
+        },
+        {
+          "filename": "0022",
+          "comment": "22",
+          "TTSText": "22"
+        },
+        {
+          "filename": "0023",
+          "comment": "23",
+          "TTSText": "23"
+        },
+        {
+          "filename": "0024",
+          "comment": "24",
+          "TTSText": "24"
+        },
+        {
+          "filename": "0025",
+          "comment": "25",
+          "TTSText": "25"
+        },
+        {
+          "filename": "0026",
+          "comment": "26",
+          "TTSText": "26"
+        },
+        {
+          "filename": "0027",
+          "comment": "27",
+          "TTSText": "27"
+        },
+        {
+          "filename": "0028",
+          "comment": "28",
+          "TTSText": "28"
+        },
+        {
+          "filename": "0029",
+          "comment": "29",
+          "TTSText": "29"
+        },
+        {
+          "filename": "0030",
+          "comment": "30",
+          "TTSText": "30"
+        },
+        {
+          "filename": "0031",
+          "comment": "31",
+          "TTSText": "31"
+        },
+        {
+          "filename": "0032",
+          "comment": "32",
+          "TTSText": "32"
+        },
+        {
+          "filename": "0033",
+          "comment": "33",
+          "TTSText": "33"
+        },
+        {
+          "filename": "0034",
+          "comment": "34",
+          "TTSText": "34"
+        },
+        {
+          "filename": "0035",
+          "comment": "35",
+          "TTSText": "35"
+        },
+        {
+          "filename": "0036",
+          "comment": "36",
+          "TTSText": "36"
+        },
+        {
+          "filename": "0037",
+          "comment": "37",
+          "TTSText": "37"
+        },
+        {
+          "filename": "0038",
+          "comment": "38",
+          "TTSText": "38"
+        },
+        {
+          "filename": "0039",
+          "comment": "39",
+          "TTSText": "39"
+        },
+        {
+          "filename": "0040",
+          "comment": "40",
+          "TTSText": "40"
+        },
+        {
+          "filename": "0041",
+          "comment": "41",
+          "TTSText": "41"
+        },
+        {
+          "filename": "0042",
+          "comment": "42",
+          "TTSText": "42"
+        },
+        {
+          "filename": "0043",
+          "comment": "43",
+          "TTSText": "43"
+        },
+        {
+          "filename": "0044",
+          "comment": "44",
+          "TTSText": "44"
+        },
+        {
+          "filename": "0045",
+          "comment": "45",
+          "TTSText": "45"
+        },
+        {
+          "filename": "0046",
+          "comment": "46",
+          "TTSText": "46"
+        },
+        {
+          "filename": "0047",
+          "comment": "47",
+          "TTSText": "47"
+        },
+        {
+          "filename": "0048",
+          "comment": "48",
+          "TTSText": "48"
+        },
+        {
+          "filename": "0049",
+          "comment": "49",
+          "TTSText": "49"
+        },
+        {
+          "filename": "0050",
+          "comment": "50",
+          "TTSText": "50"
+        },
+        {
+          "filename": "0051",
+          "comment": "51",
+          "TTSText": "51"
+        },
+        {
+          "filename": "0052",
+          "comment": "52",
+          "TTSText": "52"
+        },
+        {
+          "filename": "0053",
+          "comment": "53",
+          "TTSText": "53"
+        },
+        {
+          "filename": "0054",
+          "comment": "54",
+          "TTSText": "54"
+        },
+        {
+          "filename": "0055",
+          "comment": "55",
+          "TTSText": "55"
+        },
+        {
+          "filename": "0056",
+          "comment": "56",
+          "TTSText": "56"
+        },
+        {
+          "filename": "0057",
+          "comment": "57",
+          "TTSText": "57"
+        },
+        {
+          "filename": "0058",
+          "comment": "58",
+          "TTSText": "58"
+        },
+        {
+          "filename": "0059",
+          "comment": "59",
+          "TTSText": "59"
+        },
+        {
+          "filename": "0060",
+          "comment": "60",
+          "TTSText": "60"
+        },
+        {
+          "filename": "0061",
+          "comment": "61",
+          "TTSText": "61"
+        },
+        {
+          "filename": "0062",
+          "comment": "62",
+          "TTSText": "62"
+        },
+        {
+          "filename": "0063",
+          "comment": "63",
+          "TTSText": "63"
+        },
+        {
+          "filename": "0064",
+          "comment": "64",
+          "TTSText": "64"
+        },
+        {
+          "filename": "0065",
+          "comment": "65",
+          "TTSText": "65"
+        },
+        {
+          "filename": "0066",
+          "comment": "66",
+          "TTSText": "66"
+        },
+        {
+          "filename": "0067",
+          "comment": "67",
+          "TTSText": "67"
+        },
+        {
+          "filename": "0068",
+          "comment": "68",
+          "TTSText": "68"
+        },
+        {
+          "filename": "0069",
+          "comment": "69",
+          "TTSText": "69"
+        },
+        {
+          "filename": "0070",
+          "comment": "70",
+          "TTSText": "70"
+        },
+        {
+          "filename": "0071",
+          "comment": "71",
+          "TTSText": "71"
+        },
+        {
+          "filename": "0072",
+          "comment": "72",
+          "TTSText": "72"
+        },
+        {
+          "filename": "0073",
+          "comment": "73",
+          "TTSText": "73"
+        },
+        {
+          "filename": "0074",
+          "comment": "74",
+          "TTSText": "74"
+        },
+        {
+          "filename": "0075",
+          "comment": "75",
+          "TTSText": "75"
+        },
+        {
+          "filename": "0076",
+          "comment": "76",
+          "TTSText": "76"
+        },
+        {
+          "filename": "0077",
+          "comment": "77",
+          "TTSText": "77"
+        },
+        {
+          "filename": "0078",
+          "comment": "78",
+          "TTSText": "78"
+        },
+        {
+          "filename": "0079",
+          "comment": "79",
+          "TTSText": "79"
+        },
+        {
+          "filename": "0080",
+          "comment": "80",
+          "TTSText": "80"
+        },
+        {
+          "filename": "0081",
+          "comment": "81",
+          "TTSText": "81"
+        },
+        {
+          "filename": "0082",
+          "comment": "82",
+          "TTSText": "82"
+        },
+        {
+          "filename": "0083",
+          "comment": "83",
+          "TTSText": "83"
+        },
+        {
+          "filename": "0084",
+          "comment": "84",
+          "TTSText": "84"
+        },
+        {
+          "filename": "0085",
+          "comment": "85",
+          "TTSText": "85"
+        },
+        {
+          "filename": "0086",
+          "comment": "86",
+          "TTSText": "86"
+        },
+        {
+          "filename": "0087",
+          "comment": "87",
+          "TTSText": "87"
+        },
+        {
+          "filename": "0088",
+          "comment": "88",
+          "TTSText": "88"
+        },
+        {
+          "filename": "0089",
+          "comment": "89",
+          "TTSText": "89"
+        },
+        {
+          "filename": "0090",
+          "comment": "90",
+          "TTSText": "90"
+        },
+        {
+          "filename": "0091",
+          "comment": "91",
+          "TTSText": "91"
+        },
+        {
+          "filename": "0092",
+          "comment": "92",
+          "TTSText": "92"
+        },
+        {
+          "filename": "0093",
+          "comment": "93",
+          "TTSText": "93"
+        },
+        {
+          "filename": "0094",
+          "comment": "94",
+          "TTSText": "94"
+        },
+        {
+          "filename": "0095",
+          "comment": "95",
+          "TTSText": "95"
+        },
+        {
+          "filename": "0096",
+          "comment": "96",
+          "TTSText": "96"
+        },
+        {
+          "filename": "0097",
+          "comment": "97",
+          "TTSText": "97"
+        },
+        {
+          "filename": "0098",
+          "comment": "98",
+          "TTSText": "98"
+        },
+        {
+          "filename": "0099",
+          "comment": "99",
+          "TTSText": "99"
+        },
+        {
+          "filename": "0100",
+          "comment": "100",
+          "TTSText": "100"
+        },
+        {
+          "filename": "0101",
+          "comment": "ciento",
+          "TTSText": "ciento"
+        },
+        {
+          "filename": "0102",
+          "comment": "doscientos",
+          "TTSText": "doscientos"
+        },
+        {
+          "filename": "0103",
+          "comment": "trescientos",
+          "TTSText": "trescientos"
+        },
+        {
+          "filename": "0104",
+          "comment": "cuatrocientos",
+          "TTSText": "cuatrocientos"
+        },
+        {
+          "filename": "0105",
+          "comment": "quinientos",
+          "TTSText": "quinientos"
+        },
+        {
+          "filename": "0106",
+          "comment": "sescientos",
+          "TTSText": "sescientos"
+        },
+        {
+          "filename": "0107",
+          "comment": "setecientos",
+          "TTSText": "setecientos"
+        },
+        {
+          "filename": "0108",
+          "comment": "ochocientos",
+          "TTSText": "ochocientos"
+        },
+        {
+          "filename": "0109",
+          "comment": "nuevecientos",
+          "TTSText": "nuevecientos"
+        },
+        {
+          "filename": "0110",
+          "comment": "mil",
+          "TTSText": "mil"
+        },
+        {
+          "filename": "0111",
+          "comment": "coma",
+          "TTSText": "coma"
+        },
+        {
+          "filename": "0112",
+          "comment": "un",
+          "TTSText": "un"
+        },
+        {
+          "filename": "0113",
+          "comment": "una",
+          "TTSText": "una"
+        },
+        {
+          "filename": "0114",
+          "comment": "y",
+          "TTSText": "y"
+        },
+        {
+          "filename": "0115",
+          "comment": "meno",
+          "TTSText": "meno"
+        },
+        {
+          "filename": "0116",
+          "comment": "hora",
+          "TTSText": "hora"
+        },
+        {
+          "filename": "0117",
+          "comment": "horas",
+          "TTSText": "horas"
+        },
+        {
+          "filename": "0118",
+          "comment": "minuto",
+          "TTSText": "minuto"
+        },
+        {
+          "filename": "0119",
+          "comment": "minutos",
+          "TTSText": "minutos"
+        },
+        {
+          "filename": "0120",
+          "comment": "segundo",
+          "TTSText": "segundo"
+        },
+        {
+          "filename": "0121",
+          "comment": "segundos",
+          "TTSText": "segundos"
+        },
+        {
+          "filename": "volt0",
+          "comment": "Voltio",
+          "TTSText": "Voltio"
+        },
+        {
+          "filename": "amp0",
+          "comment": "ampério",
+          "TTSText": "ampério"
+        },
+        {
+          "filename": "mamp0",
+          "comment": "miliamperios",
+          "TTSText": "miliamperios"
+        },
+        {
+          "filename": "knot0",
+          "comment": "knots",
+          "TTSText": "knots"
+        },
+        {
+          "filename": "mps0",
+          "comment": "metros por segundo",
+          "TTSText": "metros por segundo"
+        },
+        {
+          "filename": "fps0",
+          "comment": "pie por segundo",
+          "TTSText": "pie por segundo"
+        },
+        {
+          "filename": "kph0",
+          "comment": "kilómetro por hora",
+          "TTSText": "kilómetro por hora"
+        },
+        {
+          "filename": "mph0",
+          "comment": "millas por hora",
+          "TTSText": "millas por hora"
+        },
+        {
+          "filename": "meter0",
+          "comment": "metros",
+          "TTSText": "metros"
+        },
+        {
+          "filename": "foot0",
+          "comment": "pie",
+          "TTSText": "pie"
+        },
+        {
+          "filename": "celsius0",
+          "comment": "grados",
+          "TTSText": "grados"
+        },
+        {
+          "filename": "fahr0",
+          "comment": "fahrenheit",
+          "TTSText": "fahrenheit"
+        },
+        {
+          "filename": "percent0",
+          "comment": "por ciento",
+          "TTSText": "por ciento"
+        },
+        {
+          "filename": "mamph0",
+          "comment": "miliamperios por hora",
+          "TTSText": "miliamperios por hora"
+        },
+        {
+          "filename": "watt0",
+          "comment": "vatio",
+          "TTSText": "vatio"
+        },
+        {
+          "filename": "mwatt0",
+          "comment": "millivatio",
+          "TTSText": "millivatio"
+        },
+        {
+          "filename": "db0",
+          "comment": "D B",
+          "TTSText": "D B"
+        },
+        {
+          "filename": "rpm0",
+          "comment": "R P M",
+          "TTSText": "R P M"
+        },
+        {
+          "filename": "g0",
+          "comment": "g",
+          "TTSText": "g"
+        },
+        {
+          "filename": "degree0",
+          "comment": "grados",
+          "TTSText": "grados"
+        },
+        {
+          "filename": "rad0",
+          "comment": "radianes ",
+          "TTSText": "radianes "
+        },
+        {
+          "filename": "ml0",
+          "comment": "mililitro",
+          "TTSText": "mililitro"
+        },
+        {
+          "filename": "founce0",
+          "comment": "onzas",
+          "TTSText": "onzas"
+        },
+        {
+          "filename": "hour0",
+          "comment": "horas",
+          "TTSText": "horas"
+        },
+        {
+          "filename": "minute0",
+          "comment": "minutos",
+          "TTSText": "minutos"
+        },
+        {
+          "filename": "second0",
+          "comment": "segundos",
+          "TTSText": "segundos"
+        },
+        {
+          "filename": "inactiv",
+          "comment": "me tienes abandonada",
+          "TTSText": "me tienes abandonada"
+        },
+        {
+          "filename": "lowbatt",
+          "comment": "batería del transmisor baja",
+          "TTSText": "batería del transmisor baja"
+        },
+        {
+          "filename": "thralert",
+          "comment": "El acelerador está activado, por favor, corrijalo",
+          "TTSText": "El acelerador está activado, por favor, corrijalo"
+        },
+        {
+          "filename": "swalert",
+          "comment": "Los interruptores no están en la posición correcta, por favor corrijalo",
+          "TTSText": "Los interruptores no están en la posición correcta, por favor corrijalo"
+        },
+        {
+          "filename": "eebad",
+          "comment": "eeprom corrompida",
+          "TTSText": "eeprom corrompida"
+        },
+        {
+          "filename": "eeformat",
+          "comment": "Formateo de eeprom en curso",
+          "TTSText": "Formateo de eeprom en curso"
+        },
+        {
+          "filename": "error",
+          "comment": "error",
+          "TTSText": "error"
+        },
+        {
+          "filename": "midtrim",
+          "comment": "trim centrado",
+          "TTSText": "trim centrado"
+        },
+        {
+          "filename": "midpot",
+          "comment": "potenciómetro centrado",
+          "TTSText": "potenciómetro centrado"
+        },
+        {
+          "filename": "maxtrim",
+          "comment": "trim al máximo",
+          "TTSText": "trim al máximo"
+        },
+        {
+          "filename": "mintrim",
+          "comment": "trim al mínima",
+          "TTSText": "trim al mínima"
+        },
+        {
+          "filename": "timer20",
+          "comment": "20 segundos",
+          "TTSText": "20 segundos"
+        },
+        {
+          "filename": "timer30",
+          "comment": "30 segundos",
+          "TTSText": "30 segundos"
+        },
+        {
+          "filename": "highmah",
+          "comment": "assorbimiento elevado",
+          "TTSText": "assorbimiento elevado"
+        },
+        {
+          "filename": "hightemp",
+          "comment": "temperatura elevada",
+          "TTSText": "temperatura elevada"
+        },
+        {
+          "filename": "a1_org",
+          "comment": "Alarma A1",
+          "TTSText": "Alarma A1"
+        },
+        {
+          "filename": "a1_red",
+          "comment": "A1 crítica",
+          "TTSText": "A1 crítica"
+        },
+        {
+          "filename": "a2_org",
+          "comment": "Alarma A2",
+          "TTSText": "Alarma A2"
+        },
+        {
+          "filename": "a2_red",
+          "comment": "A2 crítica",
+          "TTSText": "A2 crítica"
+        },
+        {
+          "filename": "rssi_org",
+          "comment": "recepcion de señal baja",
+          "TTSText": "recepcion de señal baja"
+        },
+        {
+          "filename": "rssi_red",
+          "comment": "recepción de señal crítica",
+          "TTSText": "recepción de señal crítica"
+        },
+        {
+          "filename": "swr_red",
+          "comment": "Problemas con la antena del transmisor",
+          "TTSText": "Problemas con la antena del transmisor"
+        },
+        {
+          "filename": "telemko",
+          "comment": "Sin telemetría",
+          "TTSText": "Sin telemetría"
+        },
+        {
+          "filename": "telemok",
+          "comment": "Telemetría disponible",
+          "TTSText": "Telemetría disponible"
+        },
+        {
+          "filename": "servoko",
+          "comment": "servo overload",
+          "TTSText": "servo overload"
+        },
+        {
+          "filename": "rxko",
+          "comment": "power overload",
+          "TTSText": "power overload"
+        },
+        {
+          "filename": "modelpwr",
+          "comment": "receiver still connected",
+          "TTSText": "receiver still connected"
+        },
+        {
+          "filename": "0141",
+          "comment": "cronómetro",
+          "TTSText": "cronómetro"
+        },
+        {
+          "filename": "0142",
+          "comment": "cronómetro",
+          "TTSText": "cronómetro"
+        },
+        {
+          "filename": "0143",
+          "comment": "transmisión",
+          "TTSText": "transmisión"
+        },
+        {
+          "filename": "0144",
+          "comment": "recepción",
+          "TTSText": "recepción"
+        },
+        {
+          "filename": "0145",
+          "comment": "A1",
+          "TTSText": "A1"
+        },
+        {
+          "filename": "0146",
+          "comment": "A2",
+          "TTSText": "A2"
+        },
+        {
+          "filename": "0147",
+          "comment": "altitud",
+          "TTSText": "altitud"
+        },
+        {
+          "filename": "0148",
+          "comment": "motor",
+          "TTSText": "motor"
+        },
+        {
+          "filename": "0149",
+          "comment": "combustible",
+          "TTSText": "combustible"
+        },
+        {
+          "filename": "0150",
+          "comment": "temperatura",
+          "TTSText": "temperatura"
+        },
+        {
+          "filename": "0151",
+          "comment": "temperatura",
+          "TTSText": "temperatura"
+        },
+        {
+          "filename": "0152",
+          "comment": "velocidad",
+          "TTSText": "velocidad"
+        },
+        {
+          "filename": "0153",
+          "comment": "distancia",
+          "TTSText": "distancia"
+        },
+        {
+          "filename": "0154",
+          "comment": "altitude",
+          "TTSText": "altitude"
+        },
+        {
+          "filename": "0155",
+          "comment": "célula lipo",
+          "TTSText": "célula lipo"
+        },
+        {
+          "filename": "0156",
+          "comment": "Total lipo",
+          "TTSText": "Total lipo"
+        },
+        {
+          "filename": "0157",
+          "comment": "voltaje",
+          "TTSText": "voltaje"
+        },
+        {
+          "filename": "0158",
+          "comment": "corriente",
+          "TTSText": "corriente"
+        },
+        {
+          "filename": "0159",
+          "comment": "consumo",
+          "TTSText": "consumo"
+        },
+        {
+          "filename": "0160",
+          "comment": "potencia",
+          "TTSText": "potencia"
+        },
+        {
+          "filename": "0161",
+          "comment": "aceleración X",
+          "TTSText": "aceleración X"
+        },
+        {
+          "filename": "0162",
+          "comment": "aceleración Y",
+          "TTSText": "aceleración Y"
+        },
+        {
+          "filename": "0163",
+          "comment": "aceleración Z",
+          "TTSText": "aceleración Z"
+        },
+        {
+          "filename": "0164",
+          "comment": "dirección",
+          "TTSText": "dirección"
+        },
+        {
+          "filename": "0165",
+          "comment": "variómetro",
+          "TTSText": "variómetro"
+        },
+        {
+          "filename": "0166",
+          "comment": "minimo",
+          "TTSText": "minimo"
+        },
+        {
+          "filename": "0167",
+          "comment": "máximo",
+          "TTSText": "máximo"
+        }
+      ],
+      "UserVoices": [
+        {
+          "filename": "gearup",
+          "comment": "tren arriba.",
+          "TTSText": "tren arriba."
+        },
+        {
+          "filename": "geardn",
+          "comment": "tren abajo.",
+          "TTSText": "tren abajo."
+        },
+        {
+          "filename": "flapup",
+          "comment": "flaps arriba",
+          "TTSText": "flaps arriba"
+        },
+        {
+          "filename": "flapdn",
+          "comment": "flaps abajo",
+          "TTSText": "flaps abajo"
+        },
+        {
+          "filename": "attero",
+          "comment": "aterrizaje",
+          "TTSText": "aterrizaje"
+        },
+        {
+          "filename": "trnon",
+          "comment": "modo de entrenamiento activado",
+          "TTSText": "modo de entrenamiento activado"
+        },
+        {
+          "filename": "trnoff",
+          "comment": "modo de entrenamiento deshabilitado",
+          "TTSText": "modo de entrenamiento deshabilitado"
+        },
+        {
+          "filename": "engoff",
+          "comment": "motor apagado",
+          "TTSText": "motor apagado"
+        },
+        {
+          "filename": "tohigh",
+          "comment": "muy alto",
+          "TTSText": "muy alto"
+        },
+        {
+          "filename": "tolow",
+          "comment": "muy bajo",
+          "TTSText": "muy bajo"
+        },
+        {
+          "filename": "lowbat",
+          "comment": "bateria baja",
+          "TTSText": "bateria baja"
+        },
+        {
+          "filename": "crowon",
+          "comment": "crou, activo",
+          "TTSText": "crou, activo"
+        },
+        {
+          "filename": "crowof",
+          "comment": "crou, desligado",
+          "TTSText": "crou, desligado"
+        },
+        {
+          "filename": "spdmod",
+          "comment": "modo de velocidad",
+          "TTSText": "modo de velocidad"
+        },
+        {
+          "filename": "thmmod",
+          "comment": "modo de térmica",
+          "TTSText": "modo de térmica"
+        },
+        {
+          "filename": "nrmmod",
+          "comment": "modo de vuelo normal",
+          "TTSText": "modo de vuelo normal"
+        },
+        {
+          "filename": "fltmd1",
+          "comment": "fase de vuelo 1",
+          "TTSText": "fase de vuelo 1"
+        },
+        {
+          "filename": "fltmd2",
+          "comment": "fase de vuelo 2",
+          "TTSText": "fase de vuelo 2"
+        },
+        {
+          "filename": "fltmd3",
+          "comment": "fase de vuelo 3",
+          "TTSText": "fase de vuelo 3"
+        },
+        {
+          "filename": "fltmd4",
+          "comment": "fase de vuelo 4",
+          "TTSText": "fase de vuelo 4"
+        },
+        {
+          "filename": "fltmd5",
+          "comment": "fase de vuelo 5",
+          "TTSText": "fase de vuelo 5"
+        },
+        {
+          "filename": "fltmd6",
+          "comment": "fase de vuelo 6",
+          "TTSText": "fase de vuelo 6"
+        },
+        {
+          "filename": "fltmd7",
+          "comment": "fase de vuelo 7",
+          "TTSText": "fase de vuelo 7"
+        },
+        {
+          "filename": "fltmd8",
+          "comment": "fase de vuelo 8",
+          "TTSText": "fase de vuelo 8"
+        },
+        {
+          "filename": "fltmd9",
+          "comment": "fase de vuelo 9",
+          "TTSText": "fase de vuelo 9"
+        }
+      ]
+    },
+    {
+      "LanguageCode": "fr-FR",
+      "VoiceName": "fr-FR-Wavenet-D",
+      "SystemVoices": [
+        {
+          "filename": "0000",
+          "comment": "0",
+          "TTSText": "0"
+        },
+        {
+          "filename": "0001",
+          "comment": "1",
+          "TTSText": "1"
+        },
+        {
+          "filename": "0002",
+          "comment": "2",
+          "TTSText": "2"
+        },
+        {
+          "filename": "0003",
+          "comment": "3",
+          "TTSText": "3"
+        },
+        {
+          "filename": "0004",
+          "comment": "4",
+          "TTSText": "4"
+        },
+        {
+          "filename": "0005",
+          "comment": "5",
+          "TTSText": "5"
+        },
+        {
+          "filename": "0006",
+          "comment": "6",
+          "TTSText": "6"
+        },
+        {
+          "filename": "0007",
+          "comment": "7",
+          "TTSText": "7"
+        },
+        {
+          "filename": "0008",
+          "comment": "8",
+          "TTSText": "8"
+        },
+        {
+          "filename": "0009",
+          "comment": "9",
+          "TTSText": "9"
+        },
+        {
+          "filename": "0010",
+          "comment": "10",
+          "TTSText": "10"
+        },
+        {
+          "filename": "0011",
+          "comment": "11",
+          "TTSText": "11"
+        },
+        {
+          "filename": "0012",
+          "comment": "12",
+          "TTSText": "12"
+        },
+        {
+          "filename": "0013",
+          "comment": "13",
+          "TTSText": "13"
+        },
+        {
+          "filename": "0014",
+          "comment": "14",
+          "TTSText": "14"
+        },
+        {
+          "filename": "0015",
+          "comment": "15",
+          "TTSText": "15"
+        },
+        {
+          "filename": "0016",
+          "comment": "16",
+          "TTSText": "16"
+        },
+        {
+          "filename": "0017",
+          "comment": "17",
+          "TTSText": "17"
+        },
+        {
+          "filename": "0018",
+          "comment": "18",
+          "TTSText": "18"
+        },
+        {
+          "filename": "0019",
+          "comment": "19",
+          "TTSText": "19"
+        },
+        {
+          "filename": "0020",
+          "comment": "20",
+          "TTSText": "20"
+        },
+        {
+          "filename": "0021",
+          "comment": "21",
+          "TTSText": "21"
+        },
+        {
+          "filename": "0022",
+          "comment": "22",
+          "TTSText": "22"
+        },
+        {
+          "filename": "0023",
+          "comment": "23",
+          "TTSText": "23"
+        },
+        {
+          "filename": "0024",
+          "comment": "24",
+          "TTSText": "24"
+        },
+        {
+          "filename": "0025",
+          "comment": "25",
+          "TTSText": "25"
+        },
+        {
+          "filename": "0026",
+          "comment": "26",
+          "TTSText": "26"
+        },
+        {
+          "filename": "0027",
+          "comment": "27",
+          "TTSText": "27"
+        },
+        {
+          "filename": "0028",
+          "comment": "28",
+          "TTSText": "28"
+        },
+        {
+          "filename": "0029",
+          "comment": "29",
+          "TTSText": "29"
+        },
+        {
+          "filename": "0030",
+          "comment": "30",
+          "TTSText": "30"
+        },
+        {
+          "filename": "0031",
+          "comment": "31",
+          "TTSText": "31"
+        },
+        {
+          "filename": "0032",
+          "comment": "32",
+          "TTSText": "32"
+        },
+        {
+          "filename": "0033",
+          "comment": "33",
+          "TTSText": "33"
+        },
+        {
+          "filename": "0034",
+          "comment": "34",
+          "TTSText": "34"
+        },
+        {
+          "filename": "0035",
+          "comment": "35",
+          "TTSText": "35"
+        },
+        {
+          "filename": "0036",
+          "comment": "36",
+          "TTSText": "36"
+        },
+        {
+          "filename": "0037",
+          "comment": "37",
+          "TTSText": "37"
+        },
+        {
+          "filename": "0038",
+          "comment": "38",
+          "TTSText": "38"
+        },
+        {
+          "filename": "0039",
+          "comment": "39",
+          "TTSText": "39"
+        },
+        {
+          "filename": "0040",
+          "comment": "40",
+          "TTSText": "40"
+        },
+        {
+          "filename": "0041",
+          "comment": "41",
+          "TTSText": "41"
+        },
+        {
+          "filename": "0042",
+          "comment": "42",
+          "TTSText": "42"
+        },
+        {
+          "filename": "0043",
+          "comment": "43",
+          "TTSText": "43"
+        },
+        {
+          "filename": "0044",
+          "comment": "44",
+          "TTSText": "44"
+        },
+        {
+          "filename": "0045",
+          "comment": "45",
+          "TTSText": "45"
+        },
+        {
+          "filename": "0046",
+          "comment": "46",
+          "TTSText": "46"
+        },
+        {
+          "filename": "0047",
+          "comment": "47",
+          "TTSText": "47"
+        },
+        {
+          "filename": "0048",
+          "comment": "48",
+          "TTSText": "48"
+        },
+        {
+          "filename": "0049",
+          "comment": "49",
+          "TTSText": "49"
+        },
+        {
+          "filename": "0050",
+          "comment": "50",
+          "TTSText": "50"
+        },
+        {
+          "filename": "0051",
+          "comment": "51",
+          "TTSText": "51"
+        },
+        {
+          "filename": "0052",
+          "comment": "52",
+          "TTSText": "52"
+        },
+        {
+          "filename": "0053",
+          "comment": "53",
+          "TTSText": "53"
+        },
+        {
+          "filename": "0054",
+          "comment": "54",
+          "TTSText": "54"
+        },
+        {
+          "filename": "0055",
+          "comment": "55",
+          "TTSText": "55"
+        },
+        {
+          "filename": "0056",
+          "comment": "56",
+          "TTSText": "56"
+        },
+        {
+          "filename": "0057",
+          "comment": "57",
+          "TTSText": "57"
+        },
+        {
+          "filename": "0058",
+          "comment": "58",
+          "TTSText": "58"
+        },
+        {
+          "filename": "0059",
+          "comment": "59",
+          "TTSText": "59"
+        },
+        {
+          "filename": "0060",
+          "comment": "60",
+          "TTSText": "60"
+        },
+        {
+          "filename": "0061",
+          "comment": "61",
+          "TTSText": "61"
+        },
+        {
+          "filename": "0062",
+          "comment": "62",
+          "TTSText": "62"
+        },
+        {
+          "filename": "0063",
+          "comment": "63",
+          "TTSText": "63"
+        },
+        {
+          "filename": "0064",
+          "comment": "64",
+          "TTSText": "64"
+        },
+        {
+          "filename": "0065",
+          "comment": "65",
+          "TTSText": "65"
+        },
+        {
+          "filename": "0066",
+          "comment": "66",
+          "TTSText": "66"
+        },
+        {
+          "filename": "0067",
+          "comment": "67",
+          "TTSText": "67"
+        },
+        {
+          "filename": "0068",
+          "comment": "68",
+          "TTSText": "68"
+        },
+        {
+          "filename": "0069",
+          "comment": "69",
+          "TTSText": "69"
+        },
+        {
+          "filename": "0070",
+          "comment": "70",
+          "TTSText": "70"
+        },
+        {
+          "filename": "0071",
+          "comment": "71",
+          "TTSText": "71"
+        },
+        {
+          "filename": "0072",
+          "comment": "72",
+          "TTSText": "72"
+        },
+        {
+          "filename": "0073",
+          "comment": "73",
+          "TTSText": "73"
+        },
+        {
+          "filename": "0074",
+          "comment": "74",
+          "TTSText": "74"
+        },
+        {
+          "filename": "0075",
+          "comment": "75",
+          "TTSText": "75"
+        },
+        {
+          "filename": "0076",
+          "comment": "76",
+          "TTSText": "76"
+        },
+        {
+          "filename": "0077",
+          "comment": "77",
+          "TTSText": "77"
+        },
+        {
+          "filename": "0078",
+          "comment": "78",
+          "TTSText": "78"
+        },
+        {
+          "filename": "0079",
+          "comment": "79",
+          "TTSText": "79"
+        },
+        {
+          "filename": "0080",
+          "comment": "80",
+          "TTSText": "80"
+        },
+        {
+          "filename": "0081",
+          "comment": "81",
+          "TTSText": "81"
+        },
+        {
+          "filename": "0082",
+          "comment": "82",
+          "TTSText": "82"
+        },
+        {
+          "filename": "0083",
+          "comment": "83",
+          "TTSText": "83"
+        },
+        {
+          "filename": "0084",
+          "comment": "84",
+          "TTSText": "84"
+        },
+        {
+          "filename": "0085",
+          "comment": "85",
+          "TTSText": "85"
+        },
+        {
+          "filename": "0086",
+          "comment": "86",
+          "TTSText": "86"
+        },
+        {
+          "filename": "0087",
+          "comment": "87",
+          "TTSText": "87"
+        },
+        {
+          "filename": "0088",
+          "comment": "88",
+          "TTSText": "88"
+        },
+        {
+          "filename": "0089",
+          "comment": "89",
+          "TTSText": "89"
+        },
+        {
+          "filename": "0090",
+          "comment": "90",
+          "TTSText": "90"
+        },
+        {
+          "filename": "0091",
+          "comment": "91",
+          "TTSText": "91"
+        },
+        {
+          "filename": "0092",
+          "comment": "92",
+          "TTSText": "92"
+        },
+        {
+          "filename": "0093",
+          "comment": "93",
+          "TTSText": "93"
+        },
+        {
+          "filename": "0094",
+          "comment": "94",
+          "TTSText": "94"
+        },
+        {
+          "filename": "0095",
+          "comment": "95",
+          "TTSText": "95"
+        },
+        {
+          "filename": "0096",
+          "comment": "96",
+          "TTSText": "96"
+        },
+        {
+          "filename": "0097",
+          "comment": "97",
+          "TTSText": "97"
+        },
+        {
+          "filename": "0098",
+          "comment": "98",
+          "TTSText": "98"
+        },
+        {
+          "filename": "0099",
+          "comment": "99",
+          "TTSText": "99"
+        },
+        {
+          "filename": "0100",
+          "comment": "100",
+          "TTSText": "100"
+        },
+        {
+          "filename": "0101",
+          "comment": "200",
+          "TTSText": "200"
+        },
+        {
+          "filename": "0102",
+          "comment": "300",
+          "TTSText": "300"
+        },
+        {
+          "filename": "0103",
+          "comment": "400",
+          "TTSText": "400"
+        },
+        {
+          "filename": "0104",
+          "comment": "500",
+          "TTSText": "500"
+        },
+        {
+          "filename": "0105",
+          "comment": "600",
+          "TTSText": "600"
+        },
+        {
+          "filename": "0106",
+          "comment": "700",
+          "TTSText": "700"
+        },
+        {
+          "filename": "0107",
+          "comment": "800",
+          "TTSText": "800"
+        },
+        {
+          "filename": "0108",
+          "comment": "900",
+          "TTSText": "900"
+        },
+        {
+          "filename": "0109",
+          "comment": "1000",
+          "TTSText": "1000"
+        },
+        {
+          "filename": "0110",
+          "comment": "une",
+          "TTSText": "une"
+        },
+        {
+          "filename": "0111",
+          "comment": "onze",
+          "TTSText": "onze"
+        },
+        {
+          "filename": "0112",
+          "comment": "vingt et une",
+          "TTSText": "vingt et une"
+        },
+        {
+          "filename": "0113",
+          "comment": "trente et une",
+          "TTSText": "trente et une"
+        },
+        {
+          "filename": "0114",
+          "comment": "quarante et une",
+          "TTSText": "quarante et une"
+        },
+        {
+          "filename": "0115",
+          "comment": "cinquante et une",
+          "TTSText": "cinquante et une"
+        },
+        {
+          "filename": "0116",
+          "comment": "soixante et une",
+          "TTSText": "soixante et une"
+        },
+        {
+          "filename": "0117",
+          "comment": "soixante et onze",
+          "TTSText": "soixante et onze"
+        },
+        {
+          "filename": "0118",
+          "comment": "quatre vingt une",
+          "TTSText": "quatre vingt une"
+        },
+        {
+          "filename": "0119",
+          "comment": "virgule",
+          "TTSText": "virgule"
+        },
+        {
+          "filename": "0120",
+          "comment": "et",
+          "TTSText": "et"
+        },
+        {
+          "filename": "0121",
+          "comment": "moins",
+          "TTSText": "moins"
+        },
+        {
+          "filename": "0122",
+          "comment": "minuit",
+          "TTSText": "minuit"
+        },
+        {
+          "filename": "0123",
+          "comment": "midi",
+          "TTSText": "midi"
+        },
+        {
+          "filename": "volt0",
+          "comment": "volts",
+          "TTSText": "volts"
+        },
+        {
+          "filename": "amp0",
+          "comment": "ampères",
+          "TTSText": "ampères"
+        },
+        {
+          "filename": "mamp0",
+          "comment": "milli ampères",
+          "TTSText": "milli ampères"
+        },
+        {
+          "filename": "knot0",
+          "comment": "noeud",
+          "TTSText": "noeud"
+        },
+        {
+          "filename": "mps0",
+          "comment": "mètres seconde",
+          "TTSText": "mètres seconde"
+        },
+        {
+          "filename": "fps0",
+          "comment": "pieds par seconde",
+          "TTSText": "pieds par seconde"
+        },
+        {
+          "filename": "kph0",
+          "comment": "kilomètre heure",
+          "TTSText": "kilomètre heure"
+        },
+        {
+          "filename": "mph0",
+          "comment": "miles par heure",
+          "TTSText": "miles par heure"
+        },
+        {
+          "filename": "meter0",
+          "comment": "mètres",
+          "TTSText": "mètres"
+        },
+        {
+          "filename": "foot0",
+          "comment": "pieds",
+          "TTSText": "pieds"
+        },
+        {
+          "filename": "celsius0",
+          "comment": "degrés",
+          "TTSText": "degrés"
+        },
+        {
+          "filename": "degf0",
+          "comment": "degrés fahrenheit",
+          "TTSText": "degrés fahrenheit"
+        },
+        {
+          "filename": "percent0",
+          "comment": "pourcents",
+          "TTSText": "pourcents"
+        },
+        {
+          "filename": "mamph0",
+          "comment": "milli ampères heure",
+          "TTSText": "milli ampères heure"
+        },
+        {
+          "filename": "watt0",
+          "comment": "watt",
+          "TTSText": "watt"
+        },
+        {
+          "filename": "mwatt0",
+          "comment": "milli watt",
+          "TTSText": "milli watt"
+        },
+        {
+          "filename": "db0",
+          "comment": "d b",
+          "TTSText": "d b"
+        },
+        {
+          "filename": "rpm0",
+          "comment": "tours minute",
+          "TTSText": "tours minute"
+        },
+        {
+          "filename": "g0",
+          "comment": "g",
+          "TTSText": "g"
+        },
+        {
+          "filename": "degree0",
+          "comment": "degrés",
+          "TTSText": "degrés"
+        },
+        {
+          "filename": "rad0",
+          "comment": "radians",
+          "TTSText": "radians"
+        },
+        {
+          "filename": "ml0",
+          "comment": "millilitres",
+          "TTSText": "millilitres"
+        },
+        {
+          "filename": "founce0",
+          "comment": "onces",
+          "TTSText": "onces"
+        },
+        {
+          "filename": "hour0",
+          "comment": "heure",
+          "TTSText": "heure"
+        },
+        {
+          "filename": "minute0",
+          "comment": "minute",
+          "TTSText": "minute"
+        },
+        {
+          "filename": "second0",
+          "comment": "seconde",
+          "TTSText": "seconde"
+        },
+        {
+          "filename": "0180",
+          "comment": "virgule 0",
+          "TTSText": "virgule 0"
+        },
+        {
+          "filename": "0181",
+          "comment": "virgule 1",
+          "TTSText": "virgule 1"
+        },
+        {
+          "filename": "0182",
+          "comment": "virgule 2",
+          "TTSText": "virgule 2"
+        },
+        {
+          "filename": "0183",
+          "comment": "virgule 3",
+          "TTSText": "virgule 3"
+        },
+        {
+          "filename": "0184",
+          "comment": "virgule 4",
+          "TTSText": "virgule 4"
+        },
+        {
+          "filename": "0185",
+          "comment": "virgule 5",
+          "TTSText": "virgule 5"
+        },
+        {
+          "filename": "0186",
+          "comment": "virgule 6",
+          "TTSText": "virgule 6"
+        },
+        {
+          "filename": "0187",
+          "comment": "virgule 7",
+          "TTSText": "virgule 7"
+        },
+        {
+          "filename": "0188",
+          "comment": "virgule 8",
+          "TTSText": "virgule 8"
+        },
+        {
+          "filename": "0189",
+          "comment": "virgule 9",
+          "TTSText": "virgule 9"
+        },
+        {
+          "filename": "midtrim",
+          "comment": "Trim centré",
+          "TTSText": "Trim centré"
+        },
+        {
+          "filename": "maxtrim",
+          "comment": "Trim maximum atteint",
+          "TTSText": "Trim maximum atteint"
+        },
+        {
+          "filename": "mintrim",
+          "comment": "Trim minimum atteint",
+          "TTSText": "Trim minimum atteint"
+        },
+        {
+          "filename": "timovr1",
+          "comment": "Chrono 1 à 0",
+          "TTSText": "Chrono 1 à 0"
+        },
+        {
+          "filename": "timovr2",
+          "comment": "Chrono 2 à 0",
+          "TTSText": "Chrono 2 à 0"
+        },
+        {
+          "filename": "timovr3",
+          "comment": "Chrono 3 à 0",
+          "TTSText": "Chrono 3 à 0"
+        },
+        {
+          "filename": "lowbatt",
+          "comment": "Batterie radio faible !",
+          "TTSText": "Batterie radio faible !"
+        },
+        {
+          "filename": "inactiv",
+          "comment": "Radio inactive !",
+          "TTSText": "Radio inactive !"
+        },
+        {
+          "filename": "thralert",
+          "comment": "Alerte manche des gaz",
+          "TTSText": "Alerte manche des gaz"
+        },
+        {
+          "filename": "swalert",
+          "comment": "Alerte inters",
+          "TTSText": "Alerte inters"
+        },
+        {
+          "filename": "eebad",
+          "comment": "éprome corrompue",
+          "TTSText": "éprome corrompue"
+        },
+        {
+          "filename": "hello",
+          "comment": "Bienvenue sur o pun t x",
+          "TTSText": "Bienvenue sur o pun t x"
+        },
+        {
+          "filename": "rssi_org",
+          "comment": "Signal RF, faible",
+          "TTSText": "Signal RF, faible"
+        },
+        {
+          "filename": "rssi_red",
+          "comment": "Signal RF, critique",
+          "TTSText": "Signal RF, critique"
+        },
+        {
+          "filename": "swr_red",
+          "comment": "Antenne défectueuse",
+          "TTSText": "Antenne défectueuse"
+        },
+        {
+          "filename": "telemko",
+          "comment": "Télémétrie perdue",
+          "TTSText": "Télémétrie perdue"
+        },
+        {
+          "filename": "telemok",
+          "comment": "Télémétrie retrouvée",
+          "TTSText": "Télémétrie retrouvée"
+        },
+        {
+          "filename": "trainko",
+          "comment": "Signal écolage perdu",
+          "TTSText": "Signal écolage perdu"
+        },
+        {
+          "filename": "trainok",
+          "comment": "Signal écolage retrouvé",
+          "TTSText": "Signal écolage retrouvé"
+        },
+        {
+          "filename": "sensorko",
+          "comment": "Sonde de télémétrie perdue",
+          "TTSText": "Sonde de télémétrie perdue"
+        },
+        {
+          "filename": "servoko",
+          "comment": "Servo en surcharge",
+          "TTSText": "Servo en surcharge"
+        },
+        {
+          "filename": "rxko",
+          "comment": "Surcharge réception",
+          "TTSText": "Surcharge réception"
+        },
+        {
+          "filename": "modelpwr",
+          "comment": "Récepteur encore sous tension",
+          "TTSText": "Récepteur encore sous tension"
+        }
+      ],
+      "UserVoices": [
+        {
+          "filename": "altitude",
+          "comment": "altitude",
+          "TTSText": "altitude"
+        },
+        {
+          "filename": "moteur",
+          "comment": "température moteur",
+          "TTSText": "température moteur"
+        },
+        {
+          "filename": "cntrleur",
+          "comment": "température contrôleur",
+          "TTSText": "température contrôleur"
+        },
+        {
+          "filename": "gearup",
+          "comment": "train rentré",
+          "TTSText": "train rentré"
+        },
+        {
+          "filename": "geardn",
+          "comment": "train sorti",
+          "TTSText": "train sorti"
+        },
+        {
+          "filename": "flapup",
+          "comment": "volets rentrés",
+          "TTSText": "volets rentrés"
+        },
+        {
+          "filename": "flapdn",
+          "comment": "volets sortis",
+          "TTSText": "volets sortis"
+        },
+        {
+          "filename": "attero",
+          "comment": "atterrissage",
+          "TTSText": "atterrissage"
+        },
+        {
+          "filename": "trnon",
+          "comment": "écolage",
+          "TTSText": "écolage"
+        },
+        {
+          "filename": "trnoff",
+          "comment": "fin écolage",
+          "TTSText": "fin écolage"
+        },
+        {
+          "filename": "engoff",
+          "comment": "moteur coupé",
+          "TTSText": "moteur coupé"
+        },
+        {
+          "filename": "spdmod",
+          "comment": "high. speed. mode!, active",
+          "TTSText": "high. speed. mode!, active"
+        },
+        {
+          "filename": "thmmod",
+          "comment": "thermal. mode!, on",
+          "TTSText": "thermal. mode!, on"
+        },
+        {
+          "filename": "nrmmod",
+          "comment": "normal. mode!, on",
+          "TTSText": "normal. mode!, on"
+        },
+        {
+          "filename": "lnding",
+          "comment": "landing. mode!, on",
+          "TTSText": "landing. mode!, on"
+        },
+        {
+          "filename": "acro",
+          "comment": "mode acro",
+          "TTSText": "mode acro"
+        },
+        {
+          "filename": "fm-1",
+          "comment": "mode de vol un",
+          "TTSText": "mode de vol un"
+        },
+        {
+          "filename": "fm-2",
+          "comment": "mode de vol deux",
+          "TTSText": "mode de vol deux"
+        },
+        {
+          "filename": "fm-3",
+          "comment": "mode de vol trois",
+          "TTSText": "mode de vol trois"
+        },
+        {
+          "filename": "fm-4",
+          "comment": "mode de vol quatre",
+          "TTSText": "mode de vol quatre"
+        },
+        {
+          "filename": "fm-5",
+          "comment": "mode de vol 5",
+          "TTSText": "mode de vol 5"
+        },
+        {
+          "filename": "fm-6",
+          "comment": "mode de vol 6",
+          "TTSText": "mode de vol 6"
+        },
+        {
+          "filename": "fm-7",
+          "comment": "mode de vol sept",
+          "TTSText": "mode de vol sept"
+        },
+        {
+          "filename": "fm-8",
+          "comment": "mode de vol 8",
+          "TTSText": "mode de vol 8"
+        },
+        {
+          "filename": "vrion",
+          "comment": "vario activé",
+          "TTSText": "vario activé"
+        },
+        {
+          "filename": "vrioff",
+          "comment": "vario désactivé",
+          "TTSText": "vario désactivé"
+        },
+        {
+          "filename": "fm-pwr",
+          "comment": "mode de vol puissance",
+          "TTSText": "mode de vol puissance"
+        },
+        {
+          "filename": "fm-lnd",
+          "comment": "mode de vol attérissage",
+          "TTSText": "mode de vol attérissage"
+        },
+        {
+          "filename": "fm-flt",
+          "comment": "mode de vol amérissage",
+          "TTSText": "mode de vol amérissage"
+        },
+        {
+          "filename": "fm-spd",
+          "comment": "mode de vol vitesse",
+          "TTSText": "mode de vol vitesse"
+        },
+        {
+          "filename": "fm-fst",
+          "comment": "mode de vol rapide",
+          "TTSText": "mode de vol rapide"
+        },
+        {
+          "filename": "fm-nrm",
+          "comment": "mode de vol normal",
+          "TTSText": "mode de vol normal"
+        },
+        {
+          "filename": "fm-crs",
+          "comment": "mode de vol de croisière",
+          "TTSText": "mode de vol de croisière"
+        },
+        {
+          "filename": "fm-acr",
+          "comment": "mode de vol acro",
+          "TTSText": "mode de vol acro"
+        },
+        {
+          "filename": "fm-rce",
+          "comment": "mode de vol course",
+          "TTSText": "mode de vol course"
+        },
+        {
+          "filename": "fm-lch",
+          "comment": "mode de vol lancé",
+          "TTSText": "mode de vol lancé"
+        },
+        {
+          "filename": "fm-png",
+          "comment": "mode de vol ping",
+          "TTSText": "mode de vol ping"
+        },
+        {
+          "filename": "fm-thm",
+          "comment": "mode de vol thermique",
+          "TTSText": "mode de vol thermique"
+        },
+        {
+          "filename": "fm-thl",
+          "comment": "mode de vol thermique gauche",
+          "TTSText": "mode de vol thermique gauche"
+        },
+        {
+          "filename": "fm-thr",
+          "comment": "mode de vol thermique droit",
+          "TTSText": "mode de vol thermique droit"
+        }
+      ]
+    },
+    {
+      "LanguageCode": "it-IT",
+      "VoiceName": "it-IT-Wavenet-D",
+      "SystemVoices": [
+        {
+          "filename": "0000",
+          "comment": "0",
+          "TTSText": "0"
+        },
+        {
+          "filename": "0001",
+          "comment": "1",
+          "TTSText": "1"
+        },
+        {
+          "filename": "0002",
+          "comment": "2",
+          "TTSText": "2"
+        },
+        {
+          "filename": "0003",
+          "comment": "3",
+          "TTSText": "3"
+        },
+        {
+          "filename": "0004",
+          "comment": "4",
+          "TTSText": "4"
+        },
+        {
+          "filename": "0005",
+          "comment": "5",
+          "TTSText": "5"
+        },
+        {
+          "filename": "0006",
+          "comment": "6",
+          "TTSText": "6"
+        },
+        {
+          "filename": "0007",
+          "comment": "7",
+          "TTSText": "7"
+        },
+        {
+          "filename": "0008",
+          "comment": "8",
+          "TTSText": "8"
+        },
+        {
+          "filename": "0009",
+          "comment": "9",
+          "TTSText": "9"
+        },
+        {
+          "filename": "0010",
+          "comment": "10",
+          "TTSText": "10"
+        },
+        {
+          "filename": "0011",
+          "comment": "11",
+          "TTSText": "11"
+        },
+        {
+          "filename": "0012",
+          "comment": "12",
+          "TTSText": "12"
+        },
+        {
+          "filename": "0013",
+          "comment": "13",
+          "TTSText": "13"
+        },
+        {
+          "filename": "0014",
+          "comment": "14",
+          "TTSText": "14"
+        },
+        {
+          "filename": "0015",
+          "comment": "15",
+          "TTSText": "15"
+        },
+        {
+          "filename": "0016",
+          "comment": "16",
+          "TTSText": "16"
+        },
+        {
+          "filename": "0017",
+          "comment": "17",
+          "TTSText": "17"
+        },
+        {
+          "filename": "0018",
+          "comment": "18",
+          "TTSText": "18"
+        },
+        {
+          "filename": "0019",
+          "comment": "19",
+          "TTSText": "19"
+        },
+        {
+          "filename": "0020",
+          "comment": "20",
+          "TTSText": "20"
+        },
+        {
+          "filename": "0021",
+          "comment": "21",
+          "TTSText": "21"
+        },
+        {
+          "filename": "0022",
+          "comment": "22",
+          "TTSText": "22"
+        },
+        {
+          "filename": "0023",
+          "comment": "23",
+          "TTSText": "23"
+        },
+        {
+          "filename": "0024",
+          "comment": "24",
+          "TTSText": "24"
+        },
+        {
+          "filename": "0025",
+          "comment": "25",
+          "TTSText": "25"
+        },
+        {
+          "filename": "0026",
+          "comment": "26",
+          "TTSText": "26"
+        },
+        {
+          "filename": "0027",
+          "comment": "27",
+          "TTSText": "27"
+        },
+        {
+          "filename": "0028",
+          "comment": "28",
+          "TTSText": "28"
+        },
+        {
+          "filename": "0029",
+          "comment": "29",
+          "TTSText": "29"
+        },
+        {
+          "filename": "0030",
+          "comment": "30",
+          "TTSText": "30"
+        },
+        {
+          "filename": "0031",
+          "comment": "31",
+          "TTSText": "31"
+        },
+        {
+          "filename": "0032",
+          "comment": "32",
+          "TTSText": "32"
+        },
+        {
+          "filename": "0033",
+          "comment": "33",
+          "TTSText": "33"
+        },
+        {
+          "filename": "0034",
+          "comment": "34",
+          "TTSText": "34"
+        },
+        {
+          "filename": "0035",
+          "comment": "35",
+          "TTSText": "35"
+        },
+        {
+          "filename": "0036",
+          "comment": "36",
+          "TTSText": "36"
+        },
+        {
+          "filename": "0037",
+          "comment": "37",
+          "TTSText": "37"
+        },
+        {
+          "filename": "0038",
+          "comment": "38",
+          "TTSText": "38"
+        },
+        {
+          "filename": "0039",
+          "comment": "39",
+          "TTSText": "39"
+        },
+        {
+          "filename": "0040",
+          "comment": "40",
+          "TTSText": "40"
+        },
+        {
+          "filename": "0041",
+          "comment": "41",
+          "TTSText": "41"
+        },
+        {
+          "filename": "0042",
+          "comment": "42",
+          "TTSText": "42"
+        },
+        {
+          "filename": "0043",
+          "comment": "43",
+          "TTSText": "43"
+        },
+        {
+          "filename": "0044",
+          "comment": "44",
+          "TTSText": "44"
+        },
+        {
+          "filename": "0045",
+          "comment": "45",
+          "TTSText": "45"
+        },
+        {
+          "filename": "0046",
+          "comment": "46",
+          "TTSText": "46"
+        },
+        {
+          "filename": "0047",
+          "comment": "47",
+          "TTSText": "47"
+        },
+        {
+          "filename": "0048",
+          "comment": "48",
+          "TTSText": "48"
+        },
+        {
+          "filename": "0049",
+          "comment": "49",
+          "TTSText": "49"
+        },
+        {
+          "filename": "0050",
+          "comment": "50",
+          "TTSText": "50"
+        },
+        {
+          "filename": "0051",
+          "comment": "51",
+          "TTSText": "51"
+        },
+        {
+          "filename": "0052",
+          "comment": "52",
+          "TTSText": "52"
+        },
+        {
+          "filename": "0053",
+          "comment": "53",
+          "TTSText": "53"
+        },
+        {
+          "filename": "0054",
+          "comment": "54",
+          "TTSText": "54"
+        },
+        {
+          "filename": "0055",
+          "comment": "55",
+          "TTSText": "55"
+        },
+        {
+          "filename": "0056",
+          "comment": "56",
+          "TTSText": "56"
+        },
+        {
+          "filename": "0057",
+          "comment": "57",
+          "TTSText": "57"
+        },
+        {
+          "filename": "0058",
+          "comment": "58",
+          "TTSText": "58"
+        },
+        {
+          "filename": "0059",
+          "comment": "59",
+          "TTSText": "59"
+        },
+        {
+          "filename": "0060",
+          "comment": "60",
+          "TTSText": "60"
+        },
+        {
+          "filename": "0061",
+          "comment": "61",
+          "TTSText": "61"
+        },
+        {
+          "filename": "0062",
+          "comment": "62",
+          "TTSText": "62"
+        },
+        {
+          "filename": "0063",
+          "comment": "63",
+          "TTSText": "63"
+        },
+        {
+          "filename": "0064",
+          "comment": "64",
+          "TTSText": "64"
+        },
+        {
+          "filename": "0065",
+          "comment": "65",
+          "TTSText": "65"
+        },
+        {
+          "filename": "0066",
+          "comment": "66",
+          "TTSText": "66"
+        },
+        {
+          "filename": "0067",
+          "comment": "67",
+          "TTSText": "67"
+        },
+        {
+          "filename": "0068",
+          "comment": "68",
+          "TTSText": "68"
+        },
+        {
+          "filename": "0069",
+          "comment": "69",
+          "TTSText": "69"
+        },
+        {
+          "filename": "0070",
+          "comment": "70",
+          "TTSText": "70"
+        },
+        {
+          "filename": "0071",
+          "comment": "71",
+          "TTSText": "71"
+        },
+        {
+          "filename": "0072",
+          "comment": "72",
+          "TTSText": "72"
+        },
+        {
+          "filename": "0073",
+          "comment": "73",
+          "TTSText": "73"
+        },
+        {
+          "filename": "0074",
+          "comment": "74",
+          "TTSText": "74"
+        },
+        {
+          "filename": "0075",
+          "comment": "75",
+          "TTSText": "75"
+        },
+        {
+          "filename": "0076",
+          "comment": "76",
+          "TTSText": "76"
+        },
+        {
+          "filename": "0077",
+          "comment": "77",
+          "TTSText": "77"
+        },
+        {
+          "filename": "0078",
+          "comment": "78",
+          "TTSText": "78"
+        },
+        {
+          "filename": "0079",
+          "comment": "79",
+          "TTSText": "79"
+        },
+        {
+          "filename": "0080",
+          "comment": "80",
+          "TTSText": "80"
+        },
+        {
+          "filename": "0081",
+          "comment": "81",
+          "TTSText": "81"
+        },
+        {
+          "filename": "0082",
+          "comment": "82",
+          "TTSText": "82"
+        },
+        {
+          "filename": "0083",
+          "comment": "83",
+          "TTSText": "83"
+        },
+        {
+          "filename": "0084",
+          "comment": "84",
+          "TTSText": "84"
+        },
+        {
+          "filename": "0085",
+          "comment": "85",
+          "TTSText": "85"
+        },
+        {
+          "filename": "0086",
+          "comment": "86",
+          "TTSText": "86"
+        },
+        {
+          "filename": "0087",
+          "comment": "87",
+          "TTSText": "87"
+        },
+        {
+          "filename": "0088",
+          "comment": "88",
+          "TTSText": "88"
+        },
+        {
+          "filename": "0089",
+          "comment": "89",
+          "TTSText": "89"
+        },
+        {
+          "filename": "0090",
+          "comment": "90",
+          "TTSText": "90"
+        },
+        {
+          "filename": "0091",
+          "comment": "91",
+          "TTSText": "91"
+        },
+        {
+          "filename": "0092",
+          "comment": "92",
+          "TTSText": "92"
+        },
+        {
+          "filename": "0093",
+          "comment": "93",
+          "TTSText": "93"
+        },
+        {
+          "filename": "0094",
+          "comment": "94",
+          "TTSText": "94"
+        },
+        {
+          "filename": "0095",
+          "comment": "95",
+          "TTSText": "95"
+        },
+        {
+          "filename": "0096",
+          "comment": "96",
+          "TTSText": "96"
+        },
+        {
+          "filename": "0097",
+          "comment": "97",
+          "TTSText": "97"
+        },
+        {
+          "filename": "0098",
+          "comment": "98",
+          "TTSText": "98"
+        },
+        {
+          "filename": "0099",
+          "comment": "99",
+          "TTSText": "99"
+        },
+        {
+          "filename": "0100",
+          "comment": "100",
+          "TTSText": "100"
+        },
+        {
+          "filename": "0101",
+          "comment": "mila",
+          "TTSText": "mila"
+        },
+        {
+          "filename": "0102",
+          "comment": "mille",
+          "TTSText": "mille"
+        },
+        {
+          "filename": "0103",
+          "comment": "virgola",
+          "TTSText": "virgola"
+        },
+        {
+          "filename": "0104",
+          "comment": "un",
+          "TTSText": "un"
+        },
+        {
+          "filename": "0105",
+          "comment": "e",
+          "TTSText": "e"
+        },
+        {
+          "filename": "0106",
+          "comment": "meno",
+          "TTSText": "meno"
+        },
+        {
+          "filename": "0107",
+          "comment": "ora",
+          "TTSText": "ora"
+        },
+        {
+          "filename": "0108",
+          "comment": "ore",
+          "TTSText": "ore"
+        },
+        {
+          "filename": "0109",
+          "comment": "minuto",
+          "TTSText": "minuto"
+        },
+        {
+          "filename": "0110",
+          "comment": "minuti",
+          "TTSText": "minuti"
+        },
+        {
+          "filename": "0111",
+          "comment": "secondo",
+          "TTSText": "secondo"
+        },
+        {
+          "filename": "0112",
+          "comment": "secondi",
+          "TTSText": "secondi"
+        },
+        {
+          "filename": "volt0",
+          "comment": "volt",
+          "TTSText": "volt"
+        },
+        {
+          "filename": "amp0",
+          "comment": "ampere",
+          "TTSText": "ampere"
+        },
+        {
+          "filename": "mamp0",
+          "comment": "milliampers",
+          "TTSText": "milliampers"
+        },
+        {
+          "filename": "knot0",
+          "comment": "nodo",
+          "TTSText": "nodo"
+        },
+        {
+          "filename": "knot1",
+          "comment": "nodi",
+          "TTSText": "nodi"
+        },
+        {
+          "filename": "mps0",
+          "comment": "metro al secondo",
+          "TTSText": "metro al secondo"
+        },
+        {
+          "filename": "msp1",
+          "comment": "metri al secondo",
+          "TTSText": "metri al secondo"
+        },
+        {
+          "filename": "fps0",
+          "comment": "piede al secondo",
+          "TTSText": "piede al secondo"
+        },
+        {
+          "filename": "fps1",
+          "comment": "piedi al secondo",
+          "TTSText": "piedi al secondo"
+        },
+        {
+          "filename": "kph0",
+          "comment": "chilometro ora",
+          "TTSText": "chilometro ora"
+        },
+        {
+          "filename": "kph1",
+          "comment": "chilometri orari",
+          "TTSText": "chilometri orari"
+        },
+        {
+          "filename": "mph0",
+          "comment": "miglio per ora",
+          "TTSText": "miglio per ora"
+        },
+        {
+          "filename": "mph1",
+          "comment": "miglia per ora",
+          "TTSText": "miglia per ora"
+        },
+        {
+          "filename": "meter0",
+          "comment": "metro",
+          "TTSText": "metro"
+        },
+        {
+          "filename": "meter1",
+          "comment": "metri",
+          "TTSText": "metri"
+        },
+        {
+          "filename": "foot0",
+          "comment": "piede",
+          "TTSText": "piede"
+        },
+        {
+          "filename": "foot1",
+          "comment": "piedi",
+          "TTSText": "piedi"
+        },
+        {
+          "filename": "celsius0",
+          "comment": "grado celsius",
+          "TTSText": "grado celsius"
+        },
+        {
+          "filename": "celsius1",
+          "comment": "gradi celsius",
+          "TTSText": "gradi celsius"
+        },
+        {
+          "filename": "fahr0",
+          "comment": "grado fahrenheit",
+          "TTSText": "grado fahrenheit"
+        },
+        {
+          "filename": "fahr1",
+          "comment": "gradi fahrenheit",
+          "TTSText": "gradi fahrenheit"
+        },
+        {
+          "filename": "percent0",
+          "comment": "percento",
+          "TTSText": "percento"
+        },
+        {
+          "filename": "percent1",
+          "comment": "percento",
+          "TTSText": "percento"
+        },
+        {
+          "filename": "mamph0",
+          "comment": "milliampere ora",
+          "TTSText": "milliampere ora"
+        },
+        {
+          "filename": "mamph1",
+          "comment": "milliampere ora",
+          "TTSText": "milliampere ora"
+        },
+        {
+          "filename": "watt0",
+          "comment": "watt",
+          "TTSText": "watt"
+        },
+        {
+          "filename": "watt1",
+          "comment": "watt",
+          "TTSText": "watt"
+        },
+        {
+          "filename": "mwatt0",
+          "comment": "milli-watt",
+          "TTSText": "milli-watt"
+        },
+        {
+          "filename": "mwatt1",
+          "comment": "milli-watt",
+          "TTSText": "milli-watt"
+        },
+        {
+          "filename": "db0",
+          "comment": "d b",
+          "TTSText": "d b"
+        },
+        {
+          "filename": "db1",
+          "comment": "d b",
+          "TTSText": "d b"
+        },
+        {
+          "filename": "rpm0",
+          "comment": "r p m",
+          "TTSText": "r p m"
+        },
+        {
+          "filename": "rpm1",
+          "comment": "r p m",
+          "TTSText": "r p m"
+        },
+        {
+          "filename": "g0",
+          "comment": "g",
+          "TTSText": "g"
+        },
+        {
+          "filename": "g1",
+          "comment": "g",
+          "TTSText": "g"
+        },
+        {
+          "filename": "degree0",
+          "comment": "grado",
+          "TTSText": "grado"
+        },
+        {
+          "filename": "degree1",
+          "comment": "gradi",
+          "TTSText": "gradi"
+        },
+        {
+          "filename": "rad0",
+          "comment": "radian",
+          "TTSText": "radian"
+        },
+        {
+          "filename": "rad1",
+          "comment": "radians",
+          "TTSText": "radians"
+        },
+        {
+          "filename": "m10",
+          "comment": "millilitro",
+          "TTSText": "millilitro"
+        },
+        {
+          "filename": "m11",
+          "comment": "millilitri",
+          "TTSText": "millilitri"
+        },
+        {
+          "filename": "founce0",
+          "comment": "oncia",
+          "TTSText": "oncia"
+        },
+        {
+          "filename": "founce1",
+          "comment": "once",
+          "TTSText": "once"
+        },
+        {
+          "filename": "hour0",
+          "comment": "ora",
+          "TTSText": "ora"
+        },
+        {
+          "filename": "hour1",
+          "comment": "ore",
+          "TTSText": "ore"
+        },
+        {
+          "filename": "minute0",
+          "comment": "minuto",
+          "TTSText": "minuto"
+        },
+        {
+          "filename": "minute1",
+          "comment": "minuti",
+          "TTSText": "minuti"
+        },
+        {
+          "filename": "second0",
+          "comment": "secondo",
+          "TTSText": "secondo"
+        },
+        {
+          "filename": "second1",
+          "comment": "secondi",
+          "TTSText": "secondi"
+        },
+        {
+          "filename": "inactiv",
+          "comment": "radio inattiva controllare",
+          "TTSText": "radio inattiva controllare"
+        },
+        {
+          "filename": "lowbatt",
+          "comment": "batteria della radio scarica",
+          "TTSText": "batteria della radio scarica"
+        },
+        {
+          "filename": "thralert",
+          "comment": "controllo motore non in posizione, verificare",
+          "TTSText": "controllo motore non in posizione, verificare"
+        },
+        {
+          "filename": "swalert",
+          "comment": "interruttori non in posizione, verificare",
+          "TTSText": "interruttori non in posizione, verificare"
+        },
+        {
+          "filename": "eebad",
+          "comment": "eeprom corrotta",
+          "TTSText": "eeprom corrotta"
+        },
+        {
+          "filename": "eeformat",
+          "comment": "formattazzione eeprom in corso",
+          "TTSText": "formattazzione eeprom in corso"
+        },
+        {
+          "filename": "error",
+          "comment": "errore",
+          "TTSText": "errore"
+        },
+        {
+          "filename": "midtrim",
+          "comment": "trim centrato",
+          "TTSText": "trim centrato"
+        },
+        {
+          "filename": "midpot",
+          "comment": "potenziometro centrato",
+          "TTSText": "potenziometro centrato"
+        },
+        {
+          "filename": "maxtrim",
+          "comment": "massimo trim raggiunto",
+          "TTSText": "massimo trim raggiunto"
+        },
+        {
+          "filename": "mintrim",
+          "comment": "minimo trim raggiunto",
+          "TTSText": "minimo trim raggiunto"
+        },
+        {
+          "filename": "timer20",
+          "comment": "venti secondi",
+          "TTSText": "venti secondi"
+        },
+        {
+          "filename": "timer30",
+          "comment": "trenta secondi",
+          "TTSText": "trenta secondi"
+        },
+        {
+          "filename": "highmah",
+          "comment": "assorbimento elevato",
+          "TTSText": "assorbimento elevato"
+        },
+        {
+          "filename": "hightemp",
+          "comment": "temperatura elevata",
+          "TTSText": "temperatura elevata"
+        },
+        {
+          "filename": "a1_org",
+          "comment": "A1 in allarme",
+          "TTSText": "A1 in allarme"
+        },
+        {
+          "filename": "a1_red",
+          "comment": "A1 critico",
+          "TTSText": "A1 critico"
+        },
+        {
+          "filename": "a2_org",
+          "comment": "A2 in allarme",
+          "TTSText": "A2 in allarme"
+        },
+        {
+          "filename": "a2_red",
+          "comment": "A2 critico",
+          "TTSText": "A2 critico"
+        },
+        {
+          "filename": "a3_org",
+          "comment": "A3 in allarme",
+          "TTSText": "A3 in allarme"
+        },
+        {
+          "filename": "a3_red",
+          "comment": "A3 critico",
+          "TTSText": "A3 critico"
+        },
+        {
+          "filename": "a4_org",
+          "comment": "A4 in allarme",
+          "TTSText": "A4 in allarme"
+        },
+        {
+          "filename": "a4_red",
+          "comment": "A4 critico",
+          "TTSText": "A4 critico"
+        },
+        {
+          "filename": "rssi_org",
+          "comment": "Segnale radio basso",
+          "TTSText": "Segnale radio basso"
+        },
+        {
+          "filename": "rssi_red",
+          "comment": "Segnale radio critico",
+          "TTSText": "Segnale radio critico"
+        },
+        {
+          "filename": "swr_red",
+          "comment": "Problema all'antenna della radio",
+          "TTSText": "Problema all'antenna della radio"
+        },
+        {
+          "filename": "telemko",
+          "comment": "Telemetria assente",
+          "TTSText": "Telemetria assente"
+        },
+        {
+          "filename": "telemok",
+          "comment": "Telemetria disponibile",
+          "TTSText": "Telemetria disponibile"
+        },
+        {
+          "filename": "servoko",
+          "comment": "servo overload",
+          "TTSText": "servo overload"
+        },
+        {
+          "filename": "rxko",
+          "comment": "power overload",
+          "TTSText": "power overload"
+        },
+        {
+          "filename": "modelpwr",
+          "comment": "receiver still connected",
+          "TTSText": "receiver still connected"
+        },
+        {
+          "filename": "0135",
+          "comment": "timer",
+          "TTSText": "timer"
+        },
+        {
+          "filename": "0137",
+          "comment": "tensione",
+          "TTSText": "tensione"
+        },
+        {
+          "filename": "0138",
+          "comment": "tensione",
+          "TTSText": "tensione"
+        },
+        {
+          "filename": "0139",
+          "comment": "trasmissione",
+          "TTSText": "trasmissione"
+        },
+        {
+          "filename": "0140",
+          "comment": "ricezione",
+          "TTSText": "ricezione"
+        },
+        {
+          "filename": "0141",
+          "comment": "altitudine",
+          "TTSText": "altitudine"
+        },
+        {
+          "filename": "0142",
+          "comment": "motore",
+          "TTSText": "motore"
+        },
+        {
+          "filename": "0143",
+          "comment": "carburante",
+          "TTSText": "carburante"
+        },
+        {
+          "filename": "0144",
+          "comment": "temperatura",
+          "TTSText": "temperatura"
+        },
+        {
+          "filename": "0145",
+          "comment": "temperatura",
+          "TTSText": "temperatura"
+        },
+        {
+          "filename": "0146",
+          "comment": "velocità",
+          "TTSText": "velocità"
+        },
+        {
+          "filename": "0147",
+          "comment": "distanza",
+          "TTSText": "distanza"
+        },
+        {
+          "filename": "0148",
+          "comment": "altitudine",
+          "TTSText": "altitudine"
+        },
+        {
+          "filename": "0149",
+          "comment": "cella lipo",
+          "TTSText": "cella lipo"
+        },
+        {
+          "filename": "0150",
+          "comment": "totale lipo",
+          "TTSText": "totale lipo"
+        },
+        {
+          "filename": "0151",
+          "comment": "tensione",
+          "TTSText": "tensione"
+        },
+        {
+          "filename": "0152",
+          "comment": "corrente",
+          "TTSText": "corrente"
+        },
+        {
+          "filename": "0153",
+          "comment": "consumo",
+          "TTSText": "consumo"
+        },
+        {
+          "filename": "0154",
+          "comment": "potenza",
+          "TTSText": "potenza"
+        },
+        {
+          "filename": "0155",
+          "comment": "accellerazione X",
+          "TTSText": "accellerazione X"
+        },
+        {
+          "filename": "0156",
+          "comment": "accellerazione Y",
+          "TTSText": "accellerazione Y"
+        },
+        {
+          "filename": "0157",
+          "comment": "accellerazione Z",
+          "TTSText": "accellerazione Z"
+        },
+        {
+          "filename": "0158",
+          "comment": "direzione",
+          "TTSText": "direzione"
+        },
+        {
+          "filename": "0159",
+          "comment": "variometro",
+          "TTSText": "variometro"
+        },
+        {
+          "filename": "0160",
+          "comment": "minimo",
+          "TTSText": "minimo"
+        },
+        {
+          "filename": "0161",
+          "comment": "massimo",
+          "TTSText": "massimo"
+        }
+      ],
+      "UserVoices": [
+        {
+          "filename": "gearup",
+          "comment": "carrello chiuso",
+          "TTSText": "carrello chiuso"
+        },
+        {
+          "filename": "geardn",
+          "comment": "carrello aperto",
+          "TTSText": "carrello aperto"
+        },
+        {
+          "filename": "flapup",
+          "comment": "flap rientrati",
+          "TTSText": "flap rientrati"
+        },
+        {
+          "filename": "flapdn",
+          "comment": "flap estesi",
+          "TTSText": "flap estesi"
+        },
+        {
+          "filename": "attero",
+          "comment": "atterraggio",
+          "TTSText": "atterraggio"
+        },
+        {
+          "filename": "trnon",
+          "comment": "modalità maestro attiva",
+          "TTSText": "modalità maestro attiva"
+        },
+        {
+          "filename": "trnoff",
+          "comment": "modalità maestro disattiva",
+          "TTSText": "modalità maestro disattiva"
+        },
+        {
+          "filename": "engoff",
+          "comment": "motore spento",
+          "TTSText": "motore spento"
+        },
+        {
+          "filename": "tohigh",
+          "comment": "troppo alto",
+          "TTSText": "troppo alto"
+        },
+        {
+          "filename": "tolow",
+          "comment": "troppo basso",
+          "TTSText": "troppo basso"
+        },
+        {
+          "filename": "lowbat",
+          "comment": "batteria scarica",
+          "TTSText": "batteria scarica"
+        },
+        {
+          "filename": "crowon",
+          "comment": "crow on",
+          "TTSText": "crow on"
+        },
+        {
+          "filename": "crowof",
+          "comment": "crow off",
+          "TTSText": "crow off"
+        },
+        {
+          "filename": "spdmod",
+          "comment": "modo velocità",
+          "TTSText": "modo velocità"
+        },
+        {
+          "filename": "thmmod",
+          "comment": "modo termica",
+          "TTSText": "modo termica"
+        },
+        {
+          "filename": "nrmmod",
+          "comment": "modo volo normale",
+          "TTSText": "modo volo normale"
+        },
+        {
+          "filename": "fltmd1",
+          "comment": "fase di volo 1",
+          "TTSText": "fase di volo 1"
+        },
+        {
+          "filename": "fltmd2",
+          "comment": "fase di volo 2",
+          "TTSText": "fase di volo 2"
+        },
+        {
+          "filename": "fltmd3",
+          "comment": "fase di volo 3",
+          "TTSText": "fase di volo 3"
+        },
+        {
+          "filename": "fltmd4",
+          "comment": "fase di volo 4",
+          "TTSText": "fase di volo 4"
+        },
+        {
+          "filename": "fltmd5",
+          "comment": "fase di volo 5",
+          "TTSText": "fase di volo 5"
+        },
+        {
+          "filename": "fltmd6",
+          "comment": "fase di volo 6",
+          "TTSText": "fase di volo 6"
+        },
+        {
+          "filename": "fltmd7",
+          "comment": "fase di volo 7",
+          "TTSText": "fase di volo 7"
+        },
+        {
+          "filename": "fltmd8",
+          "comment": "fase di volo 8",
+          "TTSText": "fase di volo 8"
+        },
+        {
+          "filename": "fltmd9",
+          "comment": "fase di volo 9",
+          "TTSText": "fase di volo 9"
+        }
+      ]
+    },
+    {
+      "LanguageCode": "pt-BR",
+      "VoiceName": "pt-PT-Wavenet-D",
+      "SystemVoices": [
+        {
+          "filename": "0000",
+          "comment": "0",
+          "TTSText": "0"
+        },
+        {
+          "filename": "0001",
+          "comment": "1",
+          "TTSText": "1"
+        },
+        {
+          "filename": "0002",
+          "comment": "2",
+          "TTSText": "2"
+        },
+        {
+          "filename": "0003",
+          "comment": "3",
+          "TTSText": "3"
+        },
+        {
+          "filename": "0004",
+          "comment": "4",
+          "TTSText": "4"
+        },
+        {
+          "filename": "0005",
+          "comment": "5",
+          "TTSText": "5"
+        },
+        {
+          "filename": "0006",
+          "comment": "6",
+          "TTSText": "6"
+        },
+        {
+          "filename": "0007",
+          "comment": "7",
+          "TTSText": "7"
+        },
+        {
+          "filename": "0008",
+          "comment": "8",
+          "TTSText": "8"
+        },
+        {
+          "filename": "0009",
+          "comment": "9",
+          "TTSText": "9"
+        },
+        {
+          "filename": "0010",
+          "comment": "10",
+          "TTSText": "10"
+        },
+        {
+          "filename": "0011",
+          "comment": "11",
+          "TTSText": "11"
+        },
+        {
+          "filename": "0012",
+          "comment": "12",
+          "TTSText": "12"
+        },
+        {
+          "filename": "0013",
+          "comment": "13",
+          "TTSText": "13"
+        },
+        {
+          "filename": "0014",
+          "comment": "14",
+          "TTSText": "14"
+        },
+        {
+          "filename": "0015",
+          "comment": "15",
+          "TTSText": "15"
+        },
+        {
+          "filename": "0016",
+          "comment": "16",
+          "TTSText": "16"
+        },
+        {
+          "filename": "0017",
+          "comment": "17",
+          "TTSText": "17"
+        },
+        {
+          "filename": "0018",
+          "comment": "18",
+          "TTSText": "18"
+        },
+        {
+          "filename": "0019",
+          "comment": "19",
+          "TTSText": "19"
+        },
+        {
+          "filename": "0020",
+          "comment": "20",
+          "TTSText": "20"
+        },
+        {
+          "filename": "0021",
+          "comment": "21",
+          "TTSText": "21"
+        },
+        {
+          "filename": "0022",
+          "comment": "22",
+          "TTSText": "22"
+        },
+        {
+          "filename": "0023",
+          "comment": "23",
+          "TTSText": "23"
+        },
+        {
+          "filename": "0024",
+          "comment": "24",
+          "TTSText": "24"
+        },
+        {
+          "filename": "0025",
+          "comment": "25",
+          "TTSText": "25"
+        },
+        {
+          "filename": "0026",
+          "comment": "26",
+          "TTSText": "26"
+        },
+        {
+          "filename": "0027",
+          "comment": "27",
+          "TTSText": "27"
+        },
+        {
+          "filename": "0028",
+          "comment": "28",
+          "TTSText": "28"
+        },
+        {
+          "filename": "0029",
+          "comment": "29",
+          "TTSText": "29"
+        },
+        {
+          "filename": "0030",
+          "comment": "30",
+          "TTSText": "30"
+        },
+        {
+          "filename": "0031",
+          "comment": "31",
+          "TTSText": "31"
+        },
+        {
+          "filename": "0032",
+          "comment": "32",
+          "TTSText": "32"
+        },
+        {
+          "filename": "0033",
+          "comment": "33",
+          "TTSText": "33"
+        },
+        {
+          "filename": "0034",
+          "comment": "34",
+          "TTSText": "34"
+        },
+        {
+          "filename": "0035",
+          "comment": "35",
+          "TTSText": "35"
+        },
+        {
+          "filename": "0036",
+          "comment": "36",
+          "TTSText": "36"
+        },
+        {
+          "filename": "0037",
+          "comment": "37",
+          "TTSText": "37"
+        },
+        {
+          "filename": "0038",
+          "comment": "38",
+          "TTSText": "38"
+        },
+        {
+          "filename": "0039",
+          "comment": "39",
+          "TTSText": "39"
+        },
+        {
+          "filename": "0040",
+          "comment": "40",
+          "TTSText": "40"
+        },
+        {
+          "filename": "0041",
+          "comment": "41",
+          "TTSText": "41"
+        },
+        {
+          "filename": "0042",
+          "comment": "42",
+          "TTSText": "42"
+        },
+        {
+          "filename": "0043",
+          "comment": "43",
+          "TTSText": "43"
+        },
+        {
+          "filename": "0044",
+          "comment": "44",
+          "TTSText": "44"
+        },
+        {
+          "filename": "0045",
+          "comment": "45",
+          "TTSText": "45"
+        },
+        {
+          "filename": "0046",
+          "comment": "46",
+          "TTSText": "46"
+        },
+        {
+          "filename": "0047",
+          "comment": "47",
+          "TTSText": "47"
+        },
+        {
+          "filename": "0048",
+          "comment": "48",
+          "TTSText": "48"
+        },
+        {
+          "filename": "0049",
+          "comment": "49",
+          "TTSText": "49"
+        },
+        {
+          "filename": "0050",
+          "comment": "50",
+          "TTSText": "50"
+        },
+        {
+          "filename": "0051",
+          "comment": "51",
+          "TTSText": "51"
+        },
+        {
+          "filename": "0052",
+          "comment": "52",
+          "TTSText": "52"
+        },
+        {
+          "filename": "0053",
+          "comment": "53",
+          "TTSText": "53"
+        },
+        {
+          "filename": "0054",
+          "comment": "54",
+          "TTSText": "54"
+        },
+        {
+          "filename": "0055",
+          "comment": "55",
+          "TTSText": "55"
+        },
+        {
+          "filename": "0056",
+          "comment": "56",
+          "TTSText": "56"
+        },
+        {
+          "filename": "0057",
+          "comment": "57",
+          "TTSText": "57"
+        },
+        {
+          "filename": "0058",
+          "comment": "58",
+          "TTSText": "58"
+        },
+        {
+          "filename": "0059",
+          "comment": "59",
+          "TTSText": "59"
+        },
+        {
+          "filename": "0060",
+          "comment": "60",
+          "TTSText": "60"
+        },
+        {
+          "filename": "0061",
+          "comment": "61",
+          "TTSText": "61"
+        },
+        {
+          "filename": "0062",
+          "comment": "62",
+          "TTSText": "62"
+        },
+        {
+          "filename": "0063",
+          "comment": "63",
+          "TTSText": "63"
+        },
+        {
+          "filename": "0064",
+          "comment": "64",
+          "TTSText": "64"
+        },
+        {
+          "filename": "0065",
+          "comment": "65",
+          "TTSText": "65"
+        },
+        {
+          "filename": "0066",
+          "comment": "66",
+          "TTSText": "66"
+        },
+        {
+          "filename": "0067",
+          "comment": "67",
+          "TTSText": "67"
+        },
+        {
+          "filename": "0068",
+          "comment": "68",
+          "TTSText": "68"
+        },
+        {
+          "filename": "0069",
+          "comment": "69",
+          "TTSText": "69"
+        },
+        {
+          "filename": "0070",
+          "comment": "70",
+          "TTSText": "70"
+        },
+        {
+          "filename": "0071",
+          "comment": "71",
+          "TTSText": "71"
+        },
+        {
+          "filename": "0072",
+          "comment": "72",
+          "TTSText": "72"
+        },
+        {
+          "filename": "0073",
+          "comment": "73",
+          "TTSText": "73"
+        },
+        {
+          "filename": "0074",
+          "comment": "74",
+          "TTSText": "74"
+        },
+        {
+          "filename": "0075",
+          "comment": "75",
+          "TTSText": "75"
+        },
+        {
+          "filename": "0076",
+          "comment": "76",
+          "TTSText": "76"
+        },
+        {
+          "filename": "0077",
+          "comment": "77",
+          "TTSText": "77"
+        },
+        {
+          "filename": "0078",
+          "comment": "78",
+          "TTSText": "78"
+        },
+        {
+          "filename": "0079",
+          "comment": "79",
+          "TTSText": "79"
+        },
+        {
+          "filename": "0080",
+          "comment": "80",
+          "TTSText": "80"
+        },
+        {
+          "filename": "0081",
+          "comment": "81",
+          "TTSText": "81"
+        },
+        {
+          "filename": "0082",
+          "comment": "82",
+          "TTSText": "82"
+        },
+        {
+          "filename": "0083",
+          "comment": "83",
+          "TTSText": "83"
+        },
+        {
+          "filename": "0084",
+          "comment": "84",
+          "TTSText": "84"
+        },
+        {
+          "filename": "0085",
+          "comment": "85",
+          "TTSText": "85"
+        },
+        {
+          "filename": "0086",
+          "comment": "86",
+          "TTSText": "86"
+        },
+        {
+          "filename": "0087",
+          "comment": "87",
+          "TTSText": "87"
+        },
+        {
+          "filename": "0088",
+          "comment": "88",
+          "TTSText": "88"
+        },
+        {
+          "filename": "0089",
+          "comment": "89",
+          "TTSText": "89"
+        },
+        {
+          "filename": "0090",
+          "comment": "90",
+          "TTSText": "90"
+        },
+        {
+          "filename": "0091",
+          "comment": "91",
+          "TTSText": "91"
+        },
+        {
+          "filename": "0092",
+          "comment": "92",
+          "TTSText": "92"
+        },
+        {
+          "filename": "0093",
+          "comment": "93",
+          "TTSText": "93"
+        },
+        {
+          "filename": "0094",
+          "comment": "94",
+          "TTSText": "94"
+        },
+        {
+          "filename": "0095",
+          "comment": "95",
+          "TTSText": "95"
+        },
+        {
+          "filename": "0096",
+          "comment": "96",
+          "TTSText": "96"
+        },
+        {
+          "filename": "0097",
+          "comment": "97",
+          "TTSText": "97"
+        },
+        {
+          "filename": "0098",
+          "comment": "98",
+          "TTSText": "98"
+        },
+        {
+          "filename": "0099",
+          "comment": "99",
+          "TTSText": "99"
+        },
+        {
+          "filename": "0100",
+          "comment": "100",
+          "TTSText": "100"
+        },
+        {
+          "filename": "0101",
+          "comment": "cento",
+          "TTSText": "cento"
+        },
+        {
+          "filename": "0102",
+          "comment": "duzentos",
+          "TTSText": "duzentos"
+        },
+        {
+          "filename": "0103",
+          "comment": "trezentos",
+          "TTSText": "trezentos"
+        },
+        {
+          "filename": "0104",
+          "comment": "quatrocentos",
+          "TTSText": "quatrocentos"
+        },
+        {
+          "filename": "0105",
+          "comment": "quinhentos",
+          "TTSText": "quinhentos"
+        },
+        {
+          "filename": "0106",
+          "comment": "seiscentos",
+          "TTSText": "seiscentos"
+        },
+        {
+          "filename": "0107",
+          "comment": "setecentos",
+          "TTSText": "setecentos"
+        },
+        {
+          "filename": "0108",
+          "comment": "oitocentos",
+          "TTSText": "oitocentos"
+        },
+        {
+          "filename": "0109",
+          "comment": "novecentos",
+          "TTSText": "novecentos"
+        },
+        {
+          "filename": "0110",
+          "comment": "mil",
+          "TTSText": "mil"
+        },
+        {
+          "filename": "0111",
+          "comment": "virgula",
+          "TTSText": "virgula"
+        },
+        {
+          "filename": "0112",
+          "comment": "uma",
+          "TTSText": "uma"
+        },
+        {
+          "filename": "0113",
+          "comment": "duas",
+          "TTSText": "duas"
+        },
+        {
+          "filename": "0114",
+          "comment": "e",
+          "TTSText": "e"
+        },
+        {
+          "filename": "0115",
+          "comment": "menos",
+          "TTSText": "menos"
+        },
+        {
+          "filename": "0116",
+          "comment": "hora",
+          "TTSText": "hora"
+        },
+        {
+          "filename": "0117",
+          "comment": "horas",
+          "TTSText": "horas"
+        },
+        {
+          "filename": "0118",
+          "comment": "minuto",
+          "TTSText": "minuto"
+        },
+        {
+          "filename": "0119",
+          "comment": "minutos",
+          "TTSText": "minutos"
+        },
+        {
+          "filename": "0120",
+          "comment": "segundo",
+          "TTSText": "segundo"
+        },
+        {
+          "filename": "0121",
+          "comment": "segundos",
+          "TTSText": "segundos"
+        },
+        {
+          "filename": "volt0",
+          "comment": "Volt",
+          "TTSText": "Volt"
+        },
+        {
+          "filename": "amp0",
+          "comment": "ampére",
+          "TTSText": "ampére"
+        },
+        {
+          "filename": "mamp0",
+          "comment": "miliamperes",
+          "TTSText": "miliamperes"
+        },
+        {
+          "filename": "knot0",
+          "comment": "knot",
+          "TTSText": "knot"
+        },
+        {
+          "filename": "mps0",
+          "comment": "metros por segundo",
+          "TTSText": "metros por segundo"
+        },
+        {
+          "filename": "fps0",
+          "comment": "foot per second",
+          "TTSText": "foot per second"
+        },
+        {
+          "filename": "kph0",
+          "comment": "quilômetros por hora",
+          "TTSText": "quilômetros por hora"
+        },
+        {
+          "filename": "mph0",
+          "comment": "mile per hour",
+          "TTSText": "mile per hour"
+        },
+        {
+          "filename": "meter0",
+          "comment": "metros",
+          "TTSText": "metros"
+        },
+        {
+          "filename": "foot0",
+          "comment": "foot",
+          "TTSText": "foot"
+        },
+        {
+          "filename": "celsius0",
+          "comment": "degree celsius",
+          "TTSText": "degree celsius"
+        },
+        {
+          "filename": "fahr0",
+          "comment": "degree fahrenheit",
+          "TTSText": "degree fahrenheit"
+        },
+        {
+          "filename": "percent0",
+          "comment": "percent",
+          "TTSText": "percent"
+        },
+        {
+          "filename": "mamph0",
+          "comment": "miliamperes por hora",
+          "TTSText": "miliamperes por hora"
+        },
+        {
+          "filename": "watt0",
+          "comment": "watt",
+          "TTSText": "watt"
+        },
+        {
+          "filename": "mwatt0",
+          "comment": "milli-watt",
+          "TTSText": "milli-watt"
+        },
+        {
+          "filename": "db0",
+          "comment": "db",
+          "TTSText": "db"
+        },
+        {
+          "filename": "rpm0",
+          "comment": "r p m",
+          "TTSText": "r p m"
+        },
+        {
+          "filename": "g0",
+          "comment": "g",
+          "TTSText": "g"
+        },
+        {
+          "filename": "degree0",
+          "comment": "degree",
+          "TTSText": "degree"
+        },
+        {
+          "filename": "rad0",
+          "comment": "radian",
+          "TTSText": "radian"
+        },
+        {
+          "filename": "ml0",
+          "comment": "milliliter",
+          "TTSText": "milliliter"
+        },
+        {
+          "filename": "founce0",
+          "comment": "onças",
+          "TTSText": "onças"
+        },
+        {
+          "filename": "hour0",
+          "comment": "horas",
+          "TTSText": "horas"
+        },
+        {
+          "filename": "minute0",
+          "comment": "minutos",
+          "TTSText": "minutos"
+        },
+        {
+          "filename": "second0",
+          "comment": "segundos",
+          "TTSText": "segundos"
+        },
+        {
+          "filename": "inactiv",
+          "comment": "atenção, o rádio foi esquecido ligado, por favor desligue-o",
+          "TTSText": "atenção, o rádio foi esquecido ligado, por favor desligue-o"
+        },
+        {
+          "filename": "lowbatt",
+          "comment": "bateria do rádio fraca",
+          "TTSText": "bateria do rádio fraca"
+        },
+        {
+          "filename": "thralert",
+          "comment": "atenção,acelerador não está no mínimo",
+          "TTSText": "atenção,acelerador não está no mínimo"
+        },
+        {
+          "filename": "swalert",
+          "comment": "atenção, certifique-se que os interruptores estão na posição certa",
+          "TTSText": "atenção, certifique-se que os interruptores estão na posição certa"
+        },
+        {
+          "filename": "eebad",
+          "comment": "eeprom corrompida",
+          "TTSText": "eeprom corrompida"
+        },
+        {
+          "filename": "eeformat",
+          "comment": "formatação da eeprom em curso",
+          "TTSText": "formatação da eeprom em curso"
+        },
+        {
+          "filename": "error",
+          "comment": "erro",
+          "TTSText": "erro"
+        },
+        {
+          "filename": "midtrim",
+          "comment": "trim centrado",
+          "TTSText": "trim centrado"
+        },
+        {
+          "filename": "midpot",
+          "comment": "potenciómetro centrado",
+          "TTSText": "potenciómetro centrado"
+        },
+        {
+          "filename": "maxtrim",
+          "comment": "trim no máximo",
+          "TTSText": "trim no máximo"
+        },
+        {
+          "filename": "mintrim",
+          "comment": "trim no mínimo",
+          "TTSText": "trim no mínimo"
+        },
+        {
+          "filename": "timer20",
+          "comment": "20 segundos",
+          "TTSText": "20 segundos"
+        },
+        {
+          "filename": "timer30",
+          "comment": "30 segundos",
+          "TTSText": "30 segundos"
+        },
+        {
+          "filename": "highmah",
+          "comment": "assorbimento elevato",
+          "TTSText": "assorbimento elevato"
+        },
+        {
+          "filename": "hightemp",
+          "comment": "temperatura elevata",
+          "TTSText": "temperatura elevata"
+        },
+        {
+          "filename": "a1_org",
+          "comment": "Alarme A1",
+          "TTSText": "Alarme A1"
+        },
+        {
+          "filename": "a1_red",
+          "comment": "A1 critica",
+          "TTSText": "A1 critica"
+        },
+        {
+          "filename": "a2_org",
+          "comment": "Alarme A2",
+          "TTSText": "Alarme A2"
+        },
+        {
+          "filename": "a2_red",
+          "comment": "A2 critica",
+          "TTSText": "A2 critica"
+        },
+        {
+          "filename": "rssi_org",
+          "comment": "recepção de sinal muito baixa",
+          "TTSText": "recepção de sinal muito baixa"
+        },
+        {
+          "filename": "rssi_red",
+          "comment": "recepção de sinal crítica",
+          "TTSText": "recepção de sinal crítica"
+        },
+        {
+          "filename": "swr_red",
+          "comment": "Problema com a antena do transmissor",
+          "TTSText": "Problema com a antena do transmissor"
+        },
+        {
+          "filename": "servoko",
+          "comment": "servo overload",
+          "TTSText": "servo overload"
+        },
+        {
+          "filename": "rxko",
+          "comment": "power overload",
+          "TTSText": "power overload"
+        },
+        {
+          "filename": "modelpwr",
+          "comment": "receiver still connected",
+          "TTSText": "receiver still connected"
+        },
+        {
+          "filename": "0141",
+          "comment": "cronómetro",
+          "TTSText": "cronómetro"
+        },
+        {
+          "filename": "0142",
+          "comment": "cronómetro",
+          "TTSText": "cronómetro"
+        },
+        {
+          "filename": "0143",
+          "comment": "transmissão",
+          "TTSText": "transmissão"
+        },
+        {
+          "filename": "0144",
+          "comment": "recepção",
+          "TTSText": "recepção"
+        },
+        {
+          "filename": "0145",
+          "comment": "A1",
+          "TTSText": "A1"
+        },
+        {
+          "filename": "0146",
+          "comment": "A2",
+          "TTSText": "A2"
+        },
+        {
+          "filename": "0147",
+          "comment": "altitude",
+          "TTSText": "altitude"
+        },
+        {
+          "filename": "0148",
+          "comment": "motor",
+          "TTSText": "motor"
+        },
+        {
+          "filename": "0149",
+          "comment": "combustível",
+          "TTSText": "combustível"
+        },
+        {
+          "filename": "0150",
+          "comment": "temperatura",
+          "TTSText": "temperatura"
+        },
+        {
+          "filename": "0151",
+          "comment": "temperatura",
+          "TTSText": "temperatura"
+        },
+        {
+          "filename": "0152",
+          "comment": "velocidade",
+          "TTSText": "velocidade"
+        },
+        {
+          "filename": "0153",
+          "comment": "distância",
+          "TTSText": "distância"
+        },
+        {
+          "filename": "0154",
+          "comment": "altitude",
+          "TTSText": "altitude"
+        },
+        {
+          "filename": "0155",
+          "comment": "célula lipo",
+          "TTSText": "célula lipo"
+        },
+        {
+          "filename": "0156",
+          "comment": "Total lipo",
+          "TTSText": "Total lipo"
+        },
+        {
+          "filename": "0157",
+          "comment": "tensão",
+          "TTSText": "tensão"
+        },
+        {
+          "filename": "0158",
+          "comment": "corrente",
+          "TTSText": "corrente"
+        },
+        {
+          "filename": "0159",
+          "comment": "consumo",
+          "TTSText": "consumo"
+        },
+        {
+          "filename": "0160",
+          "comment": "potência",
+          "TTSText": "potência"
+        },
+        {
+          "filename": "0161",
+          "comment": "aceleração X",
+          "TTSText": "aceleração X"
+        },
+        {
+          "filename": "0162",
+          "comment": "aceleração Y",
+          "TTSText": "aceleração Y"
+        },
+        {
+          "filename": "0163",
+          "comment": "aceleração Z",
+          "TTSText": "aceleração Z"
+        },
+        {
+          "filename": "0164",
+          "comment": "Direcção",
+          "TTSText": "Direcção"
+        },
+        {
+          "filename": "0165",
+          "comment": "variómetro",
+          "TTSText": "variómetro"
+        },
+        {
+          "filename": "0166",
+          "comment": "mínimo",
+          "TTSText": "mínimo"
+        },
+        {
+          "filename": "0167",
+          "comment": "máximo",
+          "TTSText": "máximo"
+        }
+      ],
+      "UserVoices": [
+        {
+          "filename": "gearup",
+          "comment": "trem, em cima.",
+          "TTSText": "trem, em cima."
+        },
+        {
+          "filename": "geardn",
+          "comment": "trem, em baixo.",
+          "TTSText": "trem, em baixo."
+        },
+        {
+          "filename": "flapup",
+          "comment": "flaps recolhidos",
+          "TTSText": "flaps recolhidos"
+        },
+        {
+          "filename": "flapdn",
+          "comment": "flaps estendidos",
+          "TTSText": "flaps estendidos"
+        },
+        {
+          "filename": "attero",
+          "comment": "aterragem",
+          "TTSText": "aterragem"
+        },
+        {
+          "filename": "trnon",
+          "comment": "modo de treino ligado",
+          "TTSText": "modo de treino ligado"
+        },
+        {
+          "filename": "trnoff",
+          "comment": "modo de treino desligado",
+          "TTSText": "modo de treino desligado"
+        },
+        {
+          "filename": "engoff",
+          "comment": "motor desligado",
+          "TTSText": "motor desligado"
+        },
+        {
+          "filename": "tohigh",
+          "comment": "muito alto",
+          "TTSText": "muito alto"
+        },
+        {
+          "filename": "tolow",
+          "comment": "muito baixo",
+          "TTSText": "muito baixo"
+        },
+        {
+          "filename": "lowbat",
+          "comment": "bateria fraca",
+          "TTSText": "bateria fraca"
+        },
+        {
+          "filename": "crowon",
+          "comment": "crou, activo",
+          "TTSText": "crou, activo"
+        },
+        {
+          "filename": "crowof",
+          "comment": "crou, desligado",
+          "TTSText": "crou, desligado"
+        },
+        {
+          "filename": "spdmod",
+          "comment": "modo de velocidade",
+          "TTSText": "modo de velocidade"
+        },
+        {
+          "filename": "thmmod",
+          "comment": "modo de térmica",
+          "TTSText": "modo de térmica"
+        },
+        {
+          "filename": "nrmmod",
+          "comment": "modo de voo normal",
+          "TTSText": "modo de voo normal"
+        },
+        {
+          "filename": "fltmd1",
+          "comment": "fase de voo 1",
+          "TTSText": "fase de voo 1"
+        },
+        {
+          "filename": "fltmd2",
+          "comment": "fase de voo 2",
+          "TTSText": "fase de voo 2"
+        },
+        {
+          "filename": "fltmd3",
+          "comment": "fase de voo 3",
+          "TTSText": "fase de voo 3"
+        },
+        {
+          "filename": "fltmd4",
+          "comment": "fase de voo 4",
+          "TTSText": "fase de voo 4"
+        },
+        {
+          "filename": "fltmd5",
+          "comment": "fase de voo 5",
+          "TTSText": "fase de voo 5"
+        },
+        {
+          "filename": "fltmd6",
+          "comment": "fase de vôo 6",
+          "TTSText": "fase de vôo 6"
+        },
+        {
+          "filename": "fltmd7",
+          "comment": "fase de voo 7",
+          "TTSText": "fase de voo 7"
+        },
+        {
+          "filename": "fltmd8",
+          "comment": "fase de voo 8",
+          "TTSText": "fase de voo 8"
+        },
+        {
+          "filename": "fltmd9",
+          "comment": "fase de voo 9",
+          "TTSText": "fase de voo 9"
+        }
+      ]
+    }
+  ]
+}
