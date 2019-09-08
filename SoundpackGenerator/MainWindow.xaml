@@ -65,7 +65,7 @@
                                 <DataGridTextColumn Header="TTS" Binding="{Binding TTSText}"/>
                             </DataGrid.Columns>
                         </DataGrid>
-                        <ComboBox x:Name="ComboBox_LanguageCode" Margin="82,10,10,0" VerticalAlignment="Top" Height="22" Grid.ColumnSpan="2" ItemsSource="{Binding currentFile.LanguagePacks}" DisplayMemberPath="LanguageCode" SelectionChanged="ComboBox_LanguageCode_SelectionChanged"/>
+                        <ComboBox x:Name="ComboBox_LanguageCode" Margin="82,10,10,0" VerticalAlignment="Top" Height="22" Grid.ColumnSpan="2" DisplayMemberPath="LanguageCode" SelectionChanged="ComboBox_LanguageCode_SelectionChanged"/>
                         <Label Content="Language:" Margin="10,8,0,0" VerticalAlignment="Top" Height="26" HorizontalAlignment="Left" Width="67"/>
                         <Button x:Name="Button_SystemVoices" Content="System" Margin="10,39,5,0" VerticalAlignment="Top" Height="20" IsEnabled="False" Click="Button_SystemVoices_Click"/>
                         <Button x:Name="Button_UserVoices" Content="User" Margin="5,39,10,0" VerticalAlignment="Top" Grid.Column="1" Height="20" Click="Button_UserVoices_Click"/>

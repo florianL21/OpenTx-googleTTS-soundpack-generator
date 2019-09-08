@@ -38,9 +38,9 @@ namespace SoundpackGenerator
         public class LanguagePack
         {
             public string LanguageCode { get; set; }
+            public string VoiceName { get; set; }
             public List<VoiceEntry> SystemVoices { get; set; }
             public List<VoiceEntry> UserVoices { get; set; }
-            public string VoiceName { get; set; }
 
             public LanguagePack()
             {
@@ -106,6 +106,7 @@ namespace SoundpackGenerator
 
             //UI initialization:
             InitializeComponent();
+            ComboBox_LanguageCode.ItemsSource = currentFile.LanguagePacks;
             ComboBox_LanguageCode.SelectedIndex = 0;
             DataGrid_FileList.ItemsSource = ((LanguagePack)ComboBox_LanguageCode.SelectedItem).SystemVoices;
             ComboBox_VoiceName.ItemsSource = ListVoices(((LanguagePack)ComboBox_LanguageCode.SelectedItem).LanguageCode);
@@ -199,14 +200,10 @@ namespace SoundpackGenerator
                 }
                 FileLocation = openFileDialog.FileName;
             }
+            ComboBox_LanguageCode.ItemsSource = currentFile.LanguagePacks;
             ComboBox_LanguageCode.Items.Refresh();
             ComboBox_LanguageCode.SelectedIndex = 0;
-            DataGrid_FileList.ItemsSource = ((LanguagePack)ComboBox_LanguageCode.SelectedItem).SystemVoices;
-            ComboBox_VoiceName.ItemsSource = ListVoices(((LanguagePack)ComboBox_LanguageCode.SelectedItem).LanguageCode);
-            if (ComboBox_VoiceName.SelectedIndex == -1)
-            {
-                ComboBox_VoiceName.SelectedIndex = 0;
-            }
+            switchDataView(true);
             GUIRefresh();
         }
 
@@ -450,36 +447,48 @@ namespace SoundpackGenerator
             Task.Factory.StartNew(() => generate(listOfGeneratedPacks, outputPath));
         }
 
-        private void Button_SystemVoices_Click(object sender, RoutedEventArgs e)
+        public void switchDataView(bool systemUserSwitch)
         {
-            Button_UserVoices.IsEnabled = true;
-            Button_SystemVoices.IsEnabled = false;
-            DataGridTextColumn_Filename.IsReadOnly = true;
-            LanguagePack currentLanguagePack = ComboBox_LanguageCode.SelectedItem as LanguagePack;
-            if (currentLanguagePack != null)
+            if(systemUserSwitch)
             {
-                DataGrid_FileList.ItemsSource = currentLanguagePack.SystemVoices;
+                Button_UserVoices.IsEnabled = true;
+                Button_SystemVoices.IsEnabled = false;
+                DataGridTextColumn_Filename.IsReadOnly = true;
+                LanguagePack currentLanguagePack = ComboBox_LanguageCode.SelectedItem as LanguagePack;
+                if (currentLanguagePack != null)
+                {
+                    DataGrid_FileList.ItemsSource = currentLanguagePack.SystemVoices;
+                }
+                else
+                {
+                    DataGrid_FileList.ItemsSource = null;
+                }
             }
             else
             {
-                DataGrid_FileList.ItemsSource = null;
+                Button_UserVoices.IsEnabled = false;
+                Button_SystemVoices.IsEnabled = true;
+                DataGridTextColumn_Filename.IsReadOnly = false;
+                LanguagePack currentLanguagePack = ComboBox_LanguageCode.SelectedItem as LanguagePack;
+                if (currentLanguagePack != null)
+                {
+                    DataGrid_FileList.ItemsSource = currentLanguagePack.UserVoices;
+                }
+                else
+                {
+                    DataGrid_FileList.ItemsSource = null;
+                }
             }
+        }
+
+        private void Button_SystemVoices_Click(object sender, RoutedEventArgs e)
+        {
+            switchDataView(true);
         }
 
         private void Button_UserVoices_Click(object sender, RoutedEventArgs e)
         {
-            Button_UserVoices.IsEnabled = false;
-            Button_SystemVoices.IsEnabled = true;
-            DataGridTextColumn_Filename.IsReadOnly = false;
-            LanguagePack currentLanguagePack = ComboBox_LanguageCode.SelectedItem as LanguagePack;
-            if (currentLanguagePack != null)
-            {
-                DataGrid_FileList.ItemsSource = currentLanguagePack.UserVoices;
-            }
-            else
-            {
-                DataGrid_FileList.ItemsSource = null;
-            }
+            switchDataView(false);
         }
 
         private void Button_BrowseOutputPath_Click(object sender, RoutedEventArgs e)
