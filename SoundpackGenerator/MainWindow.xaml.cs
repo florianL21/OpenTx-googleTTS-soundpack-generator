@@ -632,11 +632,6 @@ namespace SoundpackGenerator
             
         }
 
-        private void MenuItem_Duplicate_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void MenuItem_Delete_Click(object sender, RoutedEventArgs e)
         {
             MessageBoxResult result = MessageBox.Show("Are you sure you want to delete the currently selected soundpack?", "Delete", MessageBoxButton.YesNo, MessageBoxImage.Question);

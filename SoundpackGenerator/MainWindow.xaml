@@ -17,7 +17,6 @@
                 </MenuItem>
                 <MenuItem Header="_Edit">
                     <MenuItem x:Name="MenuItem_CreateEmpty" Header="_Create empty soundpack" Click="MenuItem_CreateEmpty_Click"/>
-                    <MenuItem x:Name="MenuItem_Duplicate" Header="_Duplicate current soundpack" Click="MenuItem_Duplicate_Click" IsEnabled="False"/>
                     <MenuItem x:Name="MenuItem_Delete" Header="_Delete current soundpack" Click="MenuItem_Delete_Click"/>
                 </MenuItem>
             </Menu>
