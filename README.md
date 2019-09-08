@@ -40,3 +40,4 @@ In this project I make use of the following 3rd party software:
 - [Google cloud TTS](https://cloud.google.com/text-to-speech/)
 - [Json parser from Newtonsoft](https://www.newtonsoft.com/json)
 - [Microsoft .NET Core](https://dotnet.microsoft.com/download)
+- [NAudio](https://github.com/naudio/NAudio)
