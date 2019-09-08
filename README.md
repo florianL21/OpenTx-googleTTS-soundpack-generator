@@ -13,8 +13,25 @@ The application features an easy to use GUI:
 
 ## Setup
 
-The setup is really easy. The hardest part about it is to setup a Google cloud project and access key for your google account. The application will ask you for the json file (which you can learn how to generate [here](https://cloud.google.com/text-to-speech/docs/quickstart-client-libraries)) at startup. 
+Setup of this application is really easy. You can go to the [releases](https://github.com/florianL21/OpenTx-googleTTS-soundpack-generator/releases) and download the newest eecutable for Windows from there.
 
+Some steps to get you up and running:
+
+### 1. Prerequisits:
+Some kind of .NET core installaiton is required so that you can start the application.
+You can simply try to download and run the exe file on your PC and see if it opens. 
+If not donwload and install the .NET Core runtime from [here](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+If you plan to build the application from source you will have to get the SDK instead.
+
+### 2. Create a Google Cloud project and download the acces key Json file
+
+The application will ask you for a json file at its first startup.
+A guide on how to setup the Google Cloud project and generate the key can be found [here](https://cloud.google.com/text-to-speech/docs/quickstart-client-libraries).
+
+## Building from source
+
+Building the app is as simple as clonig this repo and then opening a cmd window inside the SoundpackGenerator Folder. 
+Make sure you have the dotnet core sdk installed and the simply execute `dotnet run` to start the application.
 
 ## References
 
