@@ -212,35 +212,61 @@ namespace SoundpackGenerator
             if(!soundIsPlaying)
             {
                 //TODO: Maybe improve by playing the stream directly without saving it as a file first
-                generateTTSSoundFile("output.mp3", ssml, usedLanguageCode, voiceName);
-                PlaySound("output.mp3");
+                if(generateTTSSoundFile("output.mp3", ssml, usedLanguageCode, voiceName))
+                {
+                    PlaySound("output.mp3");
+                }
             }
         }
 
-        public void generateTTSSoundFile(string outputFileName, string ssml, string usedLanguageCode, string voiceName)
+        public bool generateTTSSoundFile(string outputFileName, string ssml, string usedLanguageCode, string voiceName)
         {
-            var response = client.SynthesizeSpeech(new SynthesizeSpeechRequest
+            try
             {
-                Input = new SynthesisInput
+                var response = client.SynthesizeSpeech(new SynthesizeSpeechRequest
                 {
-                    Ssml = ssml
-                },
-                // Note: voices can also be specified by name
-                Voice = new VoiceSelectionParams
-                {
-                    LanguageCode = usedLanguageCode,
-                    Name = voiceName
-                },
-                AudioConfig = new AudioConfig
-                {
-                    AudioEncoding = AudioEncoding.Mp3
-                }
-            });
+                    Input = new SynthesisInput
+                    {
+                        Ssml = ssml
+                    },
+                    // Note: voices can also be specified by name
+                    Voice = new VoiceSelectionParams
+                    {
+                        LanguageCode = usedLanguageCode,
+                        Name = voiceName
+                    },
+                    AudioConfig = new AudioConfig
+                    {
+                        AudioEncoding = AudioEncoding.Mp3
+                    }
+                });
 
-            using (Stream output = File.Create(outputFileName))
-            {
-                response.AudioContent.WriteTo(output);
+                using (Stream output = File.Create(outputFileName))
+                {
+                    response.AudioContent.WriteTo(output);
+                }
+                return true;
             }
+            catch(Grpc.Core.RpcException ex)
+            {
+                if(ex.StatusCode == Grpc.Core.StatusCode.ResourceExhausted)
+                {
+                    MessageBoxResult result = MessageBox.Show("The google cloud rejeccted the request because of too many polls. Try generating less files at once. You could also wait for a bit and try agian. Retry?", "Retry", MessageBoxButton.YesNo);
+                    if(result == MessageBoxResult.Yes)
+                    {
+                        generateTTSSoundFile(outputFileName, ssml, usedLanguageCode, voiceName);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("An error occured: " + ex.Message);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("An error occured: " + ex.Message);
+            }
+            return false;
         }
 
         private static void ConvertMp3ToWav(string inPath, string outPath)
@@ -281,9 +307,11 @@ namespace SoundpackGenerator
             string FilePath = System.IO.Path.Combine(outputPath, filename + ".wav");
             if (filename != null && filename != "" && (!File.Exists(FilePath) || currentFile.OverrideSounds) && TTSText != null && TTSText != "")
             {
-                generateTTSSoundFile("output.mp3", TTSText, LanguageCode, VoiceName);
-                ConvertMp3ToWav("output.mp3", FilePath);
-                return true;
+                if(generateTTSSoundFile("output.mp3", TTSText, LanguageCode, VoiceName))
+                {
+                    ConvertMp3ToWav("output.mp3", FilePath);
+                    return true;
+                }
             }
             return false;
         }
@@ -367,10 +395,10 @@ namespace SoundpackGenerator
             {
                 MessageBox.Show("Filename is empty. If moving forward this entry will be ignored.\n Entry comment: " + entryToValidate.comment + "\n Entry TTS: " + entryToValidate.TTSText);
             }
-            else if (entryToValidate.filename.Length > 7 || entryToValidate.filename.Any(char.IsUpper))
-            {
-                MessageBox.Show("Filename is too long or contains uppercase letters. (max 7 lower case characters) If moving forward this file will not be selectable from within the transmitter.\n Entry filename: " + entryToValidate.filename + "\n Entry comment: " + entryToValidate.comment + "\n Entry TTS: " + entryToValidate.TTSText);
-            }
+            //else if (entryToValidate.filename.Length > 7 || entryToValidate.filename.Any(char.IsUpper))
+            //{
+            //    MessageBox.Show("Filename is too long or contains uppercase letters. (max 7 lower case characters) If moving forward this file will not be selectable from within the transmitter.\n Entry filename: " + entryToValidate.filename + "\n Entry comment: " + entryToValidate.comment + "\n Entry TTS: " + entryToValidate.TTSText);
+            //}
             else if (entryToValidate.TTSText == null || entryToValidate.TTSText == "")
             {
                 MessageBox.Show("TTS Text is empty for:\n Entry filename: " + entryToValidate.filename + "\n Entry comment: " + entryToValidate.comment);
