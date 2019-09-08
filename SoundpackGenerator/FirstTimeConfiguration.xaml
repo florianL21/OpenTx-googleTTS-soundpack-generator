@@ -4,7 +4,11 @@
         Title="FirstTimeConfiguration" Height="329" Width="336" MinHeight="123" MinWidth="182">
     <Grid>
 
-        <TextBlock Text="It seems like there is no google cloud authentication setup. To be able to use this application you will need to follow this guide (https://cloud.google.com/text-to-speech/docs/quickstart-client-libraries) to generate a json Service account key for your google account and either create an environment variable called GOOGLE_APPLICATION_CREDENTIALS that points to this file or you could paste the path to it below and this application will do it for you." Margin="10,10,10,63" TextWrapping="Wrap"/>
+        <TextBlock Margin="10,10,10,63" TextWrapping="Wrap">
+            The environment variable GOOGLE_APPLICATION_CREDENTIALS was not found on your system or it was set to an invalid value. <LineBreak></LineBreak>
+            Please follow <Hyperlink NavigateUri="https://cloud.google.com/text-to-speech/docs/quickstart-client-libraries" RequestNavigate="Hyperlink_RequestNavigate">this</Hyperlink> guide to generate an autentication file for your Google cloud project, save it to your PC and paste the path to this file here:
+        
+        </TextBlock>
         <TextBox x:Name="TextBox_path" Margin="10,0,10,35" TextWrapping="NoWrap" Text="Path to the json file" Height="23" VerticalAlignment="Bottom"/>
         <Button x:Name="Button_Appy" Content="Apply" HorizontalAlignment="Left" Margin="10,0,0,10" Width="75" Height="20" VerticalAlignment="Bottom" Click="Button_Appy_Click"/>
         <Button x:Name="Button_Exit" Content="Exit" Margin="0,0,10,10" HorizontalAlignment="Right" Width="75" Height="20" VerticalAlignment="Bottom" Click="Button_Exit_Click"/>

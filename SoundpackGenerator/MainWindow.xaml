@@ -21,7 +21,33 @@
                     <MenuItem x:Name="MenuItem_Delete" Header="_Delete current soundpack" Click="MenuItem_Delete_Click"/>
                 </MenuItem>
             </Menu>
-            <Grid>
+            <StatusBar DockPanel.Dock="Bottom">
+                <StatusBar.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="300" />
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </ItemsPanelTemplate>
+                </StatusBar.ItemsPanel>
+                <StatusBarItem>
+                    <TextBlock Name="TextBlock_Progress" Text="Idle" />
+                </StatusBarItem>
+                <Separator Grid.Column="1" />
+                <StatusBarItem Grid.Column="2">
+                    <TextBlock x:Name="TextBlock_CurrentFile" />
+                </StatusBarItem>
+                <Separator Grid.Column="3" />
+                <StatusBarItem Grid.Column="4">
+                    <ProgressBar x:Name="ProgressBar_Progress" Value="0" Width="290" Height="16"/>
+                </StatusBarItem>
+            </StatusBar>
+            <Grid x:Name="Grid_MainGrid">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" MinWidth="300"/>
                     <ColumnDefinition Width="*" MinWidth="300"/>
@@ -48,16 +74,17 @@
                 <GridSplitter Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Stretch" Width="5"/>
                 <GroupBox Header="Settings" Margin="10" Grid.Column="1">
                     <Grid Margin="0,0,0,0">
-                        <ComboBox x:Name="ComboBox_VoiceName" Margin="82,12,10,0" VerticalAlignment="Top" Height="22" SelectionChanged="ComboBox_VoiceName_SelectionChanged"/>
+                        <ComboBox x:Name="ComboBox_VoiceName" Margin="82,12,10,0" VerticalAlignment="Top" Height="22" SelectedItem="{Binding ElementName=ComboBox_LanguageCode, Path=SelectedItem.VoiceName}"/>
                         <Label Content="Voice:" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" HorizontalAlignment="Left" Width="67"/>
-                        <Button x:Name="Button_Generate" Content="Generate" Margin="10,0,10,10" Height="20" VerticalAlignment="Bottom" Click="Button_Generate_Click"/>
-                        <CheckBox Content="Generate system sounds" HorizontalAlignment="Left" Margin="10,0,0,75" VerticalAlignment="Bottom" Width="248" IsChecked="{Binding currentFile.GenerateSystemSounds}"/>
-                        <CheckBox Content="Generate user sounds" HorizontalAlignment="Left" Margin="10,0,0,55" Width="248" Height="15" VerticalAlignment="Bottom" IsChecked="{Binding currentFile.GenerateUserSounds}"/>
-                        <CheckBox Content="Overwrite existing sounds" HorizontalAlignment="Left" Margin="10,0,0,35" VerticalAlignment="Bottom" Width="248" IsChecked="{Binding currentFile.OverrideSounds}"/>
+                        <Button x:Name="Button_Generate" Focusable="False" Content="Generate" Margin="10,0,10,10" Height="20" VerticalAlignment="Bottom" Click="Button_Generate_Click"/>
+                        <CheckBox Content="Generate system sounds" Margin="10,0,10,95" IsChecked="{Binding currentFile.GenerateSystemSounds}" Height="15" VerticalAlignment="Bottom"/>
+                        <CheckBox Content="Generate user sounds" Margin="10,0,10,75" IsChecked="{Binding currentFile.GenerateUserSounds}" Height="15" VerticalAlignment="Bottom"/>
+                        <CheckBox Content="Overwrite existing sounds" Margin="10,0,10,55" IsChecked="{Binding currentFile.OverrideSounds}" Height="15" VerticalAlignment="Bottom"/>
                         <Label Content="Output folder: " Margin="10,41,0,0" VerticalAlignment="Top" Height="26" HorizontalAlignment="Left" Width="89"/>
-                        <TextBox x:Name="TextBox_OutputPath" Height="23" Margin="104,44,64,0" TextWrapping="Wrap" Text="{Binding currentFile.outputPath}" VerticalAlignment="Top"/>
+                        <TextBox x:Name="TextBox_OutputPath" Height="23" Margin="104,44,64,0" TextWrapping="NoWrap" Text="{Binding currentFile.outputPath}" VerticalAlignment="Top"/>
                         <Button x:Name="Button_BrowseOutputPath" Content="Browse" Margin="0,44,10,0" VerticalAlignment="Top" Height="23" HorizontalAlignment="Right" Width="49" Click="Button_BrowseOutputPath_Click"/>
-                        <Button x:Name="Button_PlaySelected" Content="Play selected row" Margin="10,0,10,95" Click="Button_PlaySelected_Click" Height="23" VerticalAlignment="Bottom"/>
+                        <Button x:Name="Button_PlaySelected" Content="Play selected row" Margin="10,0,10,115" Click="Button_PlaySelected_Click" Height="23" VerticalAlignment="Bottom"/>
+                        <CheckBox Content="Generate all language packs at once" Margin="10,0,10,35" IsChecked="{Binding generateAllLanguages}" Height="15" VerticalAlignment="Bottom"/>
 
                     </Grid>
                 </GroupBox>
