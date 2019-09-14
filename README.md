@@ -10,6 +10,8 @@ The application features an easy to use GUI:
 
 ![](https://github.com/florianL21/OpenTx-googleTTS-soundpack-generator/blob/master/wiki-images/Screenshot-main-GUI.png)
 
+If you want to hear an example of what the voices sound like you can check that out [here](https://cloud.google.com/text-to-speech/).
+
 
 ## Setup
 
